@@ -1,0 +1,3118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Электронный ресурс по учебной дисциплине ОСАПр. Перечень команд AutoCAD</Title>
+<Meta Name="Description" http-equiv="description" Content="Электронный ресурс по учебной дисциплине ОСАПр. Типы данных, переменные и выражения AutoLISP">
+<Link Rel="stylesheet" Type="text/css" Href="../Оболочка/acad_lisp.css">
+
+<Script>hljs.initHighlightingOnLoad();</Script>
+
+<Script Language="JavaScript">
+<!--
+function mOver(num) {if (document.images) {document.images['link'+num].src=eval('active'+num+'.src');}}
+function mOut(num) {if (document.images) {document.images['link'+num].src=eval('normal'+num+'.src');}}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 style="max-width: 1300px;" >
+<div class=max>
+<Script Language="JavaScript">
+if (document.images) {
+normal1=new Image(190,29);normal1.src="../Оболочка/images/01a.gif";
+active1=new Image(190,29);active1.src="../Оболочка/images/01p.gif";
+normal2=new Image(190,29);normal2.src="../Оболочка/images/02a.gif";
+active2=new Image(190,29);active2.src="../Оболочка/images/02p.gif";
+normal31=new Image(170,40);normal31.src="../Оболочка/images/031a.gif";
+active31=new Image(170,40);active31.src="../Оболочка/images/031p.gif";
+normal32=new Image(170,40);normal32.src="../Оболочка/images/032a.gif";
+active32=new Image(170,40);active32.src="../Оболочка/images/032p.gif";
+normal33=new Image(170,40);normal33.src="../Оболочка/images/033a.gif";
+active33=new Image(170,40);active33.src="../Оболочка/images/033p.gif";
+normal34=new Image(170,40);normal34.src="../Оболочка/images/034a.gif";
+active34=new Image(170,40);active34.src="../Оболочка/images/034p.gif";
+normal4=new Image(190,29);normal4.src="../Оболочка/images/04a.gif";
+active4=new Image(190,29);active4.src="../Оболочка/images/04p.gif";
+normal5=new Image(190,29);normal5.src="../Оболочка/images/05a.gif";
+active5=new Image(190,29);active5.src="../Оболочка/images/05p.gif";
+normal6=new Image(159,46);normal6.src="../Оболочка/images/06a.gif";
+active6=new Image(159,46);active6.src="../Оболочка/images/06p.gif";
+normal7=new Image(159,54);normal7.src="../Оболочка/images/07a.gif";
+active7=new Image(159,55);active7.src="../Оболочка/images/07p.gif";
+}
+</Script>
+
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../Оболочка/images/bg01.gif Width=190 Height=91>&nbsp;</Td>
+ <Td RowSpan=2 BackGround=../Оболочка/images/bg02.gif Height=120 Valign=Bottom>
+<Table BackGround=../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td Width=180></Td>
+  <Td Valign=top Height=60><P Class=h6>AutoCAD</P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+  <Td BackGround=../Оболочка/images/bg03.gif>
+    <A Href=../Программа/!rabprog.html onMouseOver="mOver(1)" onMouseOut="mOut(1)"><Img Src=../Оболочка/images/01a.gif Border=0 Width=190 Height=29 Alt="Рабочая программа" name="link1"></A><Br>
+ </Td>
+</Tr>
+<Tr>
+ <Td Height=100% RowSpan="2" Valign=Top BackGround=../Оболочка/images/bg00.gif>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+  <A Href=../Теория/!lekcii.html onMouseOver="mOver(2)" onMouseOut="mOut(2)"><Img Src=../Оболочка/images/02a.gif Width=190 Height=29 Border=0 Alt="Лекции" name="link2"></A><Br>
+ </Td>
+</Tr>
+<Tr><Td BackGround=../Оболочка/images/bg04.gif Width=190 Valign=Top>
+  <Img Src=../Оболочка/images/03p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"><Br></Td>
+<Tr><Td BackGround=../Оболочка/images/bg05.gif Width=190 Valign=Top>
+  <A href="!acad.html" onMouseOver="mOver(31)" onMouseOut="mOut(31)"><Img Src=../Оболочка/images/031a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link31"></A><Br></Td></Tr>
+<Tr><Td BackGround=../Оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+  <A href="!mechanic.html" onMouseOver="mOver(32)" onMouseOut="mOut(32)"><Img Src=../Оболочка/images/032a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link32"></A><Br>
+  <A href="!mechanic.html" onMouseOver="mOver(33)" onMouseOut="mOut(33)"><Img Src=../Оболочка/images/033a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link33"></A><Br>
+  <A href="!lisp.html" onMouseOver="mOver(34)" onMouseOut="mOut(34)"><Img Src=../Оболочка/images/034a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link34"></A><Br>
+<Img Src=../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+ <A Href=../Заочнику/!zaochnoe.html onMouseOver="mOver(4)" onMouseOut="mOut(4)"><Img Src=../Оболочка/images/04a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link4"></A><Br>
+ <A Href=../Контроль_знаний/!samocontrol.html onMouseOver="mOver(5)" onMouseOut="mOut(5)"><Img Src=../Оболочка/images/05a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link5"></A><Br>
+ <Img Src=../Оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ 
+ <Td Valign=Сenter>
+ <Br><Br>
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=97%><Tr><Td>
+
+<A name="top"></A>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Перечень команд AutoCAD</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../Оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+<Map Name=map>
+ <Area Shape=RECT Coords="0,0,19,20" Href=#a>
+ <Area Shape=RECT Coords="20,0,39,20" Href=#b>
+ <Area Shape=RECT Coords="40,0,59,20" Href=#c>
+ <Area Shape=RECT Coords="60,0,79,20" Href=#d>
+ <Area Shape=RECT Coords="80,0,99,20" Href=#e>
+ <Area Shape=RECT Coords="100,0,119,20" Href=#f>
+ <Area Shape=RECT Coords="120,0,139,20" Href=#g>
+ <Area Shape=RECT Coords="140,0,159,20" Href=#h>
+ <Area Shape=RECT Coords="160,0,179,20" Href=#i>
+ <Area Shape=RECT Coords="180,0,199,20" Href=#l>
+ <Area Shape=RECT Coords="200,0,219,20" Href=#m>
+ <Area Shape=RECT Coords="220,0,239,20" Href=#o>
+ <Area Shape=RECT Coords="240,0,259,20" Href=#p>
+ <Area Shape=RECT Coords="260,0,279,20" Href=#q>
+ <Area Shape=RECT Coords="280,0,299,20" Href=#r>
+ <Area Shape=RECT Coords="300,0,319,20" Href=#s>
+ <Area Shape=RECT Coords="320,0,339,20" Href=#t>
+ <Area Shape=RECT Coords="340,0,359,20" Href=#u>
+ <Area Shape=RECT Coords="360,0,379,20" Href=#v>
+ <Area Shape=RECT Coords="380,0,399,20" Href=#w>
+ <Area Shape=RECT Coords="400,0,419,20" Href=#x>
+</Map>
+<Img Src=../Оболочка/images/operators.gif Width=420 Height=21 Usemap=#map Align=Right Border=0><Br><Br>
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+<A name="3"></A>
+
+<Table Width=97%>
+
+<Tr><Td><SPAN>#</SPAN></Td></Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>3DFACE</P></Td>
+ <Td><P>Рисует участок трехмерной плоскости.<Br>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>I</P></Td>
+ <Td><P Class=tj>Делает указанный край невидимым.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>3DPOLY</P></Td>
+ <Td><P>Создание трехмерных полилиний.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Замыкает открытые полилинии.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Отменяет (удаляет) последний нарисованный сегмент.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>RETURN</P></Td>
+ <Td><P Class=tj>Выход из команды.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>3DMESH</P></Td>
+ <Td><P>Задает трехмерную  многоугольную  сеть  указанием  ее   размера (в терминах М, N) и положение каждой ее вершины.</P></Td>
+</Tr>
+</Table>
+
+<A name="a"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>A</SPAN></Td></Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'ABOUT</P></Td>
+ <Td><P>Через диалоговое окно выводит различную информацию, в том числе о версии AutoCAD, серийном номере и текстом из файла acad.msg.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>АРЕRTURE</P></Td>
+ <Td><P>Устанавливает размер прицела режима объектной привязки.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ARC</P></Td>
+ <Td><P>Рисует дугу любого радиуса; метод задания дуги, принимаемый по умолчанию, заключается в указании на две ее конечные точки и на точку, принадлежащую дуге.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Центральный угол.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Центр.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Направление.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Конец.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Длина хорды.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Радиус.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>RETURN</P></Td>
+ <Td><P Class=tj>Воспринимается (при нажатии в ответ на запрос "Центр") как указание совместить начало дуги с концом последней нарисованной дуги или отрезка.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>AREA</P></Td>
+ <Td><P>Вычисляет площадь многоугольника, замкнутой полилинии, круга.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Устанавливает режим добавления.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Устанавливает режим вычитания.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Вычисляет площадь выбранного объекта.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ARRAY</P></Td>
+ <Td><P>Производит многократное копирование выбранного объекта, располагая копии прямоугольным или круговым массивом.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Круговой массив.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Прямоугольный массив.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ATTDEF</P></Td>
+ <Td><P>Определяет атрибуты.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>I</P></Td>
+ <Td><P Class=tj>Управляет видимостью атрибутов.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Присваивает атрибуту статус "постоянный".</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>V</P></Td>
+ <Td><P Class=tj>Управляет режимом проверки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Задает предварительные установки.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ATTDISP</P></Td>
+ <Td><P>Управляет видимостью атрибутов на экране.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Все атрибуты отображаются на экране.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Все атрибуты невидимы.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Нормальный: видимость каждого атрибута определяется отдельно.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ATTEDIT</P></Td>
+ <Td><P>Средство редактирования атрибутов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ATTEXT</P></Td>
+ <Td><P>Экспортирует в файл данные, содержащиеся в атрибутах.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Экспорт в CDF-формате.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Экспорт в SDF-формате.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Экспорт в DXF-формате.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj> Экспорт атрибутов из выбранных объектов.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>AUDIT</P></Td>
+ <Td><P>Выполняет проверку целостности рисунка.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>У</P></Td>
+ <Td><P Class=tj>Исправляет замеченные ошибки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Только сообщает о замеченных ошибках.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="b"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>B</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>BASE</P></Td>
+ <Td><P>Задание базовой точки для последующей вставки блока в другой рисунок.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ВНАТСН</P></Td>
+ <Td><P>Автоматически заполняет определенный контур образцом штриховки с использованием диалогового окна, а также помогает предварительно просматривать и многократно подгонять штриховку без выхода из команды.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>BLIPMODE</P></Td>
+ <Td><P>Управляет видимостью маркеров на экране при указании точек.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>На экране появляются временные маркеры.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Маркеры не появляются.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>BLOCK</P></Td>
+ <Td><P>Из группы объектов создает составной неделимый объект.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Отображает на экране список определенных в рисунке блоков.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>BPOLY</P></Td>
+ <Td><P>Создает полилинию по замкнутому контуру.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>BREAK</P></Td>
+ <Td><P>Стирает часть объекта или разрывает его на две части.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>F</P></Td>
+ <Td><P Class=tj>Переопределяет первую указанную точку.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="c"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>C</SPAN></Td></Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>CIRCLE</P></Td>
+ <Td><P>Рисует круг любого заданного радиуса; по умолчанию принят метод задания круга по центру и точке на его окружности.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>2Р</P></Td>
+ <Td><P Class=tj>Задает круг по двум конечным точкам на его диаметре.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ЗР</P></Td>
+ <Td><P Class=tj>Задает круг по трем точкам на его окружности.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Задает круг по радиусу.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Для указания диаметра вместо запрашиваемого радиуса.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>TTR</P></Td>
+ <Td><P Class=tj>Задание круга указанием двух касательных и радиуса.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>CHAMFER</P></Td>
+ <Td><P>Снимает фаску с угла, образованного пересечением двух отрезков.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Устанавливает длину фасок.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Снимает фаску с полилинии.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>CHANGE</P></Td>
+ <Td><P>Изменяет положение, размер, ориентацию в пространстве и другие характеристики выбранного объекта. Особенно интересна при работе с текстом.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Общие свойства примитивов.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>LА</P></Td>
+ <Td><P Class=tj>Слой.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Цвет.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>LT</P></Td>
+ <Td><P Class=tj>Тип линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Т</P></Td>
+ <Td><P Class=tj>Высота.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Уровень.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>CHPROP</P></Td>
+ <Td><P>Изменяет свойства выбранных объектов.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Цвет.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>LT</P></Td>
+ <Td><P Class=tj>Тип линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>LА</P></Td>
+ <Td><P Class=tj>Слой.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Т</P></Td>
+ <Td><P Class=tj>Высота.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'COLOUR</P></Td>
+ <Td><P>Устанавливает цвет вновь создаваемого примитива.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>число</P></Td>
+ <Td><P Class=tj>Устанавливает цвет объекта.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>имя</P></Td>
+ <Td><P Class=tj>Устанавливает цвет объекта; стандартное имя цвета.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ВУВ</P></Td>
+ <Td><P Class=tj>Присваивает цвет "BYBLOCK".</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ВYL</P></Td>
+ <Td><P Class=tj>Присваивает цвет "BYLAYER".</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>COMPILE</P></Td>
+ <Td><P>Компилирует файлы форм и шрифтов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>CONFIG</P></Td>
+ <Td><P>Позволяет изменить на текстовом экране настройки монитора дигитайзера, плоттера и рабочих параметров.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>COPY</P></Td>
+ <Td><P>Рисует копии указанного объекта.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>М</P></Td>
+ <Td><P Class=tj>Создает несколько копий указанного объекта.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="d"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>D</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DDATTDEF</P></Td>
+ <Td><P>Выводит на экран диалоговое окно для создания определения атрибута, включаемого в качестве текстовой информации в определение блока.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DDATTEXT</P></Td>
+ <Td><P>Выводит на экран диалоговое окно для извлечения данных из рисунка. Допустимыми форматами являются DXF, CDF и SDF.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DDCHPROP</P></Td>
+ <Td><P>Позволяет через диалоговое окно изменять цвет, слой, тип линии и высоту выбранных примитивов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DDEDIT</P></Td>
+ <Td><P>Выводит на экран диалоговое окно для редактирования текстов и определений атрибутов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDEMODES</P></Td>
+ <Td><P>Установка текущего слоя, цвета, типа линии и высоты через диалоговое окно.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDGRIPS</P></Td>
+ <Td><P>Позволяет через диалоговое окно включать ручки выбора примитивов и задавать их цвет и величину.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDIM</P></Td>
+ <Td><P>Отображает на экране серию диалоговых окон для управления простановкой размеров.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DDINSERT</P></Td>
+ <Td><P>Выводит на экран диалоговое окно, позволяющее вставить копию предварительно созданного стандартного элемента или файла в рисунок.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDLMODES</P></Td>
+ <Td><P>Редактирование атрибутов через диалоговое окно. Установка характеристик слоя через диалоговое окно.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDOSNAP</P></Td>
+ <Td><P>Вызывает диалоговое окно для установления текущих режимов объектной привязки и изменения величины прицела выбора объектов для привязки.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DDRENAME</P></Td>
+ <Td><P>Вызывает диалоговое окно для переименования гарнитуры шрифтов, слоев, типов линий, блоков, видов, ПСК, конфигураций видовых экранов и размерных стилей.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDRMODES</P></Td>
+ <Td><P>Установка режимов рисования через диалоговое окно.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDSELECT</P></Td>
+ <Td><P>Вызывает диалоговое окно для задания режимов выбора примитивов, величину прицела выбора и способ сортировки объектов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DDUCS</P></Td>
+ <Td><P>Изображает на экране диалоговое окно для управления ПСК.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DDUNITS</P></Td>
+ <Td><P>Вызывает диалоговое окно для задания форматов отображения и точности координат и углов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'DELAY</P></Td>
+ <Td><P>Приостанавливает выполнение команды на указанное время; употребляется в пакетных файлах.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DIM</P></Td>
+ <Td><P>Выход в режим проставления размеров, позволяющий дополнить рисунок размерными и выносными линиями.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DIST</P></Td>
+ <Td><P>Определяет расстояние между двумя точками.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DIVIDE</P></Td>
+ <Td><P>Делит объект на заданное число частей, помечая их маркерами.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>B</P></Td>
+ <Td><P Class=tj>Вместо маркера вставляется указанный блок.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DONUT</P></Td>
+ <Td><P>Рисует кольца с заданным внешним и внутренним диаметром.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DRAGMODE</P></Td>
+ <Td><P>Включает и отключает режим динамического отслеживания, применяющийся при выполнении некоторых команд.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Ввод требований отслеживания при необходимости.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Игнорирование требования отслеживания.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Устанавливает автоматический режим: отслеживание включается без запроса.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DТЕХT</P></Td>
+ <Td><P>Рисует на экране текстовые символы заданного размера и начертания.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>J</P></Td>
+ <Td><P Class=tj>Запрашивает опции выключки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>F</P></Td>
+ <Td><P Class=tj>Текст заданной гарнитуры, вписанный между двумя точками; высота определяется автоматически.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Горизонтальное центрирование строки текста.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Строка текста заданной высоты выравнивается между двумя точками; соответствующая степень растяжения/сжатия вычисляется автоматически.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>М</P></Td>
+ <Td><P Class=tj>Горизонтальное и вертикальное центрирование строки текста.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Строка текста выравнивается по правому краю.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Выбор гарнитуры шрифта.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ВL</P></Td>
+ <Td><P Class=tj>Выключка вниз влево.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ВС</P></Td>
+ <Td><P Class=tj>Выключка вниз в центр.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ВR</P></Td>
+ <Td><P Class=tj>Выключка вниз вправо.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ML</P></Td>
+ <Td><P Class=tj>Выключка посередине влево.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>МС</P></Td>
+ <Td><P Class=tj>Выключка посередине в центр.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>MR</P></Td>
+ <Td><P Class=tj>Выключка посередине вправо.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>TL</P></Td>
+ <Td><P Class=tj>Выключка вверх влево.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ТС</P></Td>
+ <Td><P Class=tj>Выключка вверх в центр.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>TR</P></Td>
+ <Td><P Class=tj>Выключка вверх вправо.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DVIEW</P></Td>
+ <Td><P>Определяет параллельные и перспективные проекции видов в динамическом режиме.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>СА</P></Td>
+ <Td><P Class=tj>Выбор угла поворота камеры относительно цели.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>CL</P></Td>
+ <Td><P Class=tj>Устанавливает заднюю и переднюю секущие плоскости.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Устанавливает расстояние от камеры до цели, включает перспективу.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Н</P></Td>
+ <Td><P Class=tj>Убирает скрытые линии в наборе.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключает перспективное изображение.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>РА</P></Td>
+ <Td><P Class=tj>Панорамирование рисунка.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>РО</P></Td>
+ <Td><P Class=tj>Задает точки расположения камеры и цели.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ТА</P></Td>
+ <Td><P Class=tj>Вращает вид вокруг направления взгляда.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>TW</P></Td>
+ <Td><P Class=tj>Вращает вид вокруг направления взгляда.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Отменяет действие субкоманды DVIEW.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Х</P></Td>
+ <Td><P Class=tj>Прерывает выполнение команды DVIEW.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Z</P></Td>
+ <Td><P Class=tj>Зуммирование или задание фокусного расстояния.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DXBIN</P></Td>
+ <Td><P>Вставляет закодированный в двоичном формате файл в рисунок.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DXFIN</P></Td>
+ <Td><P>Загружает файл обмена рисунками.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>DXFOUT</P></Td>
+ <Td><P>Записывает файл обмена рисунками на диск.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>V</P></Td>
+ <Td><P Class=tj>Записывает файл в двоичном формате.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Только выбранные объекты.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>0-16</P></Td>
+ <Td><P Class=tj>Количество знаков после запятой.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="e"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>E</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>EDGESURF</P></Td>
+ <Td><P>Создает трехмерную многоугольную сеть методом аппроксимации участка поверхности Кунса (бикубическая поверхность, полученная интерполяцией между четырьмя краями).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ELEV</P></Td>
+ <Td><P>Устанавливает уровень и высоту для вновь создаваемых объектов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ELLIPSE</P></Td>
+ <Td><P>Рисует эллипсы.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>По центру.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>По эксцентриситету указанием угла поворота вокруг второй оси.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>I</P></Td>
+ <Td><P Class=tj>Рисует круг на текущей изометрической плоскости.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ERASE</P></Td>
+ <Td><P>Удаляет примитивы из рисунка.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>EXPLODE</P></Td>
+ <Td><P>Расчленяет блок или полилинию на составляющие элементы, не изменяя геометрии объекта, но удаляя определение блока или полилинии.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>EXTEND</P></Td>
+ <Td><P>Удлиняет отрезок, дугу или полилинию до пересечения с другим объектом.</P></Td>
+</Tr>
+</Table>
+
+<A name="f"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>F</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'FILL</P></Td>
+ <Td><P>Определяет, будут ли закрашены изображаемые на экране или выводимые на бумагу полосы, фигуры и полилинии.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Полосы, фигуры и полилинии закрашены.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Полосы, фигуры и полилинии только оконтурены.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>FILLET</P></Td>
+ <Td><P>Построение сопряжения двух отрезков, дуг или кругов заданного радиуса.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Сопряжение между собой отдельных сегментов одной полилинии.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Установка радиуса сопряжения.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="g"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>G</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'GRAPHSCR</P></Td>
+ <Td><P>При одноэкранной конфигурации переключает монитор в графический режим; команда употребляется в пакетах и при создании меню.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'GRID</P></Td>
+ <Td><P>Изображает на экране сетку из точек с заданным расстоянием между ними.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включает видимость сетки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключает видимость сетки.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Устанавливает интервал равным шагу привязки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Устанавливает отличные друг от друга интервалы по осям.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>число</P></Td>
+ <Td><P Class=tj>Устанавливает интервал сетки (0=шаг привязки).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>числоХ</P></Td>
+ <Td><P Class=tj>Задает интервал сетки кратным шагу привязки.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="h"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>H</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>HANDLES</P></Td>
+ <Td><P>Присваивает уникальный постоянный номер каждому примитиву рисунка.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Присваивает метки всем примитивам и устанавливает переменную HANDLES, равную единице.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Удаляет ранее присвоенные примитивам метки.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>HATCH</P></Td>
+ <Td><P>Осуществляет штриховку и заполнение областей.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>имя</P></Td>
+ <Td><P Class=tj>Использует для штриховкиобразец, имя которого указано.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Использует для штриховки простой образец, создаваемый пользователем.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Выводит на экран названия имеющихся образцов.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'HELP</P></Td>
+ <Td><P>Выводит на экран список команд и форматы ввода данных; можно применять для получения справки по указанной команде.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>HIDE</P></Td>
+ <Td><P>Удаляет скрытые линии на трехмерном изображении объекта.</P></Td>
+</Tr>
+</Table>
+
+<A name="i"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>I</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'ID</P></Td>
+ <Td><P>Выдает на экране в зоне подсказки координаты указанной точки.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>IGESIN</P></Td>
+ <Td><P>Загружает обменный файл в формате IGES.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>IGESOUT</P></Td>
+ <Td><P>Записывает на диск обменный файл в формате IGES.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>INSERT</P></Td>
+ <Td><P>Вставляет копию блока в рисунок.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>имя</P></Td>
+ <Td><P Class=tj>Вставляет целый рисунок "имя-файла-рисунка" в текший рисунок.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>имя=f</P></Td>
+ <Td><P Class=tj>Создает блок из целого рисунка "имя-файла-рисунка".</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>*имя</P></Td>
+ <Td><P Class=tj>Сохраняет графические примитивы отдельных частей.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Выводит на экран список определенных в рисунке блоков (в ответ на запрос масштаба по оси X).</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Y</P></Td>
+ <Td><P Class=tj>Определяет масштаб указанием двух точек (угловое задание масштаба)<Br>
+(в ответ на запрос масштаба по оси X).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>XYZ</P></Td>
+ <Td><P Class=tj>Воспринимается как необходимость задания масштабов по осям Х, Y, Z.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'ISOPLANE</P></Td>
+ <Td><P>Задает изометрическую плоскость для рисования.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Левая плоскость.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Правая плоскость.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Т</P></Td>
+ <Td><P Class=tj>Верхняя плоскость.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>RETURN</P></Td>
+ <Td><P Class=tj>Делает следующую по очереди плоскость текущей.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="l"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>L</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'LAYER</P></Td>
+ <Td><P>Создает в текущем рисунке именованные слои и присваивает им цвет и тип линии.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Присваивает указанному слою цвет.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>F</P></Td>
+ <Td><P Class=tj>Замораживает слои.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Присваивает указанному слою тип линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>М</P></Td>
+ <Td><P Class=tj>Делает текущим слой; если такого слоя не существует, создает его.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Создает новые слои.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включает видимость слоев.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключает видимость слоев.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Устанавливает текшим существующий слой.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Т</P></Td>
+ <Td><P Class=tj>Размораживает слои.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Выдает на экран список определенных в рисунке слоев, их состояние, цвет и тип линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Разблокирует слой.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>LIMITS</P></Td>
+ <Td><P>Изменяет лимиты рисунка и проверяет соблюдение этих лимитов.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>2 точки</P></Td>
+ <Td><P Class=tj>Устанавливает лимиты по нижнему левому и верхнему правому углам рисунка.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включает проверку лимитов.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключает проверку лимитов.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>LINE</P></Td>
+ <Td><P>Рисует прямолинейный отрезок указанной длины.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>RETURN</P></Td>
+ <Td><P Class=tj>(Как ответ на запрос "From point",) Начало изображаемого отрезка совмещается с концом последней нарисованной дуги или отрезка (как ответ на запрос "To point:").</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Замыкает ломаную (как ответ на запрос "To point:").</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Отменяет последний нарисованный сегмент.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'LINETYPE</P></Td>
+ <Td><P>Определение типа линии как последовательности штрихов, точек и пробелов; загрузка его из библиотеки и присвоение последующим нарисованным объектам.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Вывод на экран списка имён типов линий, содержащихся в библиотеке.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Создание определения типа линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Загрузка определения типа линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Установка типа линии текущим для последующего рисования.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>LIST</P></Td>
+ <Td><P>Выводит на экран информацию о выбранном объекте, содержащуюся в базе данных рисунка.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>LOAD</P></Td>
+ <Td><P>Загружает файл, содержащий описание определенных пользователем форм.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Выдает на экран список загруженных файлов описания форм.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>LTSCALE</P></Td>
+ <Td><P>Устанавливает масштаб для всех типов линий, появляющихся в рисунке.</P></Td>
+</Tr>
+</Table>
+
+<A name="m"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>M</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MEASURE</P></Td>
+ <Td><P>Ставит метки на выбранном объекте через указанные интервалы.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>В</P></Td>
+ <Td><P Class=tj>Вместо метки будет вставлен указанный блок.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MENU</P></Td>
+ <Td><P>Загружает в рисунок файл меню, содержащий команды AutoCAD (экранное меню).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MINSERT</P></Td>
+ <Td><P>Вставляет массив копий блока в рисунок.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>имя</P></Td>
+ <Td><P Class=tj>Вставляет целый рисунок "имя-файла-рисунка" и формирует из вставленных рисунков массив.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>имя=f</P></Td>
+ <Td><P Class=tj>Создает блок из целого рисунка "имя-файла-рисунка" и формирует из созданных блоков массив.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Выводит на экран список определенных в рисунке блоков (как ответ на запрос масштаба по оси X).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Y</P></Td>
+ <Td><P Class=tj>Определяет масштаб указанием двух точек (угловое задание масштаба) (как ответ на запрос масштаба по оси X).</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>XYZ</P></Td>
+ <Td><P Class=tj>Воспринимается как необходимость задания масштабов по осям X, Y, Z.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MIRROR</P></Td>
+ <Td><P>Рисует зеркальное отображение указанного объекта.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MOVE</P></Td>
+ <Td><P>Параллельный перенос выбранного объекта.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>МSLIDE</P></Td>
+ <Td><P>Записывает изображение на экране в слайд-файл.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MSPACE</P></Td>
+ <Td><P>Делает текущим пространство модели.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MULTIPLE</P></Td>
+ <Td><P>Вызывает повторение последующей за этой спецификацией команды до тех пор, пока она не будет прервана.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>MVIEW</P></Td>
+ <Td><P>Создает видовые экраны и управляет ими.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включает выбранные видовые экраны и регенерирует на них изображения объекта.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключает изображение на выбранных видовых экранах.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Н</P></Td>
+ <Td><P Class=tj>Удаляет невидимые линии при выводе на плоттер в пространстве листа.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>F</P></Td>
+ <Td><P Class=tj>Создает единый видовой экран, вписанный в текущий вид пространства листа.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>2</P></Td>
+ <Td><P Class=tj>Создает два видовых экрана, вписанных в заданную область.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>3</P></Td>
+ <Td><P Class=tj>Создает три видовых экрана, вписанных в заданную область.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>4</P></Td>
+ <Td><P Class=tj>Создает четыре равных, видовых экрана, вписанных в заданную область.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Переводит конфигурации видовых экранов, сохраненные командой VPORTS, в совокупности npимитивов пространства листа.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>точка</P></Td>
+ <Td><P Class=tj>Создает новый видовой экран внутри области, заданной двумя точками.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="n"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>N</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>NEW</P></Td>
+ <Td><P>Создает новый рисунок.</P></Td>
+</Tr>
+
+</Table>
+
+<A name="o"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>O</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>OFFSET</P></Td>
+ <Td><P>Создает подобные существующим кривые и параллельные линии.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>число</P></Td>
+ <Td><P Class=tj>Определение расстояния смещения.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Т</P></Td>
+ <Td><P Class=tj>Точка, через которую будет проходить линия, подобная заданной.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>OOPS</P></Td>
+ <Td><P>Восстанавливает стертые ранее примитивы.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ORTHO</P></Td>
+ <Td><P>Включает режим рисования примитивов только параллельно сетке.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'OSNAP</P></Td>
+ <Td><P>Геометрически точное совмещение указываемых точек с характерными точками объектов.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>CEN</P></Td>
+ <Td><P Class=tj>К центру дуги или круга.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>END</P></Td>
+ <Td><P Class=tj>К ближайшей конечной точке отрезка или дуги.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>INS</P></Td>
+ <Td><P Class=tj>К точке вставки текста, блока,формы.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>INT</P></Td>
+ <Td><P Class=tj>К точке пересечения отрезков, дуг, окружностей.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>MID</P></Td>
+ <Td><P Class=tj>К середине дуги, отрезка.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>NЕА</P></Td>
+ <Td><P Class=tj>К ближайшей видимой точке дуги, круга, отрезка.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>NOD</P></Td>
+ <Td><P Class=tj>К узлу (точке).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>NON</P></Td>
+ <Td><P Class=tj>Ничего (Откл.).</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>PER</P></Td>
+ <Td><P Class=tj>Нормаль к дуге, отрезку или кругу.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>QUA</P></Td>
+ <Td><P Class=tj>К квадранту дуги или круга.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>QUI</P></Td>
+ <Td><P Class=tj>Быстрый режим (возвращается не ближайшая к перекрестью, а первая найденная точка).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>TAN</P></Td>
+ <Td><P Class=tj>Касательная к дуге или окружности.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="p"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>P</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'PAN</P></Td>
+ <Td><P>Перемещает окно экрана по рисунку.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PEDIT(2D)</P></Td>
+ <Td><P>Редактирует двумерные полилинии.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Замыкает открытую полилинию.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Убирает сглаживание, т. е. возвращает полилинию после применения сглаживания в первоначальное состояние.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Редактирует вершины.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>F</P></Td>
+ <Td><P Class=tj>Сглаживает полилинию, делая из ломаной кривую.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>J</P></Td>
+ <Td><P Class=tj>Добавляет к существующей полилинии.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Включает генерацию линии с обрывом или без обрыва штрихов в вершинах.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>О</P></Td>
+ <Td><P Class=tj>Разрывает в указанной вершине замкнутую полилинию.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Использует вершины полилинии как фрейм для сплайн-аппроксимаций (тип определяется значением переменной SPLINETYPE).</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Отменяет последнее действие редактирования.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>W</P></Td>
+ <Td><P Class=tj>Устанавливает ширину всех сегментов.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Х</P></Td>
+ <Td><P Class=tj>Выход из PEDIT.</P></Td>
+</Tr>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#E6E6E6"><P><I>&nbsp;&nbsp;&nbsp;В режиме редактирования вершин:</I></P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>В</P></Td>
+ <Td><P Class=tj>Устанавливает первую вершину для разрыва.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>G</P></Td>
+ <Td><P Class=tj>Выполни (разрыв или выпрямление).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>J</P></Td>
+ <Td><P Class=tj>Восстанавливает новую вершину после текущей.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>М</P></Td>
+ <Td><P Class=tj>Переносит текущую вершину в указанную точку.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Устанавливает следующую по порядку вершину текущей.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Устанавливает предыдущую вершину текущей.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Регенерирует изображение полилиний.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Устанавливает первую вершину для выпрямления.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Т</P></Td>
+ <Td><P Class=tj>Устанавливает касательное направление для текущей вершины.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>W</P></Td>
+ <Td><P Class=tj>Устанавливает новую ширину для следующего сегмента.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Х</P></Td>
+ <Td><P Class=tj>Выход из команды или прерывание процесса выпрямления или сглаживания.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PEDIT(3D)</P></Td>
+ <Td><P>Редактирование трехмерных полилиний.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Замыкает открытую полилинию.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Убирает сглаживание.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Редактирование вершин (субкоманды описаны ниже).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>O</P></Td>
+ <Td><P Class=tj>Разрывает в указанной вершине замкнутую полилинию.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Использует вершины полилинии как каркас для сплайн-аппроксимации (тип определяется значением переменной SPLINETYPE).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Отменяет последнее действие редактирования.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Х</P></Td>
+ <Td><P Class=tj>Выход из команды PEDIT.</P></Td>
+</Tr>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#E6E6E6"><P><I>&nbsp;&nbsp;&nbsp;В режиме редактирования вершин:</I></P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>В</P></Td>
+ <Td><P Class=tj>Устанавливает первую вершину для разрыва.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>G</P></Td>
+ <Td><P Class=tj>Выполни (разрыв или выпрямление).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>J</P></Td>
+ <Td><P Class=tj>Вставляет новую вершину после текущей.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>М</P></Td>
+ <Td><P Class=tj>Переносит текущую вершину в указанную точку.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Устанавливает следующую по порядку вершину текущей.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Делает текущей предыдущую вершину.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Регенерирует полилинию.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Устанавливает первую вершину для выпрямления.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Х</P></Td>
+ <Td><P Class=tj>Выход из процесса редактирования или прерывание выпрямления или сглаживания.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PEDIT (Mesh)</P></Td>
+ <Td><P>Редактирует трехмерные многоугольные сети.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Убирает сглаживание и восстанавливает первоначальный вид сети.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Редактирует вершины полилинии.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>М</P></Td>
+ <Td><P Class=tj>Размыкает или замыкает сеть в направлении М.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Размыкает или замыкает сеть в направлении N.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Сглаживает поверхность (тип определяется значением SURFTYPE).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Отменяет последнюю операцию редактирования.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Х</P></Td>
+ <Td><P Class=tj>Выход из команды PEDIT.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PLAN</P></Td>
+ <Td><P>Устаналивается точка зрения (0, 0, 1).</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>План текущей ПСК.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>План указанной ПСК.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>W</P></Td>
+ <Td><P Class=tj>План МСК.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PLINE</P></Td>
+ <Td><P>Рисует двумерные полилинии (последовательности из прямолинейных и дуговых сегментов с возможным указанием их ширины).</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Н</P></Td>
+ <Td><P Class=tj>Устанавливает новую полуширину.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Отменяет последний нарисованный сегмент.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>W</P></Td>
+ <Td><P Class=tj>Устанавливает ширину.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>RETURN</P></Td>
+ <Td><P Class=tj>Выход из команды PLINE.</P></Td>
+</Tr>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#E6E6E6"><P><I>&nbsp;&nbsp;&nbsp;В режиме отрезка:</I></P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Переключение в режим дуги.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Замыкание прямолинейным сегментом.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Длина сегмента (продолжает предыдущий сегмент).</P></Td>
+</Tr>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#E6E6E6"><P><I>&nbsp;&nbsp;&nbsp;В режиме дуги:</I></P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Центральный угол.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>СЕ</P></Td>
+ <Td><P Class=tj>Центральная точка.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>CL</P></Td>
+ <Td><P Class=tj>Замыкание прямолинейным сегментом.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Направление.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Длина хорды или переключение в режим отрезка.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Радиус.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Вторая точка дуги по трем точкам.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PLOT</P></Td>
+ <Td><P>Вывод рисунка на плоттер.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>POINT</P></Td>
+ <Td><P>Рисует отдельные точки.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>POLIGON</P></Td>
+ <Td><P>Рисует правильные многоугольники с заданным числом сторон.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Задание многоугольника указанием одной его стороны.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Описанный вокруг окружности.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>I</P></Td>
+ <Td><P Class=tj>Вписанный в окружность.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PSDRAG</P></Td>
+ <Td><P>Управляет режимом слежения при динамическом размещении изображения, импортируемого из PostScript-файла командой PSIN.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>О</P></Td>
+ <Td><P Class=tj>При слежении отображается только габаритный прямоугольник.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>1</P></Td>
+ <Td><P Class=tj>При слежении отображается тонированное изображение.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PSIN</P></Td>
+ <Td><P>Загружает файл в формате Encapsulated PostSesipt (EPS).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PSFILL</P></Td>
+ <Td><P>Заполняет контуры (двумерные полилинии) образцом закраски формата PostScript, определенным в файле поддержки PostScript AutoCAD (akad.pst).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PSOUT</P></Td>
+ <Td><P>Экспортирует текущий вид рисунка в файл в формате Encapsulated PostScript (EPS).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PSPACE</P></Td>
+ <Td><P>Делает текущим пространство листа.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>PURGE</P></Td>
+ <Td><P>Удаляет из рисунка ненужные блоки, формы, гарнитуры шрифтов, слои, блоки и типы линий.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Удаляет все ненужные поименованные объекты.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>В</P></Td>
+ <Td><P Class=tj>Удаляет ненужные блоки.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>LA</P></Td>
+ <Td><P Class=tj>Удаляет ненужные слои.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>LT</P></Td>
+ <Td><P Class=tj>Удаляет ненужные типы линий.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>SН</P></Td>
+ <Td><P Class=tj>Удаляет ненужные формы.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>SТ</P></Td>
+ <Td><P Class=tj>Удаляет ненужные атрибуты.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Удаляет ненужные размерные стили.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="q"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>Q</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>QSAVE</P></Td>
+ <Td><P>Сохраняет рисунок без запроса имени файла.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>QTEXT</P></Td>
+ <Td><P>При включенном режиме на экране появляются не символы, а контуры текста.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Режим контурного текста включен.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Режим контурного текста отключен.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>QUIT</P></Td>
+ <Td><P>Выход из графического редактора и возвращение в Главное меню без записи сделанных за сеанс изменений.</P></Td>
+</Tr>
+
+</Table>
+
+<A name="r"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>R</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>RECOVER</P></Td>
+ <Td><P>Восстановление по возможности поврежденного иди испорченного рисунка.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>REDEFINE</P></Td>
+ <Td><P>Восстанавливает встроенную команду, переопределенную с помощью команды UNDEFINE.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>REDO</P></Td>
+ <Td><P>Восстанавливает изменения, сделанные предыдущей командой, если это были команды U или UNDO.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'REDRAW</P></Td>
+ <Td><P>Перерисовывает текущий видовой экран.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>REDRAWALL</P></Td>
+ <Td><P>Перерисовывает изображение на всех видовых экранах.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>REGEN</P></Td>
+ <Td><P>Регенерирует изображение в текущем видовом экране.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>REGENALL</P></Td>
+ <Td><P>Регенерирует изображение на всех видовых экранах.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'REGENAUTO</P></Td>
+ <Td><P>Определяет, будет ли произведена регенерация, обусловленная выполнением другой команды.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Автоматическая регенерация без сообщений.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Регенерация с разрешения пользователя.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>REINIT</P></Td>
+ <Td><P>Повторно инициализирует порты ввода/вывода, дигитайзер, монитор, плоттер и PGP-файл.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>RENAME</P></Td>
+ <Td><P>Изменяет имена гарнитур шрифтов, слоев, типов линий, блоков и видов ПСК и конфигураций видовых экранов.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>В</P></Td>
+ <Td><P Class=tj>Изменяет имя блока.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>LA</P></Td>
+ <Td><P Class=tj>Изменяет имя слоя.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>LT</P></Td>
+ <Td><P Class=tj>Изменяет имя типа линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Изменяет имя гарнитуры.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>U</P></Td>
+ <Td><P Class=tj>Изменяет имя ПСК.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>VI</P></Td>
+ <Td><P Class=tj>Изменяет имя вида.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>VР</P></Td>
+ <Td><P Class=tj>Изменяет имя конфигурации видовых экранов.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Изменяет имя размерного стиля.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'RESUM</P></Td>
+ <Td><P>Продолжает прерванный процесс выполнения пакета.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>REVSURF</P></Td>
+ <Td><P>Создает трехмерную многоугольную сеть аппроксимацией поверхности вращения, полученной в результате вращения кривой вокруг заданной оси.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ROTATE</P></Td>
+ <Td><P>Поворачивает существующий объект.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Поворот относительно существующего угла.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>RSCRIPT</P></Td>
+ <Td><P>Возобновляет исполнение прерванного пакета.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>RULESURF</P></Td>
+ <Td><P>Создает трехмерную многоугольную сеть аппроксимацией поверхности между двумя кривыми.</P></Td>
+</Tr>
+</Table>
+
+<A name="s"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>S</SPAN></Td></Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SAVE</P></Td>
+ <Td><P>Записывает сделанные в сеансе редактирования изменения в файл, не выходя из графического редактора.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SAVEAS</P></Td>
+ <Td><P>Аналогично команде SAVE, но при этом переименовывает текущий рисунок.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SCALE</P></Td>
+ <Td><P>Пропорционально изменяет размеры существующих объектов.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Изменение размера со ссылкой на величину существующего объекта.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SCRIPT</P></Td>
+ <Td><P>Выполняет указанный командный пакет.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SELECT</P></Td>
+ <Td><P>Составляет из выбранных объектов набор для последующего выполнения команд.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'SETVAR</P></Td>
+ <Td><P>Дает возможность вывести на экран или изменить значения системных переменных.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SH</P></Td>
+ <Td><P>Предоставляет доступ к внутренним командам ДОС без выхода из AutoCAD.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SHADE</P></Td>
+ <Td><P>Строит тонированное изображение модели в текущем видовом экране.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SHAPE</P></Td>
+ <Td><P>Рисует ранее определенные формы.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Список имен доступных форм.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SHELL</P></Td>
+ <Td><P>Предоставляет возможность запуска других программ без выхода из AutoCAD.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SKETCH</P></Td>
+ <Td><P>Выполнение эскизов "от руки".</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Продолжает эскизную линию начиная с конечной точки предыдущей линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Стирает временные (незаписанные) эскизные линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Поднимает/опускает перо.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Q</P></Td>
+ <Td><P Class=tj>Выход из команды с отменой временных линий.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Запись временных линий без выхода из команды.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Х</P></Td>
+ <Td><P Class=tj>Запись временных линий с последующим выходом из команды. Рисует линию до указанной устройством указания точки.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'SNAP</P></Td>
+ <Td><P>Устанавливает шаг для ввода точек с помощью дигитайзера, что облегчает указание и делает его точным.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>число</P></Td>
+ <Td><P Class=tj>Устанавливает шаг привязки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включает режим SNAP.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключает режим SNAP.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Устанавливает различный шаг по разным осям.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Поворачивает сетку шаговой привязки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Выбор типа изометрического стиля.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>SOLID</P></Td>
+ <Td><P>Рисует закрашиваемые многоугольники.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'STATUS</P></Td>
+ <Td><P>Выводит на экран текущую информацию о рисунке и режимах.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>STRETH</P></Td>
+ <Td><P>Позволяет растягивать объект, перемещая одну из его частей, но не разрывая его.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'STYLE</P></Td>
+ <Td><P>Создание новых гарнитур шрифта, пользователю предоставляется возможность выбрать шрифт, его направление, наклон и степень растяжения.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Выводит на экран список гарнитур, определенных в рисунке.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="t"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>T</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>TABLET</P></Td>
+ <Td><P>Настраивает планшет для точного копирования изображения на бумаге средствами AutoCAD.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включает режим "TABLET".</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключает режим "TABLET".</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>CAL</P></Td>
+ <Td><P Class=tj>Калибровка планшета.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>CFG</P></Td>
+ <Td><P Class=tj>Настройка зон планшетного меню.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>TABSURF</P></Td>
+ <Td><P>Создает многоугольную сеть, аппроксимирующую поверхность, полученную сдвигом определяющей кривой вдоль направляющего вектора.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>TEXT</P></Td>
+ <Td><P>Позволяет создавать в рисунке текстовую информацию, которая выводится на экран после завершения команды.<Br>
+Подробное описание опций - см. команду DTEXT.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'TEXTSCR</P></Td>
+ <Td><P>При одноэкранной конфигурации переключает в текстовый режим монитор; команда употребляется в пакетных файлах и при создании меню.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>TIME</P></Td>
+ <Td><P>Показывает время создания и редактирования рисунка, и позволяет управлять таймером пользователя.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Выводит на экран текущие значения таймера.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включает таймер пользователя.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Останавливает таймер пользователя.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Сброс таймера пользователя.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>TRACE</P></Td>
+ <Td><P>Рисует закрашенные линии заданной ширины.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>TREESTAT</P></Td>
+ <Td><P>Отображает информацию о текущем пространственном индексе рисунка, такую, как количество и глубина узлов в базе данных. Используется вместе с системной переменной TREEDEPTH для увеличения производительности при работе с большими рисунками.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>TRIM</P></Td>
+ <Td><P>Удаляет части примитивов, которые пересекают указанную границу.</P></Td>
+</Tr>
+</Table>
+
+<A name="u"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>U</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>U</P></Td>
+ <Td><P>Отменяет действие предыдущей команды.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>UCS</P></Td>
+ <Td><P>Определяет или видоизменяет текущую ПСК.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Удаляет одну или более записанных систем.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Устанавливает ПСК с тем же направлением выдавливания, что и у указанного объекта.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>О</P></Td>
+ <Td><P Class=tj>Перемещает точку отсчета текущей ПСК.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Делает предыдущую ПСК текущей.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Заменяет текущую ПСК на записанную ранее.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Сохраняет текущую ПСК.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>V</P></Td>
+ <Td><P Class=tj>Поворачивает текущую ПСК, совмещая направление взгляда с направлением оси Z.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>W</P></Td>
+ <Td><P Class=tj>Устанавливает текущую ПСК, эквивалентную МСК.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>X</P></Td>
+ <Td><P Class=tj>Поворачивает текущую ПСК вокруг ее оси X.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Y</P></Td>
+ <Td><P Class=tj>Поворачивает текущую ПСК вокруг ее оси Y.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Z</P></Td>
+ <Td><P Class=tj>Поворачивает текущую ПСК вокруг ее оси Z.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>ZA</P></Td>
+ <Td><P Class=tj>Задание ПСК по точке отсчета и положительному направлению оси Z.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>3</P></Td>
+ <Td><P Class=tj>Задание ПСК по трем точкам: началу отсчета, точке на положительном направлении оси X и аналогичной точке на оси У.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Список имен сохраненных ПСК.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>UCSICON</P></Td>
+ <Td><P>Управляет видимостью пиктограммы пользовательскай системы координат.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>ON</P></Td>
+ <Td><P Class=tj>Включение отображения пиктограммы ПСК.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>OFF</P></Td>
+ <Td><P Class=tj>Отключение отображения пиктограммы.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Внесение изменений на все видавые экраны.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Помещать пиктограмму в левый нижний угол видового экрана.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>OR</P></Td>
+ <Td><P Class=tj>Размещает пиктограмму ПСК по возможности в начальной точке текущей ПСК.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>UNDEFINE</P></Td>
+ <Td><P>Переопределяет встроенную команду.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>UNDO</P></Td>
+ <Td><P>Отменяет действие нескольких команд; имеет более широкие возможности, чем команда U.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>число</P></Td>
+ <Td><P Class=tj>Отменяет действие указанного количества команд начиная с последней.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Авто: любая операция из меню интерпретируется командами U и UNDO как один шаг.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>B</P></Td>
+ <Td><P Class=tj>Обратно: восстанавливает состояние рисунка на момент проставления контрольной точки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Управление: определяет количество шагов, запоминаемых командами U и UNDO.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Конец: последовательность команд начиная с метки.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>G</P></Td>
+ <Td><P Class=tj>"Группа" и заканчивающаяся меткой "КОНЕЦ" воспринимается командами U и UNDO как одна команда.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>М</P></Td>
+ <Td><P Class=tj>Метка: устанавливает метку в протоколе рисунка.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Включает все средства UNDO.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Полностью отключает команды U и UNDO и отнимает всю информацию команды UNDO, записанную ранее в сеансе редактирования.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>О</P></Td>
+ <Td><P Class=tj>Ограничивает действие команды U и UNDO одной операцией.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'UNITS</P></Td>
+ <Td><P>Выбор формата и точности представления координат и углов.</P></Td>
+</Tr>
+</Table>
+
+<A name="v"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>V</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>VIEW</P></Td>
+ <Td><P>Сохраняет текущее изображение на экране как именованный вид или изображает вид на экране.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Удаляет именованный вид из списка сохраненных.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Восстанавливает неименованный вид на экране.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Сохраняет изображение на экране как поименованный вид.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>W</P></Td>
+ <Td><P Class=tj>Сохраняет как поименованный вид изображение в указанной рамке.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Список имен сохраненных видов.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>VIEWRES</P></Td>
+ <Td><P>Заданием числа сторон изображающего на экране круг многоугольника определяется точность изображения и скорость регенерации кругов и дуг.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>VPLAYER</P></Td>
+ <Td><P>Устанавливает видимость для новых и существующих слоев раздельно по видовым экранам.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Выводит список слоев замороженных на выбранном видовом экране.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>F</P></Td>
+ <Td><P Class=tj>Замораживает указанные слои на выбранных видовых экранах.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Т</P></Td>
+ <Td><P Class=tj>Размораживает указанные слои на выбранных видовых экранах.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Изменяет видимость указанных слоев на значение по умолчанию.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>N</P></Td>
+ <Td><P Class=tj>Создает новый слой, замороженный на всех видовых экранах.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>V</P></Td>
+ <Td><P Class=tj>Изменяет видимость по умолчанию на видовом экране для существующих слоев.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>VPOINT</P></Td>
+ <Td><P>Выбор в пространстве точки зрения на объект.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Определение точки зрения заданием двух углов поворота.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>RETURN</P></Td>
+ <Td><P Class=tj>Выбор точки зрения поворотом тройки осей координат.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>х,у,z</P></Td>
+ <Td><P Class=tj>Задание точки зрения ее координатами.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>VPORTS</P></Td>
+ <Td><P>Разделяет графический экран на несколько частей, каждая из которых может содержать собственный вид рисунка.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Удаляет из списка сохраненных указанную конфигурацию видовых экранов.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>J</P></Td>
+ <Td><P Class=tj>Соединяет (сливает) два видовых экрана в один.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Восстанавливает сохраненную конфигурацию видовых экранов.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Записывает имя текущей конфигурации экрана в список сохраненных.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>SI</P></Td>
+ <Td><P Class=tj>Отключает видимость всех видовых экранов, кроме одного текущего.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>2</P></Td>
+ <Td><P Class=tj>Делит текущий видовой экран ни два видовых экрана.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>3</P></Td>
+ <Td><P Class=tj>Делит текущий видовой экран на три видовых экрана.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>4</P></Td>
+ <Td><P Class=tj>Делит текущий видовой экран на четыре видовых экрана.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Список имен текущей и сохраненных конфигураций видовых экранов.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>VSLIDE</P></Td>
+ <Td><P>Изображает на экране содержимое ранее созданного слайд-файла.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>имя</P></Td>
+ <Td><P Class=tj>Показывает на экране содержимое файла "имя".</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>*имя</P></Td>
+ <Td><P Class=tj>Загружает слайд-файл для употребления следуюшей командой VSLIDE.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="w"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>W</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>WBLOCK</P></Td>
+ <Td><P>Записывает изображение указанных объектов в отдельный файл на диск.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>имя</P></Td>
+ <Td><P Class=tj>Запись определенного ранее блока в отдельный файл.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>=</P></Td>
+ <Td><P Class=tj>Присвоение файлу имени выписываемого блока.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>*</P></Td>
+ <Td><P Class=tj>Запись на диск всего рисунка.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>RETURN</P></Td>
+ <Td><P Class=tj>Запись указанных объектов.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="x"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>X</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>XBIND</P></Td>
+ <Td><P>Добавляет выбранный набор зависимых от внешней ссылки символов в текущий рисунок.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>В</P></Td>
+ <Td><P Class=tj>Блок.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Размерный стиль.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>LA</P></Td>
+ <Td><P Class=tj>Слой.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>LT</P></Td>
+ <Td><P Class=tj>Тип линии.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>S</P></Td>
+ <Td><P Class=tj>Гарнитура.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>XRЕF</P></Td>
+ <Td><P>Использует другие рисунки AutoCAD без их фактического добавления в текущий рисунок и без изменения их содержания.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Вставляет новую внешнюю ссылку или копию вставленной ранее либо освежает изображение обновленного вставленного рисунка.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>B</P></Td>
+ <Td><P Class=tj>Делает внешнюю ссылку постоянной частью текущего рисунка.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Удаляет внешнюю ссылку из текущего рисунка.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Позволяет просмотреть и отредактировать имя файла, используемое при вставке внешней ссылки.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>R</P></Td>
+ <Td><P Class=tj>Обновляет одну или несколько внешних ссылок без перегрузки рисунка и освежает их изображение.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>?</P></Td>
+ <Td><P Class=tj>Перечисляет все внешние ссылки в текущем рисунке и рисунок, связанный с каждой из них.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+<A name="z"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=../оболочка/images/back.gif border=0 Align="right"></A></Tr>
+
+
+<Tr><Td><SPAN>Z</SPAN></Td></Tr>
+
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>'ZOOM</P></Td>
+ <Td><P>Уменьшает или увеличивает изображение объекта на экране.</P>
+<Center>
+<Table Width=450 border=0>
+<Tr>
+ <Td Colspan=2 BGCOLOR="#D1D6E9"><P Class=tlb>Опции</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>число</P></Td>
+ <Td><P Class=tj>Масштаб по отношению к первоначальному изображению объекта на экране.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>числоХ</P></Td>
+ <Td><P Class=tj>Масштаб по отношению к текущему изображению объекта на экране.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>числоХР</P></Td>
+ <Td><P Class=tj>Масштаб относительно пространства листа.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>А</P></Td>
+ <Td><P Class=tj>Все.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>С</P></Td>
+ <Td><P Class=tj>Центр.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>D</P></Td>
+ <Td><P Class=tj>Динамика.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Е</P></Td>
+ <Td><P Class=tj>Границы.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>L</P></Td>
+ <Td><P Class=tj>Нижний левый угол.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>Р</P></Td>
+ <Td><P Class=tj>Предыдущий.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td width=60><P Class=tlb>W</P></Td>
+ <Td><P Class=tj>Рамка.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td width=60><P Class=tlb>V</P></Td>
+ <Td><P Class=tj>Максимальное уменьшение без регенерации.</P></Td>
+</Tr>
+</Table></Center></Td>
+</Tr>
+</Table>
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+
+<Tr>
+<Td>&nbsp;</Td>
+</Tr>
+
+<Tr>
+<Td ColSpan=2>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr>
+<Td BackGround=../Оболочка/images/bg09.gif Width=458 Height=100 Valign=Bottom>
+<P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2017<Br>
+<Img Src=../Оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+<Td BackGround=../Оболочка/images/bg10.gif Width=159 Height=100>
+<A Href=#Top onMouseOver="mOver(6)" onMouseOut="mOut(6)"><Img Src=../Оболочка/images/06a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link6"></A><Br>
+<A Href=!zadanie.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../Оболочка/images/07a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link7"></A></Td>
+</Tr>
+</Table>
+
+</Td>
+</Tr>
+</Table>
+
+
+</Body>
+</HTML>

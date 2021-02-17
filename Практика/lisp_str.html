@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Электронный ресурс по учебной дисциплине ОСАПр. Работа со строками, функции преобразования</Title>
+<Meta Name="Description" http-equiv="description" Content="Электронный ресурс по учебной дисциплине ОСАПр. Работа со строками, функции преобразования">
+<Link Rel="stylesheet" Type="text/css" Href="../../../Оболочка/acad.css">
+
+<Script>hljs.initHighlightingOnLoad();</Script>
+
+<Script Language="JavaScript">
+<!--
+	function mOver(num) {if (document.images) {document.images['link'+num].src=eval('active'+num+'.src');}}
+	function mOut(num) {if (document.images) {document.images['link'+num].src=eval('normal'+num+'.src');}}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 >
+<div class=max>
+<Script Language="JavaScript"><!--
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../../../Оболочка/images//01a.gif";
+	active1=new Image(190,29);active1.src="../../../Оболочка/images//01p.gif";
+	normal2=new Image(190,29);normal2.src="../../../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../../../Оболочка/images/02p.gif";
+	normal3=new Image(190,29);normal3.src="../../../Оболочка/images//03a.gif";
+	active3=new Image(190,29);active3.src="../../../Оболочка/images//03p.gif";
+	normal4=new Image(159,46);normal4.src="../../../Оболочка/images//09a.gif";
+	active4=new Image(159,46);active4.src="../../../Оболочка/images//09p.gif";
+	normal5=new Image(159,54);normal5.src="../../../Оболочка/images//10a.gif";
+	active5=new Image(159,54);active5.src="../../../Оболочка/images//10p.gif";
+	normal7=new Image(190,29);normal7.src="../../../Оболочка/images//7a.gif";
+	active7=new Image(190,29);active7.src="../../../Оболочка/images//7p.gif";
+	normal11=new Image(170,25);normal11.src="../../../Оболочка/images//02_1a.gif";
+	active11=new Image(170,25);active11.src="../../../Оболочка/images//02_1p.gif";
+	normal12=new Image(170,19);normal12.src="../../../Оболочка/images//02_2a.gif";
+	active12=new Image(170,19);active12.src="../../../Оболочка/images//02_2p.gif";
+	normal13=new Image(170,19);normal13.src="../../../Оболочка/images//02_3a.gif";
+	active13=new Image(170,19);active13.src="../../../Оболочка/images//02_3p.gif";
+	normal24=new Image(170,19);normal24.src="../../../Оболочка/images//04a.gif";
+	active24=new Image(170,19);active24.src="../../../Оболочка/images//04p.gif";
+	normal25=new Image(170,19);normal25.src="../../../Оболочка/images//05a.gif";
+	active25=new Image(170,19);active25.src="../../../Оболочка/images//05p.gif";
+	normal26=new Image(170,19);normal26.src="../../../Оболочка/images//06a.gif";
+	active26=new Image(170,19);active26.src="../../../Оболочка/images//06p.gif";
+	normal14=new Image(170,19);normal14.src="../../../Оболочка/images//l1_a.gif";
+	active14=new Image(170,19);active14.src="../../../Оболочка/images//l1_p.gif";
+	normal15=new Image(170,19);normal15.src="../../../Оболочка/images//z_a.gif";
+	active15=new Image(170,19);active15.src="../../../Оболочка/images//z_p.gif";
+	normal16=new Image(170,19);normal16.src="../../../Оболочка/images//l2_a.gif";
+	active16=new Image(170,19);active16.src="../../../Оболочка/images//l2_p.gif";
+	normal17=new Image(170,19);normal17.src="../../../Оболочка/images//z_a.gif";
+	active17=new Image(170,19);active17.src="../../../Оболочка/images//z_p.gif";
+	normal18=new Image(170,19);normal18.src="../../../Оболочка/images//l3_a.gif";
+	active18=new Image(170,19);active18.src="../../../Оболочка/images//l3_p.gif";
+	normal19=new Image(170,19);normal19.src="../../../Оболочка/images//z_a.gif";
+	active19=new Image(170,19);active19.src="../../../Оболочка/images//z_p.gif";
+	normal20=new Image(170,19);normal20.src="../../../Оболочка/images//l4_a.gif";
+	active20=new Image(170,19);active20.src="../../../Оболочка/images//l4_p.gif";
+	normal21=new Image(170,19);normal21.src="../../../Оболочка/images//z_a.gif";
+	active21=new Image(170,19);active21.src="../../../Оболочка/images//z_p.gif";
+	normal27=new Image(170,19);normal27.src="../../../Оболочка/images/15a.gif";
+	active27=new Image(170,19);active27.src="../../../Оболочка/images/15p.gif";
+}
+//-->
+</Script>
+
+<Left>
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg01.gif Width=190 Height=91 name="link19">&nbsp;</Td>
+ <Td Rowspan=2 BackGround=../../../Оболочка/images/bg02_acad.gif Height=120 Valign=Bottom style="background-repeat:no-repeat;">
+
+<Table BackGround=../../../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td Width=230></Td>
+  <Td><P Class=h6>AutoLISP<Br><Img Src=../../../Оболочка/images/raspor.gif Width=1 Height=26></P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+ 
+
+
+<Td BackGround=../../../Оболочка/images/bg03.gif>
+ <A Href=../../../Программа/!rabprog.html onMouseOver="mOver(26)" onMouseOut="mOut(26)"><Img Src=../../../Оболочка/images/06a.gif Width=190 Height=29 Border=0 
+Alt="Рабочая программа" name="link26"></A><Br></Td>
+
+</Tr>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg09.gif Valign=Top>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+	<A Href=../../../Теория/!lekcii.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../../../оболочка/images/7a.gif Width=190 Height=29 Border=0 
+Alt="Лекции" name="link7"></A><Br>
+ </Td>
+ <Tr><Td BackGround=../../../оболочка/images/bg04.gif Width=190 Valign=Top>
+ <a href="../../!zadanie.html"> <Img Src=../../../оболочка/images/8p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"></a><Br></Td>
+<Tr><Td BackGround=../../../оболочка/images/bg05_1.gif Width=190 Valign=Top>
+  <A href="../lb1/!acad.html" onMouseOver="mOver(14)" onMouseOut="mOut(14)"><Img Src=../../../оболочка/images/l1_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link14"></A><Br></Td></Tr>
+<Tr><Td BackGround=../../../оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+   <A href="../lb1/laba1.html"  onMouseOver="mOver(15)" onMouseOut="mOut(15)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 1" name="link15"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(18)" onMouseOut="mOut(18)"><Img Src=../../../Оболочка/images/l3_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link18"></A><Br>
+<A  href="../lb2/laba2.html" onMouseOver="mOver(19)" onMouseOut="mOut(19)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 2" name="link19"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(20)" onMouseOut="mOut(20)"><Img Src=../../../Оболочка/images/l4_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link20"></A><Br>
+<A href="../lb3/laba3.html"1 onMouseOver="mOver(21)" onMouseOut="mOut(21)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 3" name="link21"></A><Br>
+ <A href="../lb4/!lisp.html" onMouseOver="mOver(16)" onMouseOut="mOut(16)"><Img Src=../../../Оболочка/images/l2_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link16"></A><Br>
+<A  href="../lb4/laba4.html" onMouseOver="mOver(17)" onMouseOut="mOut(17)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 4" name="link17"></A><Br>
+  <Img Src=../../../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+   <A Href=../../../Заочнику/!zaochnoe.html onMouseOver="mOver(27)" onMouseOut="mOut(27)"><Img Src=../../../Оболочка/images/15a.gif Width=190 Height=29 Border=0  Alt="Заочнику" name="link27"></A><Br>
+  <A Href=../../../Контроль_знаний/!samocontrol.html onMouseOver="mOver(25)" onMouseOut="mOut(25)"><Img Src=../../../оболочка/images/05a.gif Width=190 Height=29 Border=0 
+Alt="Самоконтроль" name="link25"></A><Br>
+	 <Img Src=../../../оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ <Td Valign=Top>
+<P><Br></P>
+
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Работа со строками, функции преобразования</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+
+<P>Среди встроенных функций AutoLISP, работающих со строками, можно найти практически, всё, что имеется в любом развитом языке высокого уровня:</P>
+
+<Center>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Функция</P></Td>
+ <Td><P Class=tcb>Назначение</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(itoa целое)</P></Td>
+ <Td><P Class=tl>Возвращает результат преобразования целого числа в строковую константу</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(atoi строка)</P></Td>
+ <Td><P Class=tl>Возвращает преобразование строковой константы в целое число</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(atof строка)</P></Td>
+ <Td><P Class=tl>Возвращает преобразование строковой константы в действительное число</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(strcase строка признак)</P></Td>
+ <Td><P Class=tl>Переводит все символы аргумента строка в нижний регистр, если признак не nil, если признак опущен или равен nil - в верхний</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(substr строка целое1 целое2)</P></Td>
+ <Td><P Class=tl>Возвращает подстроку аргумента строка, начинающегося с символа целое1 и длиной целое2. Первый символ строки имеет номер 1</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(strlen строка)</P></Td>
+ <Td><P Class=tl>Возвращает длину в символах аргумента строка</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(strcat строка1 строка2 ...)</P></Td>
+ <Td><P Class=tl>Осуществляет сцепление аргументов строка</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(chr число)</P></Td>
+ <Td><P Class=tl>Возвращает результат преобразования целого числа в символьный код ASCII, причем результатом является строковая константа. Например, (chr 65) возвратит символ (строковую константу) "А" (подобным образом действует функция CHR$ в языке Бейсик)</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(ascii строка)</P></Td>
+ <Td><P Class=tl>Возвращает преобразование одного символа, указываемого в виде строковой константы, в код ASCII</P></Td>
+</Tr>
+</Table></Center>
+
+
+
+
+<P>В любой момент можно преобразовать целое число в действительное и наоборот:</P>
+
+<Center>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Функция</P></Td>
+ <Td><P Class=tcb>Назначение</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(fix число)</P></Td>
+ <Td><P Class=tl>Возвращает результат преобразования действительного числа в целое. Преобразование осуществляется усечением (отбрасыванием) дробной части</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(float число)</P></Td>
+ <Td><P Class=tl>Возвращает результат преобразования целого числа в действительное</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(rtos число [режим [точность]])</P></Td>
+ <Td><P Class=tl>
+
+ Возвращает текстовую строку, которая представляет число (вещественная величина) в соответствии со значениями режима, точности и системной переменной AutoCAD DIMZIN.<Br>
+Режим и точность - целые числа, которые назначают режим представления числа и его точность:
+
+
+
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Режим RTOS</P></Td>
+ <Td><P Class=tcb>Описание</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>1</P></Td>
+ <Td><P Class=tl>Научный</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>2</P></Td>
+ <Td><P Class=tl>Десятичный</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>3</P></Td>
+ <Td><P Class=tl>Инженерный (футы и десятичные дюймы)</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>4</P></Td>
+ <Td><P Class=tl>Архитектурный (футы и дробные дюймы)</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>5</P></Td>
+ <Td><P Class=tl> Произвольные дробные части</P></Td>
+</Tr>
+</Table>
+
+
+
+Аргументы режим и точность соответствуют системным переменным AutoCAD LUNITS и LUPREC. Если эти аргументы отсутствуют, то используются текущие значения LUNITS и LUPREC.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(type элемент)</P></Td>
+ <Td><P Class=tl>
+
+ Возвращает тип элемента<Br>
+Используя функцию type, можно определить тип элемента. Пример использования функции TYPE:
+
+
+<Table>
+<Tr>
+<Pre><code> (defun isint (a)
+ 	(if (= (type a) 'INT) ;является ли а целым?
+ 		T             ;если да - возвращаем ИСТИНУ
+ 		nil           ;если нет - возвращаем nil 
+ )</code></Pre>
+ 
+</Tr>
+</Table>
+
+ </P></Td> 
+</Tr>
+</Table></Center>
+<Br> 
+
+<P>Строка может включать управляющие символы, которые интерпретируются следующим образом:</P>
+<Center>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Символ</P></Td>
+ <Td><P Class=tcb>Значение</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>\\\</P></Td>
+ <Td><P Class=tl>символ \</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>\"</P></Td>
+ <Td><P Class=tl>символ "</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>\е</P></Td>
+ <Td><P Class=tl>символ escape-последовательности</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>\n</P></Td>
+ <Td><P Class=tl>переход на новую строку</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>\r</P></Td>
+ <Td><P Class=tl>возврат каретки</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>\t</P></Td>
+ <Td><P Class=tl>табуляция</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>\nnn</P></Td>
+ <Td><P Class=tl>символ с восьмеричным кодом nnn</P></Td>
+</Tr>
+</Table></Center>
+
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+<Tr>
+ <Td ColSpan=2>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td BackGround=../../../оболочка/images/b1.gif Width=458 Height=100 Valign=Bottom>
+   <P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2015<Br>
+   <Img Src=../../../оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+  <Td BackGround=../../../оболочка/images/b2.gif Width=159 Height=100>
+   <A Href=#Top onMouseOver="mOver(4)" onMouseOut="mOut(4)">
+<Img Src=../../../оболочка/images/09a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link4"></A><Br>
+   <A Href=../../../index.html onMouseOver="mOver(5)" onMouseOut="mOut(5)">
+<Img Src=../../../оболочка/images/10a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link5"></A></Td>
+ </Tr>
+</Table>
+
+ </Td>
+</Tr>
+</Table>
+
+</Body>
+</HTML>

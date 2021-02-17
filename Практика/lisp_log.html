@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Электронный ресурс по учебной дисциплине ОСАПр. Логические функции AutoLISP</Title>
+<Meta Name="Description" http-equiv="description" Content="Электронный ресурс по учебной дисциплине ОСАПр. Логические функции AutoLISP">
+<Link Rel="stylesheet" Type="text/css" Href="../../../Оболочка/acad.css">
+
+<Script>hljs.initHighlightingOnLoad();</Script>
+
+<Script Language="JavaScript">
+<!--
+	function mOver(num) {if (document.images) {document.images['link'+num].src=eval('active'+num+'.src');}}
+	function mOut(num) {if (document.images) {document.images['link'+num].src=eval('normal'+num+'.src');}}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 >
+<div class=max>
+<Script Language="JavaScript"><!--
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../../../Оболочка/images//01a.gif";
+	active1=new Image(190,29);active1.src="../../../Оболочка/images//01p.gif";
+	normal2=new Image(190,29);normal2.src="../../../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../../../Оболочка/images/02p.gif";
+	normal3=new Image(190,29);normal3.src="../../../Оболочка/images//03a.gif";
+	active3=new Image(190,29);active3.src="../../../Оболочка/images//03p.gif";
+	normal4=new Image(159,46);normal4.src="../../../Оболочка/images//09a.gif";
+	active4=new Image(159,46);active4.src="../../../Оболочка/images//09p.gif";
+	normal5=new Image(159,54);normal5.src="../../../Оболочка/images//10a.gif";
+	active5=new Image(159,54);active5.src="../../../Оболочка/images//10p.gif";
+	normal7=new Image(190,29);normal7.src="../../../Оболочка/images//7a.gif";
+	active7=new Image(190,29);active7.src="../../../Оболочка/images//7p.gif";
+	normal11=new Image(170,25);normal11.src="../../../Оболочка/images//02_1a.gif";
+	active11=new Image(170,25);active11.src="../../../Оболочка/images//02_1p.gif";
+	normal12=new Image(170,19);normal12.src="../../../Оболочка/images//02_2a.gif";
+	active12=new Image(170,19);active12.src="../../../Оболочка/images//02_2p.gif";
+	normal13=new Image(170,19);normal13.src="../../../Оболочка/images//02_3a.gif";
+	active13=new Image(170,19);active13.src="../../../Оболочка/images//02_3p.gif";
+	normal24=new Image(170,19);normal24.src="../../../Оболочка/images//04a.gif";
+	active24=new Image(170,19);active24.src="../../../Оболочка/images//04p.gif";
+	normal25=new Image(170,19);normal25.src="../../../Оболочка/images//05a.gif";
+	active25=new Image(170,19);active25.src="../../../Оболочка/images//05p.gif";
+	normal26=new Image(170,19);normal26.src="../../../Оболочка/images//06a.gif";
+	active26=new Image(170,19);active26.src="../../../Оболочка/images//06p.gif";
+	normal14=new Image(170,19);normal14.src="../../../Оболочка/images//l1_a.gif";
+	active14=new Image(170,19);active14.src="../../../Оболочка/images//l1_p.gif";
+	normal15=new Image(170,19);normal15.src="../../../Оболочка/images//z_a.gif";
+	active15=new Image(170,19);active15.src="../../../Оболочка/images//z_p.gif";
+	normal16=new Image(170,19);normal16.src="../../../Оболочка/images//l2_a.gif";
+	active16=new Image(170,19);active16.src="../../../Оболочка/images//l2_p.gif";
+	normal17=new Image(170,19);normal17.src="../../../Оболочка/images//z_a.gif";
+	active17=new Image(170,19);active17.src="../../../Оболочка/images//z_p.gif";
+	normal18=new Image(170,19);normal18.src="../../../Оболочка/images//l3_a.gif";
+	active18=new Image(170,19);active18.src="../../../Оболочка/images//l3_p.gif";
+	normal19=new Image(170,19);normal19.src="../../../Оболочка/images//z_a.gif";
+	active19=new Image(170,19);active19.src="../../../Оболочка/images//z_p.gif";
+	normal20=new Image(170,19);normal20.src="../../../Оболочка/images//l4_a.gif";
+	active20=new Image(170,19);active20.src="../../../Оболочка/images//l4_p.gif";
+	normal21=new Image(170,19);normal21.src="../../../Оболочка/images//z_a.gif";
+	active21=new Image(170,19);active21.src="../../../Оболочка/images//z_p.gif";
+	normal27=new Image(170,19);normal27.src="../../../Оболочка/images/15a.gif";
+	active27=new Image(170,19);active27.src="../../../Оболочка/images/15p.gif";
+}
+//-->
+</Script>
+
+<Left>
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg01.gif Width=190 Height=91 name="link19">&nbsp;</Td>
+ <Td Rowspan=2 BackGround=../../../Оболочка/images/bg02_acad.gif Height=120 Valign=Bottom style="background-repeat:no-repeat;">
+
+<Table BackGround=../../../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td Width=230></Td>
+  <Td><P Class=h6>AutoLISP<Br><Img Src=../../../Оболочка/images/raspor.gif Width=1 Height=26></P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+ 
+
+
+<Td BackGround=../../../Оболочка/images/bg03.gif>
+ <A Href=../../../Программа/!rabprog.html onMouseOver="mOver(26)" onMouseOut="mOut(26)"><Img Src=../../../Оболочка/images/06a.gif Width=190 Height=29 Border=0 
+Alt="Рабочая программа" name="link26"></A><Br></Td>
+
+</Tr>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg09.gif Valign=Top>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+	<A Href=../../../Теория/!lekcii.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../../../оболочка/images/7a.gif Width=190 Height=29 Border=0 
+Alt="Лекции" name="link7"></A><Br>
+ </Td>
+ <Tr><Td BackGround=../../../оболочка/images/bg04.gif Width=190 Valign=Top>
+ <a href="../../!zadanie.html"> <Img Src=../../../оболочка/images/8p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"></a><Br></Td>
+<Tr><Td BackGround=../../../оболочка/images/bg05_1.gif Width=190 Valign=Top>
+  <A href="../lb1/!acad.html" onMouseOver="mOver(14)" onMouseOut="mOut(14)"><Img Src=../../../оболочка/images/l1_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link14"></A><Br></Td></Tr>
+<Tr><Td BackGround=../../../оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+   <A href="../lb1/laba1.html"  onMouseOver="mOver(15)" onMouseOut="mOut(15)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 1" name="link15"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(18)" onMouseOut="mOut(18)"><Img Src=../../../Оболочка/images/l3_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link18"></A><Br>
+<A  href="../lb2/laba2.html" onMouseOver="mOver(19)" onMouseOut="mOut(19)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 2" name="link19"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(20)" onMouseOut="mOut(20)"><Img Src=../../../Оболочка/images/l4_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link20"></A><Br>
+<A href="../lb3/laba3.html"1 onMouseOver="mOver(21)" onMouseOut="mOut(21)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 3" name="link21"></A><Br>
+ <A href="../lb4/!lisp.html" onMouseOver="mOver(16)" onMouseOut="mOut(16)"><Img Src=../../../Оболочка/images/l2_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link16"></A><Br>
+<A  href="../lb4/laba4.html" onMouseOver="mOver(17)" onMouseOut="mOut(17)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 4" name="link17"></A><Br>
+  <Img Src=../../../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ <Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+   <A Href=../../../Заочнику/!zaochnoe.html onMouseOver="mOver(27)" onMouseOut="mOut(27)"><Img Src=../../../Оболочка/images/15a.gif Width=190 Height=29 Border=0  Alt="Заочнику" name="link27"></A><Br>
+  <A Href=../../../Контроль_знаний/!samocontrol.html onMouseOver="mOver(25)" onMouseOut="mOut(25)"><Img Src=../../../оболочка/images/05a.gif Width=190 Height=29 Border=0 
+Alt="Самоконтроль" name="link25"></A><Br>
+	 <Img Src=../../../оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ <Td Valign=Top>
+<P><Br></P>
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Логические функции AutoLISP</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+
+<P>AutoLISP предоставляет богатые возможности конструирования логических выражений и выполнения над ними логических операций.</P>
+<P>Логический оператор - это функция, сравнивающая между собой два или больше аргумента. Результат сравнения (т. е. некоторое утверждение, касающееся двух аргументов) может быть либо истиной (Т), либо ложью (nil). Основные логические функции&nbsp;- это И (AND), ИЛИ (OR) и НЕ (NOT):</P>
+
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Логическое выражение</P></Td>
+ <Td><P Class=tcb>Результат</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(and выражение1 выражение2 ...)</P></Td>
+ <Td><P Class=tl>Возвращает результат выполнения логического И над списком выражений. Возвращается nil, если любое (хотя бы одно) из выражений имеет значение nil, в противном случае - Т</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(not элемент)</P></Td>
+ <Td><P Class=tl>Возвращает результат выполнения логического НЕ над своим аргументом</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(or выражение 1 выражение2 ...)</P></Td>
+ <Td><P Class=tl>Возвращает результат выполнения логического ИЛИ над списком выражений. Возвращается nil, если все аргументы имеют значение nil; если при оценке аргументов слева направо встречается выражение не - nil, возвращается Т</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(= атом1 атом2 ...)</P></Td>
+ <Td><P Class=tl>Возвращает Т, если все атомы равны, в противном случае возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(/= атом1 атом2)</P></Td>
+ <Td><P Class=tl>Возвращает Т, если атом1 не равен атому 2. В противном случае возвращается nil. Функция не определена для числа аргументов большего двух</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(&lt; атом1 атом2...)</P></Td>
+ <Td><P Class=tl>Возвращается Т в том случае, если каждый последующий атом меньше предыдущего. В противном случае возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(&lt;= атом1 атом2 ...)</P></Td>
+ <Td><P Class=tl>Возвращается Т в том случае, если каждый последующий атом меньше или равен предыдущему. В противном случае возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(> атом1 атом2 ...)</P></Td>
+ <Td><P Class=tl>Возвращается Т в том случае, если каждый последующий атом больше предыдущего. В противном случае возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(>= атом1 атом2 ...)</P></Td>
+ <Td><P Class=tl>Возвращается Т в том случае, если каждый последующий атом больше или равен предыдущему. В противном случае возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(eq выражение1 выражение2)</P></Td>
+ <Td><P Class=tl>Определяет, идентичны ли выражение1 и выражение2, т. е. являются ли они фактически одним объектом или нет (т. е. порожден ли один из другого при помощи функции SETQ). EQ возвращает Т, если оба выражения идентичны, в противном случае - nil. Обычно функция применяется для определения, являются ли два списка фактически одним или нет. Например, пусть<Br>
+(setq f1 '(а b с))<Br>
+(setq f2 '(a b c))<Br>
+(setq f3 f2)<Br>
+Тогда (eq fl f3) возвращает nil (f1 и f3 - разные списки), a (eq f3 f2) возвращает Т (f3 и f2 - один и тот же список) (См. также ниже функцию EQUAL.)</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(equal выражение1 выражение2 [допуск])</P></Td>
+ <Td><P Class=tl>Определяет, равны ли выражение 1 и выражение2, т. е. равны ли их значения. Например, пусть<Br>
+(setq f1 '(a b с))<Br>
+(setq f2 '(a b с))<Br>
+(setq f3 f2)<Br>
+Тогда (equal fl f3) возвращает Т (значением fl и f3 является одно и то же ), a (equal f3 f2) возвращает Т (f3 и f2 - в точности один и тот же список). Заметим, что, если оба списка EQUAL, они могут не быть EQ. Атомы, которые EQUAL, всегда к тому же EQ. Добавим, что два списка, которые EQ, всегда EQUAL.<Br>
+При сравнении двух действительных чисел (или двух списков действительных чисел, например точек) важно осознавать, что два "идентичных" числа могут незначительно отличаться друг от друга, если они вычислялись различными методами. Однако факультативный численный аргумент допуск позволяет задать максимальную точность, с которой могут отличаться друг от друга выражение1 и выражение2, оставаясь при этом EQUAL. Например, пусть<Br>
+(setq a 1.123456)<Br>
+(setq b 1.123457)<Br>
+Тогда<Br>
+(equal а Ь)возвращает nil<Br>
+(equal a b 0.000001) возвращает Т</P></Td>
+</Tr>
+</Table>
+<Br >
+
+
+<P>Кроме логических операций, производимых над выражениями как над целыми объектами, AutoLISP включает в себя встроенные функции, производящие логические операции побитово над целыми числами:</P>
+
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Логическая операция</P></Td>
+ <Td><P Class=tcb>Результат</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(~ целое)</P></Td>
+ <Td><P Class=tl>Возвращает логическое НЕТ (дополнение до единицы) своего аргумента. Аргумент должен быть целым числом</P></Td>
+</Tr>
+
+
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(Boole кодфункции целое1 целое2 ...)</P></Td>
+ <Td><P Class=tl>Определяет битовую функцию Булевой алгебры, производимой над двумя целыми аргументами. Функции кодируются следующим образом:
+<Table Border="1" CellPadding="2" CellSpacing="1">
+<Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb><I>Целое1</I></P></Td>
+ <Td><P Class=tcb><I>Целое2</I></P></Td>
+ <Td><P Class=tcb><I>Функция</I></P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tc>0</P></Td>
+ <Td><P Class=tc>0</P></Td>
+ <Td><P Class=tc>8</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tc>0</P></Td>
+ <Td><P Class=tc>1</P></Td>
+ <Td><P Class=tc>4</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tc>1</P></Td>
+ <Td><P Class=tc>0</P></Td>
+ <Td><P Class=tc>2</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tc>1</P></Td>
+ <Td><P Class=tc>1</P></Td>
+ <Td><P Class=tc>1</P></Td>
+</Tr>
+</Table>
+<P>Некоторые значения этой функции эквивалентны стандартным булевым операциям:</P>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+<Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb><I>Код функции</I></P></Td>
+ <Td><P Class=tcb><I>Булева функция</I></P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tc>1</P></Td>
+ <Td><P Class=tc>И</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tc>6</P></Td>
+ <Td><P Class=tc>Исключающее ИЛИ</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tc>7</P></Td>
+ <Td><P Class=tc>ИЛИ</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tc>8</P></Td>
+ <Td><P Class=tc>НЕТ</P></Td>
+</Tr>
+</Table>
+</P></Td>
+</Tr>
+
+
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(minusp элемент)</P></Td>
+ <Td><P Class=tl>Функция возвращает Т, если элемент является целым или действительным отрицательным числом. В противном случае возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(zerop элемент)</P></Td>
+ <Td><P Class=tl>Функция возвращает Т, если элемент является целым или действительным нулем. Иначе возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(numberp элемент)</P></Td>
+ <Td><P Class=tl>Функция возвращает Т, если элемент является целым или действительным числом. Иначе возвращается nil</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(logand число число ...)</P></Td>
+ <Td><P Class=tl>Функция возвращает результат действия побитового И над списком чисел. Числа должны быть целыми, и результат будет целым. Работает функция следующим образом. Каждое число представляется в двоичном виде; затем соответствующие разряды чисел собираются в список. Если в этом списке находится хотя бы один нуль, соответствующий разряд результирующего числа будет нулем; если в списке все единицы, разряд результирующего числа равен единице</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(logior число число ...)</P></Td>
+ <Td><P Class=tl>Функция возвращает результат действия побитового ИЛИ над списком чисел. Числа должны быть целыми, и результат будет тоже целым. В этой функции каждое число также представляется в двоичном виде; затем соответствующие разряды чисел собираются в список. Если в этом списке находится хотя бы одна единица, соответствующий разряд результирующего числа будет единицей; если в списке все нули, разряд результирующего числа равен нулю</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(listp элемент)</P></Td>
+ <Td><P Class=tl>Возвращает Т, если элемент является списком, в противном случае - nil</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(atom элемент)</P></Td>
+ <Td><P Class=tl>Возвращает nil, если элемент является списком, в противном случае - Т. Любой элемент, который не является списком, считается атомом</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tl>(null элемент)</P></Td>
+ <Td><P Class=tl>Функция возвращает Т, если элемент вычисляется в nil, в противном случае - nil</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tl>(boundp атом)</P></Td>
+ <Td><P Class=tl>Функция возвращает Т, если атом имеет некоторое значение, в противном случае - nil</P></Td>
+</Tr>
+</Table>
+<Br>
+
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+<Tr>
+ <Td ColSpan=2>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td BackGround=../../../оболочка/images/b1.gif Width=458 Height=100 Valign=Bottom>
+   <P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2015<Br>
+   <Img Src=../../../оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+  <Td BackGround=../../../оболочка/images/b2.gif Width=159 Height=100>
+   <A Href=#Top onMouseOver="mOver(4)" onMouseOut="mOut(4)">
+<Img Src=../../../оболочка/images/09a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link4"></A><Br>
+   <A Href=../../../index.html onMouseOver="mOver(5)" onMouseOut="mOut(5)">
+<Img Src=../../../оболочка/images/10a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link5"></A></Td>
+ </Tr>
+</Table>
+
+ </Td>
+</Tr>
+</Table>
+
+</Body>
+</HTML>

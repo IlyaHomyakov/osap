@@ -1,0 +1,906 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Создание Проекций Чертежа</Title>
+<Meta Name="Description" http-equiv="description" Content="Методичка по ACAD. Задание трехмерных координат">
+<Meta Name="KeyWords" http-equiv="keywords" Content="">
+<Link Rel="stylesheet" Type="text/css" Href="../Оболочка/acad.css">
+
+<Script Language="JavaScript"><!--
+	function mOver(num) {
+		if (document.images) {
+			document.images['link'+num].src=eval('active'+num+'.src');
+		}
+	}
+	function mOut(num) {
+		if (document.images) {
+			document.images['link'+num].src=eval('normal'+num+'.src');
+		}
+	}
+//-->
+</Script>
+
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 >
+<div class=max>
+
+
+		<Script Language="JavaScript">
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../Оболочка/images/01a.gif";
+	active1=new Image(190,29);active1.src="../Оболочка/images/01p.gif";
+	normal2=new Image(190,29);normal2.src="../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../Оболочка/images/02p.gif";
+	normal31=new Image(170,40);normal31.src="../Оболочка/images/031a.gif";
+	active31=new Image(170,40);active31.src="../Оболочка/images/031p.gif";
+	normal32=new Image(170,40);normal32.src="../Оболочка/images/032a.gif";
+	active32=new Image(170,40);active32.src="../Оболочка/images/032p.gif";
+	normal33=new Image(170,40);normal33.src="../Оболочка/images/033a.gif";
+	active33=new Image(170,40);active33.src="../Оболочка/images/033p.gif";
+	normal34=new Image(170,40);normal34.src="../Оболочка/images/034a.gif";
+	active34=new Image(170,40);active34.src="../Оболочка/images/034p.gif";
+	normal4=new Image(190,29);normal4.src="../Оболочка/images/04a.gif";
+	active4=new Image(190,29);active4.src="../Оболочка/images/04p.gif";
+	normal5=new Image(190,29);normal5.src="../Оболочка/images/05a.gif";
+	active5=new Image(190,29);active5.src="../Оболочка/images/05p.gif";
+	normal6=new Image(159,46);normal6.src="../Оболочка/images/06a.gif";
+	active6=new Image(159,46);active6.src="../Оболочка/images/06p.gif";
+	normal7=new Image(159,54);normal7.src="../Оболочка/images/07a.gif";
+	active7=new Image(159,55);active7.src="../Оболочка/images/07p.gif";
+}
+</Script>
+
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../Оболочка/images/bg01.gif Width=190 Height=91>&nbsp;</Td>
+ <Td RowSpan=2 BackGround=../Оболочка/images/bg02.gif Height=120 Valign=Bottom>
+<Table BackGround=../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+<Td Width=140></Td>
+  <Td Valign=top Height=75><P Class=h6>Mechanical Desktop</P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+  <Td BackGround=../Оболочка/images/bg03.gif>
+    <A Href=../Программа/!rabprog.html onMouseOver="mOver(1)" onMouseOut="mOut(1)"><Img Src=../Оболочка/images/01a.gif Border=0 Width=190 Height=29 Alt="Рабочая программа" name="link1"></A><Br>
+ </Td>
+</Tr>
+<Tr>
+ <Td Height=100% RowSpan="2" Valign=Top BackGround=../Оболочка/images/bg00.gif>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+  <A Href=../Теория/!lekcii.html onMouseOver="mOver(2)" onMouseOut="mOut(2)"><Img Src=../Оболочка/images/02a.gif Width=190 Height=29 Border=0 Alt="Лекции" name="link2"></A><Br>
+ </Td>
+</Tr>
+<Tr><Td BackGround=../Оболочка/images/bg04.gif Width=190 Valign=Top>
+  <Img Src=../Оболочка/images/03p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"><Br></Td>
+<Tr><Td BackGround=../Оболочка/images/bg05.gif Width=190 Valign=Top>
+  <A href="!acad.html" onMouseOver="mOver(31)" onMouseOut="mOut(31)"><Img Src=../Оболочка/images/031a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link31"></A><Br></Td></Tr>
+<Tr><Td BackGround=../Оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+  <A href="!mechanic.html" onMouseOver="mOver(32)" onMouseOut="mOut(32)"><Img Src=../Оболочка/images/032a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link32"></A><Br>
+  <A href="!mechanic.html" onMouseOver="mOver(33)" onMouseOut="mOut(33)"><Img Src=../Оболочка/images/033a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link33"></A><Br>
+  <A href="!lisp.html" onMouseOver="mOver(34)" onMouseOut="mOut(34)"><Img Src=../Оболочка/images/034a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link34"></A><Br>
+<Img Src=../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+ <A Href=../Заочнику/!zaochnoe.html onMouseOver="mOver(4)" onMouseOut="mOut(4)"><Img Src=../Оболочка/images/04a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link4"></A><Br>
+ <A Href=../Контроль_знаний/!samocontrol.html onMouseOver="mOver(5)" onMouseOut="mOut(5)"><Img Src=../Оболочка/images/05a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link5"></A><Br>
+ <Img Src=../Оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ 
+ <Td Valign=Сenter>
+ <Br><Br>
+
+
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>3. Создание Проекций Чертежа</span></Td></Tr>
+<Tr><Td Valign=Center Height=30><span Class=h1>(Drawing Views)</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+<P>Mechanical Desktop упрощает как процесс черчения, так и документирование проекта. При этом
+по исходной детали (part) создаются проекции чертежа (Drawing views). Вы можете их
+расположить в любой позиции экрана и затем передвинуть в другое место или отредактировать.
+Большинство размеров на проекциях расставляется автоматически, но в случае необходимости вы
+легко можете добавить к ним и другие пояснительные элементы. Здесь вы узнаете, как
+использовать закладку "Drawing" для того чтобы управлять и редактировать проекции вашего
+чертежа.</P><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>3.1. Ключевые термины</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Br>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td Width=90><P Class=tcb>Термин</P></Td>
+ <Td><P Class=tcb>Определение</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Главная Проекция (Base view)</P></Td>
+ <Td><P Class=tl>Первая проекция, которую вы создаёте. Все остальные проекции будут её
+  производными.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Balloon</P></Td>
+ <Td><P Class=tl>Метка на проекции чертежа. Часто содержит символ, соответствующий спецификации
+  материалов.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Desktop Browser</P></Td>
+ <Td><P Class=tl>Графическое представление возможностей, которые включает в себя деталь или
+  проекция чертежа. Размеры панели могут быть изменены или она может быть скрыта.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Вид Чертежа (Drawing Mode)</P></Td>
+ <Td><P Class=tl>Создаёт двухмерную проекцию чертежа выбранной трёхмерной детали или сборки.
+  Добавляет справочные размеры и примечания.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Невидимая Линия (Hidden line)</P></Td>
+ <Td><P Class=tl>Невидимая линия на определённом виде. Например, на фронтальном виде линия,
+  находящаяся за фронтальной плоскостью будет не вида.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Форма Модели (Model mode)</P></Td>
+ <Td><P Class=tl>Создаёт трёхмерные модели, на которых базируются проекции чертежа.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Параметрический размер (Parametric dimension)</P></Td>
+ <Td><P Class=tl>Контролирует размеры модели, обновляет связанные проекции чертежа.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Порождающий Вид (Parent view)</P></Td>
+ <Td><P Class=tl>Проекция, на основе которой базируются другие проекции чертежа. Например
+  главный вид является базовым для вспомогательной и ортогональной проекций.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Справочный Размер (Reference dimension)</P></Td>
+ <Td><P Class=tl>Размер, не являющийся параметрическим и не нужный для создания детали, но
+  требуется для производства.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Масштаб вида (View scale)</P></Td>
+ <Td><P Class=tl>Масштаб основной проекции чертежа относительно масштаба модели.</P></Td>
+</Tr>
+</Table><Br><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>3.2. Руководство быстрым взглядом</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Br><P Class=h3>3.2.1. Что нового в этом руководстве</P>
+
+<P>Desktop Browser - это мощный графический пользовательский интерфейс. С помощью меню
+браузера, выпадающего по нажатию правой клавиши мыши, любое действие выполняется быстро и
+легко. Кроме этого есть и другие новшества:</P>
+
+<Ul>
+ <Li>Использование браузера для создания и редактирования проекций чертежа.</Li>
+ <Li>Контроль видимости из браузера.</Li>
+ <Li>Использование размерного форматирования для контроля размерного окна.</Li>
+ <Li>Использование расширенных возможностей для описания отверстий.</Li>
+</Ul>
+
+<P>Другие расширенные возможности в данном руководстве содержат альтернативные методы доступа
+к командам.</P>
+
+<P>Для дополнительной информации о нововведениях и расширениях смотрите часть 1 описания
+Подготовка к работе (Getting Started).</P>
+
+
+<Br><P Class=h3>3.2.2. Базовые понятия создания проекций чертежа</P>
+
+<P>Mechanical Desktop, как надстройка над Autocad, наследует все его свойства и возможности.
+Но документация, разработанная здесь, далеко не ограничивается этим.</P>
+
+<P>Mechanical Desktop добавляет некоторые важные изменения в процесс создания чертежей, беря
+большую часть работы на себя. Так, такие традиционные вещи как, двухмерные проекции, изометрия,
+дополнительные виды, сечения, и деталирование сборок и деталей могут быть выполнены здесь
+автоматически.</P>
+
+<P>Mechanical Desktop создает эти виды самостоятельно по размерам, определённым в исходной
+модели. Вы можете создавать дополнительные пояснения или размеры. Все размеры и пояснения на
+вашем чертеже будут автоматически изменяться при изменении модели, от которой они были ранее
+порождены. Эта особенность позволяет значительно сэкономить время и тем самым сфокусировать
+больше своего внимания на вопросах создания более понятной, полной, последовательной
+документации для её последующего применения в производственных целях.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>3.3. Планирование и настройка чертежей</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Перед созданием чертежа, продумайте какие виды вам необходимы. Установите размеры и стили
+текста и установите чертёжный стандарт для размеров, которые вы будете использовать, выберете
+эскиз стрелок, выносок и так далее в соответствии с выбранным стандартом.</P>
+
+<P>Все эти установки вам уже хорошо знакомы как пользователю AutoCAD. Возможно даже как у
+давнишнего пользователя AutoCAD у вас уже есть какие-то свои шаблоны и разработанные стили,
+или набор стилей вашего предприятия. Если это так, вы можете их здесь использовать.</P>
+
+<P>Для подгонки чертежа под себя можно использовать системные параметры (установки), для
+описания чертёжных характеристик. Эти параметры можно определить в прототипе чертежа, тогда
+они автоматически будут загружаться всякий раз перед началом вашей работы.</P>
+
+<P>Для этого примера используйте файл partview.dwg в директории desktop\tutorial. Этот файл
+содержит saddle bracket модель, созданную в предыдущем разделе руководства. Прототип чертежа
+переопределяет стили чертежа и заголовок блока. Фронтальный вид служит базовым видом, от
+которого произошли все остальные.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99%>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Обязательно создайте копию этого файла. В том случае, если вы
+ошибётесь, у вас останется первоначальный файл.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>3.4. Создание проекций чертежа</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Первый вид, который вы создаете, будет базовым. В Формах Модели (Model Mode) вы зададите
+ориентацию проекции, после чего перейдя в Вид Чертежа (Drawing Mode) определите позицию его на
+плоскости. Заголовок блока и его граница представлены в меню Контроль Уровней (Layer Control)
+как TITLE_BLK.</P>
+
+<P>Когда базовый вид будет размещён, невидимые линии исчезнут. Параметрические размеры будут
+отображаться в соответствии с текущим, выставленным на данный момент стилем.</P>
+
+<P>Размер показан только на одном виде, который был создан первым, он показывает реальную
+величину. Если вы хотите показать размер на другом виде, то можно его переместить.</P>
+
+<P>Сперва назначьте фронтальный вид базовым видом чертежа.</P>
+
+
+<Br><P Class=h3>3.4.1. Создание базового вида</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Для построения базового вида используйте один из следующих методов: </td>
+</tr>
+</table></P>
+
+<Table Width=300>
+<Tr Valign=Top>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Выберите закладку Рисунок (Drawing). Нажатием правой клавиши мыши на фоне окна браузера вызовите контекстное меню , где после выберите пункт Создать Вид (Create View).</P></Td>
+</Tr>
+</Table>
+
+<Center><Img Src=images/mdt/mdt_drawingviews01.gif></Center>
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Create Drawing View)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews02.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; New View</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMDWGVIEW</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В диалоговом окне Create Drawing View нажмите кнопку ОК. Все опции в этом случае будут иметь значения по умолчанию.</td>
+</tr>
+</table></P>
+
+
+<Center><Img Src=images/mdt/mdt_drawingviews03.gif>
+</Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>На подсказки в командной строке ответим следующим образом: </td>
+</tr>
+</table></P>
+
+
+<P Class=h5>worldXy/worldYz/worldZx/Ucs/View/&lt;Select work plane or edge (Выберите рабочий план или грань)&gt;:</P>
+<P>Выбираем рабочую поверхность(1)</P>
+<P Class=h5>worldX/worldY/worldZ/&lt;Select work axis or straight edge (Выберите рабочую ось или поверочную линейку)&gt;:</P>
+<P>Выбираем ось вращения (2)</P>
+<P Class=h5>Rotate/Z-flip/&lt;Accept&gt;:</P>
+<P>Выбираем (вращение) rotate до тех пор, пока UCS (пользовательская система координат) не станет вертикально. Затем для подтверждения нажимаем ENTER</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews04.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Размещаем базовый вид на чертеже </td>
+</tr>
+</table></P>
+
+<P>Указаваем точку в нижнем левом углу чертежа внутри рамки (3).</P>
+<P Class=h5>Location for base view (Расположение для базового вида):</P>
+<P>Для размещения вида нажимаем Enter.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews05.gif></Center>
+
+<P>Ваш чёртеж должен сейчас выглядеть примерно так:</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews06.gif></Center>
+
+<P>Desktop Browser все объекты отображает в иерархическом порядке в соответствии, с тем как
+они создавались. Так как пока мы создали только базовый вид, он будет отображаться сразу под
+деталью (part). По мере того, как мы будем создавать из базового вида новые, они будут так же
+выстраиваться под ним.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews07.gif></Center>
+
+<P>Полученный нами вид очень маленький и для того, чтобы облегчить его чтение и анализ, можно
+изменить масштаб отображения (scale). Все последующие виды при создании будут использовать
+этот новый расширенный масштаб до тех пор, пока вы не измените его на новый.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>Редактирование коэффициента
+масштабирования (scale) базового вида. </td>
+</tr>
+</table></P>
+
+<Table Width=300>
+<Tr>
+ <Td Valign=Top><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Правой клавишей мыши щелкните на элементе базового вида браузера и в выпавшем
+  меню выберите Edit.</P></Td>
+</Tr>
+</Table>
+
+<Center><Img Src=images/mdt/mdt_drawingviews08.gif></Center>
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Edit Drawing View)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews09.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; Edit View -&gt; Attributes</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMEDITVIEW</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>Выбрав уже созданный вами вид в
+диалоговом окне Edit Drawing View проделайте следующее: </td>
+</tr>
+</table></P>
+
+
+<P>Измените значение поля Scale на 2, нажмите ENTER.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews10.gif>
+</Center>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99%>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Если данные действия вы производили через окно браузера, вам не
+нужно выбирать вид чертежа.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Следующие, чем мы займемся, будет создание вида сверху и детального вида одного из выступов
+детали.</P>
+
+<P>Вид сверху будет всегда находиться либо сверху, либо справа от фронтального вида и масштаб
+его будет совпадать с базовым, то есть с фронтальным.</P>
+
+
+
+<Br><P Class=h3>3.4.2. Создание вида сверху</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Используйте один из следующих методов
+для создания вида: </td>
+</tr>
+</table></P>
+
+<Table Width=300>
+<Tr>
+ <Td Valign=Top><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>На базовом виде окна браузера щёлкнуть правой клавишей мыши и в выпавшем меню
+  выбрать Create View.</P></Td>
+</Tr>
+</Table>
+
+<Center><Img Src=images/mdt/mdt_drawingviews11.gif></Center>
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Create Drawing View)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews02.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; New View</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMDWGVIEW</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В окне диалога Create Drawing View
+выберите Ortho и нажмите Enter для продолжения выполнения команды.</td>
+</tr>
+</table></P>
+
+
+<P Class=h5>Select parent view (Выберите родительский вид):</P>
+<P>Выберите фронтальный вид(1).</P>
+<P Class=h5>Location for orthographic view (Расположение для ортогонального вида):</P>
+<P>Выберите какую либо точку над фронтальным видом, в пределах рамки чертежа(2).</P>
+<P Class=h5>Location for orthographic view:</P>
+<P>Нажмите Enter.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99%>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Если вы используете браузер для создания нового вида, то запроса
+для выбора родительского вида не будет.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Center><Img Src=images/mdt/mdt_drawingviews12.gif></Center>
+
+<P>Ваш чертёж теперь будет выглядеть примерно так:</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews13.gif></Center>
+
+<P>Обратите внимание на то, что после выполнения данных действий в окне браузера появилась
+новая иконка, которая соответствует новой проекции.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews14.gif></Center>
+
+<P>Для создания детального вида выберите базовый вид и область у родительского вида, чтобы
+показать деталь. В этом случае создайте детальный вид крайнего справа монтажного лепестка.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Создание детального вида. </td>
+</tr>
+</table></P>
+
+<Table Width=300>
+<Tr>
+ <Td Valign=Top><P Class=tlb>Браузер</P></Td>
+ <Td><P>Нажмите правую клавишу мыши на Ortho и выберите Create View (Создать Вид).</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Create Drawing View)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews02.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; New View</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMDWGVIEW</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>В диалоговом окне Create Drawing View выберите следующее: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Type (тип):</P>
+<P>Detal (деталь).</P>
+<P Class=h5>Scale (масштаб):</P>
+<P>Введите 1,75 для увеличения вида.</P>
+<P Class=h5>Detail View Symbol (Название Вида):</P>
+<P>Введите А.</P>
+<P Class=h5>Relative to Parent (Относительно базового):</P>
+<P>Включите кнопку Relative to Parent и нажмите ENTER для продолжения.</P>
+<P Class=h5>Select vertex in parent view for detail center (Выберите высшую точку на базовом виде для цетра детали):</P>
+<P>Выберите центр для крайнего справа лепестка (1).</P>
+<P Class=h5>Drag rectangle around detail (Растяните прямоугольник вокруг детали):</P>
+<P>Обведите выделяющий прямоугольник вокруг крайнего справа лепестка (2,3).</P>
+<P Class=h5>Location for detail view (Расположение для детального вида):</P>
+<P>Выберите точку,находящуюся выше и левее базового вида (4).</P>
+<P Class=h5>Location for detail view:</P>
+<P>Нажмите ENTER.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews15.gif></Center>
+
+<P>Ваш чертёж должен выглядеть следующим образом:</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews16.gif></Center>
+
+<P>Браузер сейчас показывает иконку детали, которая располагается под иконкой ортогонального
+вида.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews17.gif></Center>
+
+<P>Следующим вы создаете поперечное сечение, вид, который можно разрезать по точке на детали
+вдоль рабочего плана или, если секция отверстия, то через эскиз(sketch). Рабочие планы чаще
+являются более наглядными и простыми для выбора, чем плоскость резания.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99%>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Для выбора плоскости резания используйте только конечные точки
+границ и центры окружностей и дуг.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Вы создадите рабочий план для поперечного сечения, используя оси и существующий рабочий
+план.</P>
+
+
+
+<Br><P Class=h3>3.4.3. Для создания поперечного сечения и изометрического вида</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Вернитесь к Форме модели (Model
+Mode). </td>
+</tr>
+</table></P>
+
+<Table Width=300>
+<Tr Valign=Top>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P>Нажмите закладку Деталь (Part).</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Part Modeling)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews18.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; Drawing Mode</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMMODE</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Создание рабочего плана для
+поперечного сечения.</td>
+</tr>
+</table></P>
+
+
+<Table Width=300>
+<Tr>
+ <Td Valign=Top><P Class=tlb>Браузер</P></Td>
+ <Td><P>Нажмите правую клавишу мыши на поле Браузера и выберите Рабочие опции (Work
+  Features)-&gt;Рабочий план(Work Plane).</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Work Plane)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews19.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Work Features -&gt; Work Plane</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMWORKPLN</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>В диалоговом окне Work Plane Feature
+выберите: </td>
+</tr>
+</table></P>
+
+
+<P Class=h5>1st Modifier (1ый модификатор):</P>
+<P>On Edge/Axis.</P>
+<P Class=h5>2nd Modifier (2ой модификатор):</P>
+<P>Planar Normal.</P>
+<P Class=h5>Create Sketch Plane (Создание эскизного плана):</P>
+<P>Отключите кнопку  Create Sketch Plane и выберите OK.</P>
+<P Class=h5>worldX/worlY/worldZ/&lt;Select work axis or straight edge (Выберите рабочую ось или поверочную линейку)&gt;:</P>
+<P>Выберите рабочую ось(1).</P>
+<P Class=h5>worldXy/worlYz/worldZx/Ucs/&lt;Select work plane or planar face (Выберите рабочий план или планарную грань)&gt;:</P>
+<P>Выберите рабочий план(2)</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews20.gif></Center>
+
+<P>Ваша модель должна выглядеть следующим образом:</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews21.gif></Center>
+
+<P>Далее вы создаете вид поперечного сечения, который является ортогональной проекцией
+фронтального вида.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Возвращение к Виду Чертежа (Drawing
+Mode). </td>
+</tr>
+</table></P>
+
+
+<Table Width=300>
+<Tr Valign=Top>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P>Выберите закладку Чертёж (Drawing).</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Drawing Layout)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews22.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; Drawing Mode</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMMODE</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>Создание нового вида чертежа. </td>
+</tr>
+</table></P>
+
+<Table Width=300>
+<Tr Valign=Top>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P>Нажмите правую клавишу мыши на Base и выберите Create View.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Create Drawing View)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews02.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; New View</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMDWGVIEW</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>В диалоговом окне Create Drawing
+View выберите: </td>
+</tr>
+</table></P>
+
+
+<P Class=h5>Type:</P>
+<P>Ortho</P>
+<P>Выберите Section Views. Затем выберите:</P>
+<P Class=h5>Type:</P>
+<P>Full.</P>
+<P Class=h5>Hatching (Штриховка):</P>
+<P>Убедитесь, что Hatch выбрано.</P>
+<P Class=h5>Section Symbol (Обозначение сечения):</P>
+<P>Введите A и выберите OK.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews23.gif></Center>
+
+<P>Выберите Hidden lines (Скрытые линии):</P>
+<P Class=h5>Calculate Hidden lines:</P>
+<P>Убедитесь, что кнопка выбрана.</P>
+<P Class=h5>Hide Hidden lines:</P>
+<P>Убедитесь, что кнопка не выбрана и нажмите OK.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews24.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 7</strong></td>
+<td width="90%"><P>Выберите OK, чтобы закрыть
+диалоговое окно Create Drawing View и отвечайте на запросы следующим образом: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Locating for orthographic view (Расположение для ортографической проекции):</P>
+<P>Выберите точку справа от фронтального вида(3).</P>
+<P Class=h5>Locating for orthographic view:</P>
+<P>Нажмите ENTER.</P>
+<P Class=h5>Section through Point/UCS/&lt;Work plane&gt;:</P>
+<P>Выбор по умолчанию, нажмите ENTER.</P>
+<P Class=h5>Select work plane in parent view for the section (Выберите рабочий план на базовом виде для сечения):</P>
+<P>Выберите грань второго рабочего плана для вида поперечного сечения (4).</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99%>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Если вы воспользовались меню, кнопкой инструментов или командой
+создания нового вида, вас попросят выбрать базовый вид.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Center><Img Src=images/mdt/mdt_drawingviews25.gif></Center>
+
+<P>Ваш чертёж теперь должен выглядеть так.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews26.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 8</strong></td>
+<td width="90%"><P>Создание изометрического вида с
+использованием базового вида в качестве родительского. </td>
+</tr>
+</table></P>
+
+
+<Table Width=300>
+<Tr Valign=Top>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P>Нажмите правую клавишу мыши на Base и выберите Create View.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Create Drawing View)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_drawingviews02.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Drawing -&gt; New View</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMDWGVIEW</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 9</strong></td>
+<td width="90%"><P>В диалоговом окне Create Drawing View
+выберите: </td>
+</tr>
+</table></P>
+
+
+<P Class=h5>Type:</P>
+<P>Iso.</P>
+<P Class=h5>Scale:</P>
+<P>Введите 1.</P>
+<P Class=h5>Relative to Parent (Относительно базового):</P>
+<P>Включите кнопку Relative to Parent и нажмите OK.</P>
+<P Class=h5>Location for isometric view (Расположение для ортографической проекции):</P>
+<P>Выберите точку справа от вида сверху(2).</P>
+<P Class=h5>Location for isometric view:</P>
+<P>Нажмите ENTER.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews27.gif></Center>
+
+<P>Ваш чертёж должен выглядеть так.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews28.gif></Center>
+
+<P>Сохраните свой файл.</P>
+
+<P>Показано отношение каждого вида друг к другу. Например, ортографическая проекция, сечение и
+изометрический вид получены из базового вида. Также очевидно, что детальный вид получен из
+ортографического. Детальный вид и сечение обозначены в соответствии с выбранными вами
+названиями.</P>
+
+<Center><Img Src=images/mdt/mdt_drawingviews29.gif></Center>
+<Br>
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+
+																<Tr>
+																	<Td>&nbsp;</Td>
+																</Tr>
+
+																<Tr>
+																	<Td ColSpan=2>
+
+																		<Table Border=0 CellSpacing=0 CellPadding=0>
+																			<Tr>
+																				<Td BackGround=../Оболочка/images/bg09.gif Width=458 Height=100 Valign=Bottom>
+																					<P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2017<Br>
+																						<Img Src=../Оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+																							<Td BackGround=../Оболочка/images/bg10.gif Width=159 Height=100>
+																								<A Href=#Top onMouseOver="mOver(6)" onMouseOut="mOut(6)"><Img Src=../Оболочка/images/06a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link6"></A><Br>
+																								<A Href=!zadanie.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../Оболочка/images/07a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link7"></A></Td>
+																							</Tr>
+																						</Table>
+
+																					</Td>
+																				</Tr>
+																			</Table>
+
+</Body>
+</HTML>

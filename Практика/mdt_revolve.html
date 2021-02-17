@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Методичка по ACAD. Revolve (Построение тела вращения)</Title>
+<Meta Name="Description" http-equiv="description" Content="Методичка по ACAD. Revolve (Построение тела вращения)">
+<Meta Name="KeyWords" http-equiv="keywords" Content="">
+<Link Rel="stylesheet" Type="text/css" Href="../оболочка/acad.css">
+
+<Script Language="JavaScript"><!--
+	function mOver(num) {
+		if (document.images) {
+			document.images['link'+num].src=eval('active'+num+'.src');
+		}
+	}
+	function mOut(num) {
+		if (document.images) {
+			document.images['link'+num].src=eval('normal'+num+'.src');
+		}
+	}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 style="max-width: 1300px;">
+
+
+		<Script Language="JavaScript">
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../Оболочка/images/01a.gif";
+	active1=new Image(190,29);active1.src="../Оболочка/images/01p.gif";
+	normal2=new Image(190,29);normal2.src="../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../Оболочка/images/02p.gif";
+	normal31=new Image(170,40);normal31.src="../Оболочка/images/031a.gif";
+	active31=new Image(170,40);active31.src="../Оболочка/images/031p.gif";
+	normal32=new Image(170,40);normal32.src="../Оболочка/images/032a.gif";
+	active32=new Image(170,40);active32.src="../Оболочка/images/032p.gif";
+	normal33=new Image(170,40);normal33.src="../Оболочка/images/033a.gif";
+	active33=new Image(170,40);active33.src="../Оболочка/images/033p.gif";
+	normal34=new Image(170,40);normal34.src="../Оболочка/images/034a.gif";
+	active34=new Image(170,40);active34.src="../Оболочка/images/034p.gif";
+	normal4=new Image(190,29);normal4.src="../Оболочка/images/04a.gif";
+	active4=new Image(190,29);active4.src="../Оболочка/images/04p.gif";
+	normal5=new Image(190,29);normal5.src="../Оболочка/images/05a.gif";
+	active5=new Image(190,29);active5.src="../Оболочка/images/05p.gif";
+	normal6=new Image(159,46);normal6.src="../Оболочка/images/06a.gif";
+	active6=new Image(159,46);active6.src="../Оболочка/images/06p.gif";
+	normal7=new Image(159,54);normal7.src="../Оболочка/images/07a.gif";
+	active7=new Image(159,55);active7.src="../Оболочка/images/07p.gif";
+}
+</Script>
+
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../Оболочка/images/bg01.gif Width=190 Height=91>&nbsp;</Td>
+ <Td RowSpan=2 BackGround=../Оболочка/images/bg02.gif Height=120 Valign=Bottom>
+<Table BackGround=../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+<Td Width=140></Td>
+  <Td Valign=top Height=75><P Class=h6>Mechanical Desktop</P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+  <Td BackGround=../Оболочка/images/bg03.gif>
+    <A Href=../Программа/!rabprog.html onMouseOver="mOver(1)" onMouseOut="mOut(1)"><Img Src=../Оболочка/images/01a.gif Border=0 Width=190 Height=29 Alt="Рабочая программа" name="link1"></A><Br>
+ </Td>
+</Tr>
+<Tr>
+ <Td Height=100% RowSpan="2" Valign=Top BackGround=../Оболочка/images/bg00.gif>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+  <A Href=../Теория/!lekcii.html onMouseOver="mOver(2)" onMouseOut="mOut(2)"><Img Src=../Оболочка/images/02a.gif Width=190 Height=29 Border=0 Alt="Лекции" name="link2"></A><Br>
+ </Td>
+</Tr>
+<Tr><Td BackGround=../Оболочка/images/bg04.gif Width=190 Valign=Top>
+  <Img Src=../Оболочка/images/03p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"><Br></Td>
+<Tr><Td BackGround=../Оболочка/images/bg05.gif Width=190 Valign=Top>
+  <A href="!acad.html" onMouseOver="mOver(31)" onMouseOut="mOut(31)"><Img Src=../Оболочка/images/031a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link31"></A><Br></Td></Tr>
+<Tr><Td BackGround=../Оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+  <A href="!mechanic.html" onMouseOver="mOver(32)" onMouseOut="mOut(32)"><Img Src=../Оболочка/images/032a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link32"></A><Br>
+  <A href="!mechanic.html" onMouseOver="mOver(33)" onMouseOut="mOut(33)"><Img Src=../Оболочка/images/033a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link33"></A><Br>
+  <A href="!lisp.html" onMouseOver="mOver(34)" onMouseOut="mOut(34)"><Img Src=../Оболочка/images/034a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link34"></A><Br>
+<Img Src=../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+ <A Href=../Заочнику/!zaochnoe.html onMouseOver="mOver(4)" onMouseOut="mOut(4)"><Img Src=../Оболочка/images/04a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link4"></A><Br>
+ <A Href=../Контроль_знаний/!samocontrol.html onMouseOver="mOver(5)" onMouseOut="mOut(5)"><Img Src=../Оболочка/images/05a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link5"></A><Br>
+ <Img Src=../Оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ 
+ <Td Valign=Сenter>
+ <Br><Br>
+
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<A name="top"></A>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Revolve (Построение тела вращения)</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+<Table valign="left"><Tr align="left"><Td>
+<Ul>
+<Dt><A Class=m href="#tit1">Диалоговое окно Revolution Feature</A></Dt>
+ <Ul>
+  <Dt><A Class=m href="#tit2">Operation</A></Dt>
+  <Dt><A Class=m href="#tit3">Termination</A></Dt>
+  <Dt><A Class=m href="#tit4">Size</A></Dt>
+ </Ul>
+<Dt><A Class=m href="#tit5">Пример создания объёмного тела методом вращения</A></Dt>
+</Ul>
+</Td></Tr></Table>
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+<P>Команда amrevolve используется для вращения профиля относительно выбранной оси для создания твердотельного элемента. Ось может быть кромкой
+модели, рабочей осью или линией эскиза, включенной в профиль. Если линия эскиза не является частью контура профиля, её тип линии должен отличаться
+от типа линии, установленного в системной переменной AMSKSTYLE. Опция вращения Angle позволяет задать угол поворота, а используя опцию Cut, можно
+создавать карманы, полости, формы для литья или пресс-формы.</P>
+
+<Center>
+  <img src=images/mdt/mdt_revolve01.gif>
+</Center>
+
+
+<Table Width=300>
+<Tr Valign=Top>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Нажатием правой клавиши мыши на иконке Профиль (Profile) окна браузера вызовите контекстное меню , где выберите пункт Revolve.</P></Td>
+</Tr>
+</Table>
+
+<Center><Img Src=images/mdt/mdt_revolve02.gif></Center>
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Revolve)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_revolve03.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Sketched Features -&gt; Revolve</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMREVOLVE</P></Td>
+</Tr>
+</Table><Br>
+
+
+<A name="tit1"></A>
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>Диалоговое окно Revolution Feature</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Center><Img Src=images/mdt/mdt_revolve04.gif></Center>
+
+<A name="tit2"></A>
+<P Class=h3>OPERATION</P>
+<P>Определяет Булеву операцию вращения.</P>
+<P><B>Base.</B> Добавляет материал, создавая первый элемент в детали.</P>
+<P><B>Cut.</B> Вырезает объем вращения из активной детали.</P>
+<P><B>Join.</B> Добавляет объем вращения к активной детали.</P>
+<P><B>Intersect.</B> Создает новый элемент из общего объема между
+существующей деталью и элементом вращения.</P>
+<P><B>Split.</B> Создает новую деталь из общего объема между существующей
+деталью и элементом вращения.</P>
+
+
+<A name="tit3"></A>
+<P Class=h3>TERMINATION</P>
+<P>Определяет метод для завершения вращения.</P>
+<P><B>By Angle.</B> Поворачивает профиль на указанный угол и отображает
+стрелки направления.</P>
+<P><B>Full.</B> Поворачивает профиль на 360°.</P>
+
+<P><B>To Face.</B> Заканчивает элемент на выбранной грани.</P>
+<P><B>To Plane.</B> Заканчивает элемент на выбранной плоскости..</P>
+<P><B>From To.</B> Определяет начальную и конечную плоскости.</P>
+<P><B>Mid Plane.</B> Поворачивает профиль одинаково в обоих направлениях, заканчивая
+его полным указанным углом.</P>
+
+<A name="tit4"></A>
+<P Class=h3>SIZE</P>
+<P><B>Angle.</B>Определяет угол вращения. Заданный по умолчанию угол –90°.</P>
+
+
+
+
+
+<A name="tit5"></A>
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>Пример создания объёмного тела методом вращения</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Создаётся эскиз (планируем как половину окончательной фигуры) </td>
+</tr>
+</table></P>
+
+<p>&nbsp;</p>
+<Center Class="Img"><Img src="images/mdt/mdt_revolve05.gif"></Center><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong><br>
+<img src="images/mdt/mdt_revolve06.gif" width="23" height="22"> </td>
+<td width="90%"><P>Эскиз отпрофилируется при помощи команды AMPROFILE</td>
+</tr>
+</table></P>
+
+<p>&nbsp;</p>
+<Center Class="Img"><Img src="images/mdt/mdt_revolve07.gif"></Center><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong><br>
+<img src="images/mdt/mdt_revolve08.gif" width="23" height="22"> </td>
+<td width="90%"><P>Введём AMFARDIM . 
+Щелкнем мышью на одной из сторон, а затем — в стороне от нее. 
+Введено размерное ограничение.</td>
+</tr>
+</table></P>
+
+<p>&nbsp;</p>
+<Center Class="Img"><Img src="images/mdt/mdt_revolve09.gif"></Center><Br>
+
+
+<P>Процесс продолжается до тех пор, пока весь эскиз 
+              профиля не будет полностью образмерен.</P>
+			  
+<Center Class="Img"><Img src="images/mdt/mdt_revolve10.gif"></Center><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong><br>
+<img src="images/mdt/mdt_revolve11.gif" width="23" height="22"> </td>
+<td width="90%"><P>Для выполнения вращения полностью соразмеренного эскиза введём AMREVOLVE.
+Выберем ось вращения.</td>
+</tr>
+</table></P>
+
+<P>Подсказка: представьте себе ось вращения в виде точки, вокруг которой осуществляется вращение.</P>
+
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve12.gif"></Center><Br>
+
+<p> В данном случае оставьте установки по умолчанию и выполните вращение на все 360°. <br>
+  Щелкните мышью на кнопке ОК</p>
+  
+<Center Class="Img"><Img src="images/mdt/mdt_revolve13.gif"></Center>
+
+<p>Теперь профиль представляет собой трехмерное тело.</p>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve14.gif"></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><img src="images/mdt/mdt_revolve15.gif" width="23" height="22"> </td>
+<td width="90%"><P>Лучший ракурс просмотра откроется, если воспользоватся 
+функцией трехмерного вращения</td>
+</tr>
+</table></P>
+
+<p>&nbsp;</p>
+<Center Class="Img"><Img src="images/mdt/mdt_revolve16.gif"></Center><Br>
+
+<P> Внимание! После завершения двухмерного эскиза перейдём 
+к изометрической проекции, что поможет лучше увидеть тело вращения. Для 
+быстрого вывода на экран изометрий просто введём с клавиатуры 8. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve17.gif" width="577" height="507">
+</Center><Br>
+
+<P>Теперь рассмотрим существующие опции операции вращения профиля. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve18.gif">
+</Center><Br>
+
+<P> Примеры: </P>
+
+<P> <strong>By Angle</strong>(На угол) (В данном случае угол поворота равен 180&deg;). </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve19.gif"></Center><Br>
+
+<P> <strong>From the MidPlane</strong>(От серединной плоскости) Профиль вращается в обоих направлениях от плоскости эскиза. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve20.gif"></Center><Br>
+
+<P> <strong>From-To</strong> (От-до) (От стартовой плоскости  до конечной плоскости) </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve21.gif"></Center><Br>
+
+<P> Если в окне Operation вы выберете опцию Join, то в меню опций вращения появляется 
+расширенный список возможных вариантов. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve22.gif"></Center><Br>
+
+<P> В качестве точек точного определения места завершения вращения могут 
+быть применены плоскости и грани. </P>
+
+<P>При использовании опции Join исходная базовая 
+форма и тело вращения становятся единым целым. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve23.gif"></Center><Br>
+
+<P> С помощью опции Cut в базовой детали можно 
+формировать полости уникальной формы. </P>
+
+ <P> После создания базовой детали, на ее грани или поверхности создается 
+новая эскизная плоскость. Эскиз полностью образмеривается, после чего 
+осуществляется его вращение, при этом в окне меню Operation следует выбрать опцию Cut.</P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve24.gif"></Center><Br>
+
+<P> Используя опцию Cut, можно создавать карманы, 
+полости, формы для литья или пресс-формы. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve25.gif">
+</Center><Br>
+
+<P> Опция операции Intersect позволяет получать 
+ тела уникальной формы, которые представляют собой область перекрытия исходного 
+ тела и тела, возникающего в результате вращения профиля. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve26.gif">
+</Center><Br>
+ 
+<P> Использование опции Split позволяет создавать 
+как полость, так и объемное тело вращения. Ее результаты во многом схожи 
+с теми, которые дает опция Intersect, но в 
+данном случае остаются обе детали. </P>
+
+<Center Class="Img"><Img src="images/mdt/mdt_revolve27.gif"></Center><Br>
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+
+																<Tr>
+																	<Td>&nbsp;</Td>
+																</Tr>
+
+																<Tr>
+																	<Td ColSpan=2>
+
+																		<Table Border=0 CellSpacing=0 CellPadding=0>
+																			<Tr>
+																				<Td BackGround=../Оболочка/images/bg09.gif Width=458 Height=100 Valign=Bottom>
+																					<P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2017<Br>
+																						<Img Src=../Оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+																							<Td BackGround=../Оболочка/images/bg10.gif Width=159 Height=100>
+																								<A Href=#Top onMouseOver="mOver(6)" onMouseOut="mOut(6)"><Img Src=../Оболочка/images/06a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link6"></A><Br>
+																								<A Href=!zadanie.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../Оболочка/images/07a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link7"></A></Td>
+																							</Tr>
+																						</Table>
+
+																					</Td>
+																				</Tr>
+																			</Table>
+
+
+</Body>
+</HTML>

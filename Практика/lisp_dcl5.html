@@ -1,0 +1,631 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Электронный ресурс по учебной дисциплине ОСАПр. Схема вызовов функций управления</Title>
+<Meta Name="Description" http-equiv="description" Content="Электронный ресурс по учебной дисциплине ОСАПр. Схема вызовов функций управления">
+<Link Rel="stylesheet" Type="text/css" Href="../../../Оболочка/acad.css">
+
+<Script>hljs.initHighlightingOnLoad();</Script>
+
+<Script Language="JavaScript">
+<!--
+	function mOver(num) {if (document.images) {document.images['link'+num].src=eval('active'+num+'.src');}}
+	function mOut(num) {if (document.images) {document.images['link'+num].src=eval('normal'+num+'.src');}}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 >
+<div class=max>
+<Script Language="JavaScript"><!--
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../../../Оболочка/images//01a.gif";
+	active1=new Image(190,29);active1.src="../../../Оболочка/images//01p.gif";
+	normal2=new Image(190,29);normal2.src="../../../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../../../Оболочка/images/02p.gif";
+	normal3=new Image(190,29);normal3.src="../../../Оболочка/images//03a.gif";
+	active3=new Image(190,29);active3.src="../../../Оболочка/images//03p.gif";
+	normal4=new Image(159,46);normal4.src="../../../Оболочка/images//09a.gif";
+	active4=new Image(159,46);active4.src="../../../Оболочка/images//09p.gif";
+	normal5=new Image(159,54);normal5.src="../../../Оболочка/images//10a.gif";
+	active5=new Image(159,54);active5.src="../../../Оболочка/images//10p.gif";
+	normal7=new Image(190,29);normal7.src="../../../Оболочка/images//7a.gif";
+	active7=new Image(190,29);active7.src="../../../Оболочка/images//7p.gif";
+	normal11=new Image(170,25);normal11.src="../../../Оболочка/images//02_1a.gif";
+	active11=new Image(170,25);active11.src="../../../Оболочка/images//02_1p.gif";
+	normal12=new Image(170,19);normal12.src="../../../Оболочка/images//02_2a.gif";
+	active12=new Image(170,19);active12.src="../../../Оболочка/images//02_2p.gif";
+	normal13=new Image(170,19);normal13.src="../../../Оболочка/images//02_3a.gif";
+	active13=new Image(170,19);active13.src="../../../Оболочка/images//02_3p.gif";
+	normal24=new Image(170,19);normal24.src="../../../Оболочка/images//04a.gif";
+	active24=new Image(170,19);active24.src="../../../Оболочка/images//04p.gif";
+	normal25=new Image(170,19);normal25.src="../../../Оболочка/images//05a.gif";
+	active25=new Image(170,19);active25.src="../../../Оболочка/images//05p.gif";
+	normal26=new Image(170,19);normal26.src="../../../Оболочка/images//06a.gif";
+	active26=new Image(170,19);active26.src="../../../Оболочка/images//06p.gif";
+	normal14=new Image(170,19);normal14.src="../../../Оболочка/images//l1_a.gif";
+	active14=new Image(170,19);active14.src="../../../Оболочка/images//l1_p.gif";
+	normal15=new Image(170,19);normal15.src="../../../Оболочка/images//z_a.gif";
+	active15=new Image(170,19);active15.src="../../../Оболочка/images//z_p.gif";
+	normal16=new Image(170,19);normal16.src="../../../Оболочка/images//l2_a.gif";
+	active16=new Image(170,19);active16.src="../../../Оболочка/images//l2_p.gif";
+	normal17=new Image(170,19);normal17.src="../../../Оболочка/images//z_a.gif";
+	active17=new Image(170,19);active17.src="../../../Оболочка/images//z_p.gif";
+	normal18=new Image(170,19);normal18.src="../../../Оболочка/images//l3_a.gif";
+	active18=new Image(170,19);active18.src="../../../Оболочка/images//l3_p.gif";
+	normal19=new Image(170,19);normal19.src="../../../Оболочка/images//z_a.gif";
+	active19=new Image(170,19);active19.src="../../../Оболочка/images//z_p.gif";
+	normal20=new Image(170,19);normal20.src="../../../Оболочка/images//l4_a.gif";
+	active20=new Image(170,19);active20.src="../../../Оболочка/images//l4_p.gif";
+	normal21=new Image(170,19);normal21.src="../../../Оболочка/images//z_a.gif";
+	active21=new Image(170,19);active21.src="../../../Оболочка/images//z_p.gif";
+	normal27=new Image(170,19);normal27.src="../../../Оболочка/images/15a.gif";
+	active27=new Image(170,19);active27.src="../../../Оболочка/images/15p.gif";
+}
+//-->
+</Script>
+
+<Left>
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg01.gif Width=190 Height=91 name="link19">&nbsp;</Td>
+ <Td Rowspan=2 BackGround=../../../Оболочка/images/bg02_acad.gif Height=120 Valign=Bottom style="background-repeat:no-repeat;">
+
+<Table BackGround=../../../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td Width=230></Td>
+  <Td><P Class=h6>AutoLISP<Br><Img Src=../../../Оболочка/images/raspor.gif Width=1 Height=26></P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+ 
+
+
+<Td BackGround=../../../Оболочка/images/bg03.gif>
+ <A Href=../../../Программа/!rabprog.html onMouseOver="mOver(26)" onMouseOut="mOut(26)"><Img Src=../../../Оболочка/images/06a.gif Width=190 Height=29 Border=0 
+Alt="Рабочая программа" name="link26"></A><Br></Td>
+
+</Tr>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg09.gif Valign=Top>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+	<A Href=../../../Теория/!lekcii.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../../../оболочка/images/7a.gif Width=190 Height=29 Border=0 
+Alt="Лекции" name="link7"></A><Br>
+ </Td>
+ <Tr><Td BackGround=../../../оболочка/images/bg04.gif Width=190 Valign=Top>
+ <a href="../../!zadanie.html"> <Img Src=../../../оболочка/images/8p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"></a><Br></Td>
+<Tr><Td BackGround=../../../оболочка/images/bg05_1.gif Width=190 Valign=Top>
+  <A href="../lb1/!acad.html" onMouseOver="mOver(14)" onMouseOut="mOut(14)"><Img Src=../../../оболочка/images/l1_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link14"></A><Br></Td></Tr>
+<Tr><Td BackGround=../../../оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+   <A href="../lb1/laba1.html"  onMouseOver="mOver(15)" onMouseOut="mOut(15)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 1" name="link15"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(18)" onMouseOut="mOut(18)"><Img Src=../../../Оболочка/images/l3_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link18"></A><Br>
+<A  href="../lb2/laba2.html" onMouseOver="mOver(19)" onMouseOut="mOut(19)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 2" name="link19"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(20)" onMouseOut="mOut(20)"><Img Src=../../../Оболочка/images/l4_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link20"></A><Br>
+<A href="../lb3/laba3.html"1 onMouseOver="mOver(21)" onMouseOut="mOut(21)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 3" name="link21"></A><Br>
+ <A href="../lb4/!lisp.html" onMouseOver="mOver(16)" onMouseOut="mOut(16)"><Img Src=../../../Оболочка/images/l2_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link16"></A><Br>
+<A  href="../lb4/laba4.html" onMouseOver="mOver(17)" onMouseOut="mOut(17)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 4" name="link17"></A><Br>
+  <Img Src=../../../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+   <A Href=../../../Заочнику/!zaochnoe.html onMouseOver="mOver(27)" onMouseOut="mOut(27)"><Img Src=../../../Оболочка/images/15a.gif Width=190 Height=29 Border=0  Alt="Заочнику" name="link27"></A><Br>
+  <A Href=../../../Контроль_знаний/!samocontrol.html onMouseOver="mOver(25)" onMouseOut="mOut(25)"><Img Src=../../../оболочка/images/05a.gif Width=190 Height=29 Border=0 
+Alt="Самоконтроль" name="link25"></A><Br>
+	 <Img Src=../../../оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ <Td Valign=Top>
+<P><Br></P>
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Схема вызовов функций управления</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+ <Table valign="left"><Tr align="left"><Td>
+
+<Ul>
+<Dt><A Class=m href="#tit1">Функции, запрещенные во время действия диалогового окна</A></Dt>
+<Dt><A Class=m href="#tit2">Выражения действий</A></Dt>
+<Dt><A Class=m href="#tit3">Вложенные диалоговые окна</A></Dt>
+<Dt><A Class=m href="#tit4">Временное закрытие диалоговых окон</A></Dt>
+<Dt><A Class=m href="#tit5">Обработка полей</A></Dt>
+<Dt><A Class=m href="#tit6">Создание изображений</A></Dt>
+<Dt><A Class=m href="#tit7">Ввод клавиши изображения</A></Dt>
+<Dt><A Class=m href="#tit8">Обработка групп выбора</A></Dt>
+<Dt><A Class=m href="#tit9">Обработка скользящих шкал</A></Dt>
+<Dt><A Class=m href="#tit10">Обработка текстовых полей</A></Dt>
+<Dt><A Class=m href="#tit11">Определяемые приложением данные</A></Dt>
+</Ul>
+</Td></Tr></Table>
+
+<P>Рассмотрим пример вызова и управления простого диалогового окна</P>
+<pre><code>hello : dialog {
+ label = "Пример диалогового окна";
+ : text {
+ label = "Всем привет";
+		}
+ ok_only;
+	}</code></pre>
+
+<P>Данное описание находится в файле hello.dcl. Управляющая появлением этого окна функция AutoLISP может иметь следующий вид:</P>
+
+<pre><code> (defun showalert ( / dcl_id)
+ (setq dcl_id (load.gialog "hello.dcl"))
+;Загрузить DCL-файл
+ (if (not (new_dialog "hello" dcl_id)) 
+;Инициализировать диалог
+ (exit)) ;(выйти, если не работает)
+ (action_tile 			
+;Связать выражение действия "accept"				
+;c ключом клавиши Да
+ "(done_dialog)") 		
+;(Закончить диалог, если					
+; нажата клавиша Да
+ (start_dialog)			
+;Вывести диалоговое окно
+ (unload_dialog dcl_id)	
+;Выгрузить DCL-файл</code></pre>
+
+<P>После вызова функции (start_dialog) диалоговое окно становится активным, пока пользователь не подсветит поле (обычно клавишу), которое связано с вызовом выражения (done_dialog). Вызов функции (action_tile) устанавливает связь между полем (в этом примере с клавишей OK, ключ которой имеет значение "accept") и выражением действия. Именно из-за этого вызов функции (done_dialog) появляется внутри вызова функции (action_tile) и перед вызовом функции (start_dialog). По сути, все действия до функции (start_dialog) являются настроечными. Более сложные окна потребуют большего числа настроек и дополнительных операторов между функциями (start_dialog) и (unload_dialog), но последовательность вызовов будет такой же.</P>
+<P>Показанный пример демонстрирует обычную последовательность вызовов функций:</P>
+
+<P><SPAN>1.</SPAN> Загрузка DCL-файла функцией (load_dialog).</P>
+<P><SPAN>2.</SPAN> Вызов функции (new_dialog) для вывода отдельного диалогового окна на графический экран AutoCAD. Важно проверять возвращаемое функцией (new_dialog) значение. Вызов функции (start_dialog), если функция (new_dialog) возвратила ошибку, может привести к непредсказуемым результатам.</P>
+<P><SPAN>3.</SPAN> Инициализация диалогового окна и установка значений полей, списков и изображений, если это необходимо. На этом этапе обычно вызываются функции (set_tile) и (mode_tile) для установки состояния полей и их значений; (start_list), (add_list), (end_list) для полей списков; (start_image), (vector_image), (fill_image), (slide_image), (end_image) для изображений. На этом этапе обычно вызывается функция (action_tile) для установки выражения действия. Здесь можно вызвать и функцию (action_tile) для связи определенных приложением данных с диалоговым окном и его компонентами.</P>
+<P><SPAN>4.</SPAN> Вызов функции (start_dialog) передает управление диалоговому окну, в которое пользователь может вводить данные.</P>
+<P><SPAN>5.</SPAN> Процесс ввода данных пользователем (вызовы с возвратом). На этом этапе используются функции (get_tile), (get_attr), (set_tile), (mode_tile).</P>
+<P><SPAN>6.</SPAN> Указание пользователем клавиши выхода вызовет функцию (done_dialig), которая, в свою очередь, возвращает функции (start_dialog). Далее следует выгрузка DCL-файла, обеспечиваемая функцией (unload_dialog).</P>
+<P>Показанную последовательность действий можно представить следующей схемой:</P>
+
+<Center><Img Src=images/lisp/lisp_dcl501.gif></Center>
+
+<P>На схеме показано одновременное управление только одним окном и одним DCL-файлом. Управление несколькими окнами аналогично: следует размножить средний большой прямоугольник нужное число раз:</P>
+
+<Center><Img Src=images/lisp/lisp_dcl502.gif></Center>
+
+<P>Схему можно использовать для загрузки нескольких DCL-файлов.</P>
+
+
+<A name="tit1"></A>
+<P Class=h3>Функции, запрещенные во время действия диалогового окна</P>
+
+
+<P>При активном диалоговом окне (функция (start_dialog) вызвана) нельзя вызывать некоторые функции AutoLISP, которые изменяют экран, который не должен изменяться, пока на нем изображается диалоговое окно, или требуют ввода пользователя, не имеющего отношения к диалоговому окну.</P>
+<P>Если необходимо ввести данные в режиме графического экрана (например, выбрать точку или примитив), необходимо временно закрыть диалоговое окно, вызвав функцию (done_dialog), - графический экран станет доступен. После выполнения выбора производится повторный вызов окна.</P>
+<P>Перечень функций AutoCAD, запрещенных к вызову при открытом диалоговом окне:</P>
+<P><SPAN>1.</SPAN> Запросы и команды AutoCAD: (command), (osnap).</P>
+<P><SPAN>2.</SPAN> Функции ввода пользователем: (getint), (getreal), (getstring), (getpoint), (getcorner), (getdist), (getangle), (getorient), (getkword).</P>
+<P><SPAN>3.</SPAN> Функции управления экраном: (prompt)
+
+<SPAN><B>(</B></SPAN>Функции вывода текста (print) и (princ) полезно использовать при отладке диалоговых окон, но не в окончательной версии. Если диалоговое окно перекрывает зону подсказок, эти функции выводят текст поверх диалогового окна.<SPAN><B>)</B></SPAN>,
+
+(menucmd), (redraw), (graphscr), (textscr), (textpage).</P>
+<P><SPAN>4.</SPAN> Графические функции низкого уровня: (grclear), (grdraw), (grread), (grtext), (grvacs).</P>
+<P><SPAN>5.</SPAN> Функция набора выбора (ssget).
+
+<SPAN><B>(</B></SPAN>Запрещены только интерактивные функции (ssget).<SPAN><B>)</B></SPAN>
+
+<P><SPAN>6.</SPAN> Функции управления примитивами: (entmod), (entmake), (entdel), (entsel), (nentsel), (entupd).</P>
+
+
+<A name="tit2"></A>
+<P Class=h3>Выражения действий</P>
+
+<P>Для определения последствий выбора определенного поля диалогового окна следует связать выражение AutoLISP с этим полем посредством вызова функции (action_tile). Внутри действия часто бывает необходимо получить доступ к атрибутам DCL-файла. Это обеспечивают функции (get_attr) и (get_tile): функция (get_attr) выдает значения, сохраненные в DCL-файле, a (get_tile) выдает текущие значения. Значения, связанные с выбранным полем, получаются автоматически.</P>
+<P>Выражение действия AutoLISP получает доступ к переменным, которые описаны ниже в таблице и описывают выбранное поле и его состояние во время действия. Имена переменных зарезервированы, и их значения можно только считать (они имеют смысл только тогда, когда доступны выражению действия).</P>
+
+<Center>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Переменная</P></Td>
+ <Td><P Class=tcb>Назначение</P></Td>
+ <Td><P Class=tcb>Примечание</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>$key</P></Td>
+ <Td><P Class=tl>Атрибут key выбранного поля</P></Td>
+ <Td><P Class=tl>Применима ко всем действиям</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>$value</P></Td>
+ <Td><P Class=tl>Строка текущего значения поля, похожая на строку окна редактирования, или "О", или "1" для переключателя</P></Td>
+ <Td><P Class=tl>Применима ко всем действиям. Если поле является полем списка (или раскрывающегося списка) и не содержит ни одного пункта, переменная $value будет иметь значение nil</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>$data</P></Td>
+ <Td><P Class=tl>Данные, установленные сразу после вызова (new_dialog) через вызов (client_data_tile) и управляемые приложением</P></Td>
+ <Td><P Class=tl>Применима ко всем действиям. Не имеет значения до тех пор, пока приложение не установит его вызовом функции (client_data_tile)</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>$reason</P></Td>
+ <Td><P Class=tl>Код причины, сообщающий, какой выбор пользователя вызвал действие. Используется в полях edit_box, list_box, image_button и slider</P></Td>
+ <Td><P Class=tl>Определяет причину действия. Ее значение определено для любого вида действия, но его следует проверять, если действие связано с полями edit_box, list_box, image_button и slider</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>$x</P></Td>
+ <Td><P Class=tl>Координата X выбора image_button.</P></Td>
+ <Td ROWSPAN=2 Bgcolor=#EAEAEA><P Class=tl>Представляют координаты X и Y точки, в которой пользователь выбрал поле image_button. Для других целей эти переменные не имеют значения. Координата Х находится в интервале, возвращаемом функцией (dimx_tile), координата Y - в интервале, возвращаемом функцией (dimy_tile).</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>$y</P></Td>
+ <Td><P Class=tl>Координата Y выбора image_button.</P></Td>
+</Tr>
+</Table></Center>
+
+
+<P Class=h55>Примеры:</P>
+
+<P>Если текстовое поле определено как edit1, выражение действия в следующем вызове функции (action_tile) вычисляется после того, как пользователь покинет текстовое поле:</P>
+<pre><code> (action_tile "edit1" "(setq ns $value)")</code></pre>
+<P>В этот момент $value содержит строку, введенную пользователем, и она сохранится в переменной us.</P>
+<P>В следующем примере сохраняется имя выбранного поля, и в случае необходимости программа может ссылаться на него.</P>
+<pre><code> (action_tile "edit1" "(setq newtile $key)")</code></pre>
+<P>Переменная newtile устанавливается в значение атрибута key выбранного поля, т. е. в "edit1". Переменная $key часто используется внутри функций, которые служат для выполнения действий, присвоенных нескольким различным полям.</P>
+
+
+
+<A name="tit3"></A>
+<P Class=h3>Вложенные диалоговые окна</P>
+
+<P>Создавая вложенные диалоговые окна, ими можно управлять с помощью функций (new_dialog) и (start_dialog), вызывая их выражение действия. Например, функция (showalert) отобразила бы диалоговое окно "Всем привет" при выборе пользователем клавиши button_l какого-либо нового диалога, если вставить выражение</P>
+
+<pre><code> (action_tile "button_1" "(showalert)").</code></pre>
+
+<P>Для возвращения в предыдущее окно необходимо покинуть текущее.</P>
+<P>Слишком большое число вложений усложняет работу. AutoCAD ограничивает число вложений восемью. Рекомендуется использовать около трех-четырех вложенных окон.</P>
+
+
+<A name="tit4"></A>
+<P Class=h3>Временное закрытие диалоговых окон</P>
+
+<P>При необходимости выхода из диалогового окна для интерактивного выбора на графическом экране следует временно закрыть диалоговое окно и после выполнения действия на графическом экране вернуться в диалоговое окно с полным его восстановлением. Такая процедура выполняется с помощью функции (done_dialog) с аргументом status.</P>
+
+<P Class=h55>Пример:</P>
+
+<P>В программе bmake.lsp используется клавиша Указание точки&lt;, которая временно закрывает диалоговое окно для предоставления возможности ввода точки на графическом экране. При указании этой клавиши происходит закрытие диалогового окна с кодом состояния 4:</P>
+<pre><code> (action_tile "pick_pt" "(done_dialog 4)")</code></pre>
+
+<P>После возврата из функции (start_dialog) программа проверяет возвращаемый код состояния и при необходимости изменяет координаты точки:</P>
+<pre><code>
+ (setq what_next (start_dialog))
+ (cond ((= what_next 4)
+ (progn
+ (setq pick_pt (getpoint "Базовая точка вставки: "))
+ (setq x_pt (rtos (car (pick_pt) 2 4))
+ (setq y_pt (rtos (cadr (pick_pt) 2 4))
+ (setq z_pt (rtos (caddr (pick_pt) 2 4))
+		 ))
+  	 )</code></pre>
+<P>Тело основной функции заключено в цикл с вызовом функции (start_dialog) до тех пор, пока пользователь не нажмет на клавишу OK или Cancel:</P>
+
+<pre><code>
+ (defun c:mblock...
+ ...
+ (while (< 2 what_next)
+ ...
+ (setq what_next (start_dialog)<Br>
+ (cond
+ ...
+		 )
+	 ))</code></pre>
+<P>Если диалоговое окно вложено, процедура усложняется, по существу оставаясь прежней:</P>
+
+<pre><code>
+ (defun c:mdialog (/what_next what_next1)
+ (setq what_next 5)
+ (if (&lt; (setq dcl_id (load_dialog "maindlg.dcl")) 0) (exit))
+ (while (&lt; 1 what_next)
+ (new_dialog "maindlg" dcl_id)
+ (action_tile "x" "(subdlg)")
+ (cond
+ ((= what_next1 3)
+ (subdlg)
+ (if (/= 3 what_next1)
+ (setq what_next (start_dialog))
+				 )
+			)
+ (T (setq what_next (start_dialog)))
+		)
+ (cond
+ ((= 2 what_next)
+ (setq xx (getpoint "\пУкажите точку: "))
+				)
+			)
+		)
+ )
+ (defun subdlg()
+ (new_dialog "subdlg" dcl_id)
+ (action_tile "hide_all" "(done_dialog 3)")
+ (setq what_next (start_dialog))
+ (if (= 3 what_next1)
+ (done_dialog 2)
+	)
+ )</code></pre>
+
+
+
+<A name="tit5"></A>
+<P Class=h3>Обработка полей</P>
+
+<P>Как управлять полями при инициализации и в процессе ведения диалога? При изменении значения одного поля со связанными с ним полями должны происходить изменения.</P>
+
+<P><I>Инициализация режимов и значений</I></P>
+
+<P>При инициализации диалогового окна определенное поле может быть первоначально включено или отключено и подсвечено или не подсвечено. Эти операции выполняются с помощью вызова функции (mode_tile). Установить значение поля можно с помощью функции (set_tile). Во время инициализации делаются установки полей списка и создаются изображения.</P>
+
+<P Class=h55>Пример:</P>
+
+<P>Показанный набор функций выполняет установку значения по умолчанию для текстового поля и подсвечивает его:</P>
+
+<pre><code> (setq name_str "Коленчатый вал")
+ (set_tile "lastname" name_str)
+ (mode_tile "lastname" 2)</code></pre>
+
+<P>Дополнительный вызов функции (mode_tile) может подсветить содержимое текстового поля:</P>
+
+<pre><code> (mode_tile "lastname" 3)</code></pre>
+
+<P>Перед тем, как отключить подсвеченное поле, необходимо с помощью вызова функции (mode_tile) подсветить другое поле. Ведь отключенное подсвеченное поле бессмысленно, что в некоторых случаях может привести к ошибке.</P>
+<P>Пример "самоотключения" поля - последовательность "страниц" диалоговых окон, которые перелистываются указанием клавиши "Следующий" или "Предыдущий". Когда указывается клавиша "Следующий" на предпоследней "странице", после перехода эта клавиша отключается. Тоже самое происходит с клавишей "Предыдущий" при переходе на первую "страницу". В обоих случаях использованная клавиша отключается и подсвечивается другое поле.</P>
+<P>Предположим, что переключатель с именем "group_on" управляет группой "group": когда переключатель отключен, поля группы недоступны и не могут быть изменены. В этом случае для переключателя следует определить следующее действие:</P>
+
+<pre><code> (action_tile "group_on" "(mode_tile \"group\" (- 1 (atoi $value)))")</code></pre>
+
+<P>Вычитание и вызов функции (atoi) в выражении действия устанавливают значение аргумента mode функции (mode_tile). Так как значение переключателя равно нулю, когда он отключен, и единице, когда он включен, вычитание изменяет значение аргумента mode на противоположное и управляет доступностью группы.</P>
+
+<P><I>Установка полей списков и раскрывающихся списков</I></P>
+
+<P>При установке значений для поля списка или раскрывающегося списка необходимо выполнить следующую последовательность операций:</P>
+
+<pre><code> (start_list), (add_list) и (end_list)</code></pre>
+
+<P>Список можно изменить после его создания. Функция (mapcar) полезна для перевода списка из AutoLISP в отображаемое поле списка:</P>
+
+<pre><code> (start_list "selections" операция)
+(mapcar 'add_list newnames)
+(end_list)</code></pre>
+
+<P><I>Обработка значений списков</I></P>
+
+<P>При обработке списков значение поля list_box может содержать начальные пробелы, особенно если выбрано несколько пунктов, так что не следует его проверять с помощью функций сравнения строк. Сначала следует преобразовать значение к целому, используя функцию (atoi) или (read).</P>
+
+<P Class=h55>Пример:</P>
+
+<P>Предполагается, что список "justone" позволяет выбрать только один пункт одновременно. Фрагмент кода проверяет, выбран ли третий пункт списка. (Поскольку функция (atoi) возвращает 0, если строка пустая или когда в ней содержится "0", сначала следует проверить, является ли строка пустой.)</P>
+
+<pre><code> (setq index (get_tile "justone"))
+(cond
+((/= index "")
+(= 2 (atoi index))		; это третий пункт
+...
+			)
+		)</code></pre>
+
+<P>Значение раскрывающегося списка никогда не начинается с символа пробела, так что преобразование в этом случае выполнять не обязательно. Раскрывающиеся списки не позволяют выполнять множественный выбор.  Если в поле списка можно выбрать одновременно несколько пунктов, программа должна не только выполнить преобразование, но и перебрать все множество значений в строке.</P>
+
+<P Class=h55>Пример:</P>
+<P>Функция (mk_list) возвращает список, содержащий только выбранные пользователем поля из исходного списка displist. Переменная displist определена как глобальная. Предполагается, что функция (mk_list) вызывается с текущим значением $value поля списка.</P>
+
+<pre><code> (defun mk_list (readlist / count item retlist)
+ (setq count 1)
+ (while (setq item (read readlist))
+ (setq retlist (cons (nth item displist) retlist))
+ (while (and (/= " " (substr readlist count 1))
+ (while (and (/= "" (substr readlist count 1))
+ (/= " " (substr readlist count 1)))
+ (setq count (1+count))
+ 			)
+ (setq readlist (substr readlist count))
+		)
+ (reverse retlist)
+	)</code></pre>
+
+
+
+<A name="tit6"></A>
+<P Class=h3>Создание изображений</P>
+
+<P>Последовательность вызовов для создания поля изображения и клавиши изображения аналогична последовательности обработки списка. Функция (start_image) начинает создание изображения, функция (end_image) заканчивает его. Однако определение результата рисования осуществляется путем использования нескольких разных функций, а не путем задания разных аргументов:</P>
+<Ul>
+ <Li>(vector_image) - рисует вектор (одна прямая линия) на текущем изображении.</Li>
+ <Li>(fill_image) - рисует закрашенный прямоугольник.</Li>
+ <Li>(slide_image) - отображает слайд AutoCAD.</Li>
+</Ul>
+
+<P>Эти функции требуют определения абсолютных координат. Чтобы задать их корректно, следует знать размеры поля изображения или клавиши изображения. Так как размеры полей определяются во время их компоновки, функции PDB обеспечивают получение ширины и высоты поля: (dimx_tile) и (dimy_tile). Начало поля (0 0) всегда находится в верхнем левом углу.</P>
+
+<P Class=h55>Примеры:</P>
+
+<P>Предположим, что нужно закрасить красным цветом поле изображения "cur_color":</P>
+
+<pre><code> (setq width (dimx_tile "cur_color")
+ height (dimy_tile "cur_color"))
+ (start_image "cur_color")
+ (fill_image "cur_color")
+ (fill_image 0 0 width height 1) ; 1 - красный цвет AutoCAD
+ (end_image)</code></pre>
+
+<P>Далее нарисуем вокруг поля границу красного цвета, а не закрашенный прямоугольник (векторы рисуются против часовой стрелки):</P>
+<pre><code> (setq width (dimx_tile "border")
+ height (dimy_tile "border"))
+ (start_image "border")
+ (vector_image 0 0 0 height 1)
+ (vector_image 0 height width height 1)
+ (vector_image width height width 1)
+ (vector_image width 0 0 0 1)
+ (end_tmage)</code></pre>
+
+<P>Функции отрисовки должны вызываться вместе. Изобразим закрашенное изображение и нарисуем на нем вертикальную линию:</P>
+
+<pre><code> (setq width (dimx_tile "striple")
+ height (dimy_tile "striple"))
+ (start_image "striple")
+ (fill_image 0 0 width height 3) ; 3 - зеленый цвет AutoCAD
+ (setq x(/ width 2.0)
+ (vector_image x 0 height 4) ; 4 - фиолетовый цвет AutoCAD
+ (end_image)</code></pre>
+
+<P>Отображаемые с помощью функции (slide_image) слайды могут быть отдельными слайд-файлами (.sld) или частью файла библиотеки слайдов (.slb). Расширение указывать не нужно. Просто слайд именуется по имени, слайд из библиотеки именуется как в меню: сначала имя библиотеки, затем имя слайда в скобках. Функция (slide_image) ищет слайд или библиотеку слайдов в соответствии с текущим путем поиска библиотек AutoCAD.</P>
+<P>Предположим, что необходимо отобразить слайд tppview.sld:</P>
+
+<pre><code> (setq x (dimx_tile "view")
+ у (dimy_tile "view"))
+ (start_image "view")
+ (slide_mage 0 x у "topview")
+ (end_image)</code></pre>
+
+<P>Векторы слайда часто рисуются бельм цветом, который является цветом фона изображения по умолчанию. Если слайд после вывода не виден, надо изменить атрибут color на значение graphic_background.</P>
+
+
+<A name="tit7"></A>
+<P Class=h3>Ввод клавиши изображения</P>
+
+<P>Клавишу изображения можно обрабатывать как и обычную клавишу, т. е. при ее указании вызывается соответствующее действие. Однако имеется возможность определения клавиши так, что действие будет зависеть от места указания в зоне клавиши. Для этого действие клавиши должно получить координаты точки указания. Координаты задаются в диапазоне размера изображения и возвращаются функциями определения размеров.</P>
+
+<P Class=h55>Пример:</P>
+
+<P>Допустим, что клавиша изображения имеет две прямоугольные области разного цвета. Требуется определить, какую из областей указал пользователь. Если клавиша разделена горизонтально, следует проверять только один размер:</P>
+
+<pre><code> (action_tile "image_set" "(pick_shade" $key $value $y)")
+ ...
+ ...
+ (defun pick_shade (key val y)
+ (setq threshold (/ dimy_tile key) 2))
+ (if (y threshold)
+ (setq result "Светлый")
+ (setq result "Темный"))
+ )</code></pre>
+
+
+<A name="tit8"></A>
+<P Class=h3>Обработка групп выбора</P>
+
+<P>Кнопки выбора появляются в группах выбора. Значение каждой отдельной кнопки может быть равно единице, если она включена, или нулю, если она отключена. Значением группы кнопок выбора является ключ, выбранной в данный момент кнопки. Проводится проверка включения только одной кнопки. Приложение может присвоить действие каждой отдельной кнопке выбора, но более приемлемым является присвоение действия группе кнопок выбора как единому целому и использование присылаемого ключа для определения, какая из кнопок выбрана в данный момент.</P>
+
+<P Class=h55>Пример:</P>
+
+<P>Допустим, что группа кнопок выбора определяет вид трехмерного объекта, который будет отображен после закрытия диалогового окна. При этом группа состоит из четырех кнопок (их может быть и больше):</P>
+
+
+<pre><code> (action_tile "view_set" "(pick $value)")
+ ...
+ ...
+ (defun pick_view (which)
+	((cond ((= which "front") (setq show_which 0))
+	((cond ((= which "top") (setq show_which 1))
+	((cond ((= which "left") (setq show_which 2))
+	((cond ((= which "right") (setq show_which 3))
+	)
+ )</code></pre>
+
+<P>Этот пример показывает, что все кнопки выбора связаны с одной переменной, которая может иметь несколько значений. Кроме, того, кнопки выбора могут выполнять еще и некоторые дополнительные действия, например отменять сделанный в диалоговом окне выбор.</P>
+
+
+<A name="tit9"></A>
+<P Class=h3>Обработка скользящих шкал</P>
+
+<P>Действие скользящей шкалы проверяет код причины. В качестве примера покажем базовую схему функции управления скользящей шкалой. Она вызывается из связанного с ней выражения действия. Поле slider_info используется этой функцией для вывода в десятичной форме текущего значения состояния шкалы и является текстовым полем, которое дает пользователю возможность управлять состоянием скользящей шкалы, непосредственно вводя значения. Если пользователь ввел значение в поле slider_info, функция текстового поля изменит значение состояния скользящей шкалы:</P>
+
+<pre><code> (action_tile "my_slider" "(slider_action $value $reason)")
+ (action_tile "my_info" "(ebox_action $value $reason)")
+ ...
+ ...
+ (defun slider_action (val why)
+	(if (or (= why 2)(= why 1))
+	(set_tile "slider_info" val)
+	 )
+ )
+ (defun ebox_action (val why)
+	(if (or (= why 2)(= why 1))
+	set_tile "myslider" val)
+	 )
+ )</code></pre>
+
+<A name="tit10"></A>
+<P Class=h3>Обработка текстовых полей</P>
+
+<P>Действия, управляющие текстовыми полями, аналогичны функциям обработки скользящих шкал, но при этом значение текстового поля всегда видимо и нет необходимости выполнять действия, связанные с промежуточными результатами.</P>
+
+<P Class=h55>Пример проверки значения без вывода его заново:</P>
+
+<pre><code> (action_tile "myeditbox "(edit_action $value $reason)
+ ...
+ ...
+ (defun edit_action (val why)
+	(if (or (= why 2) (= why 4))
+		(set_tile "myeditbox" val)
+		)
+	)
+ )</code></pre>
+
+
+<A name="tit11"></A>
+<P Class=h3>Определяемые приложением данные</P>
+
+<P>Функция client_data-tile присваивает полю определяемые приложением значения переменных. Эти данные доступны аналогично переменной AutoLISP $data. Данные приложения имеют смысл только во время исполнения приложения. Использование данных приложения сравнимо с использованием определенных пользователем атрибутов. Основное различие состоит в том, что атрибуты пользователя предназначены только для чтения, в то время как данные приложения могут изменяться во время выполнения программы и пользователь может проверить определенный им атрибут в DCL-файле приложения, а данные приложения для пользователя недоступны. В AutoLISP данные приложения определены текстовыми строками.</P>
+
+<P Class=h55>Пример:</P>
+
+<P>Так как программа должна поддерживать список, выводимый в поле списка (или в раскрывающемся списке), данные приложения могут быть использованы для обработки этой информации. В AutoLISP следующая модификация определения функции (mk_list) возвращает список как аргумент:</P>
+<pre><code> (defun mk_list (readlist displist)
+ (setq count 1)
+ (while (setq item (read readlist))
+ (setq retlist (cons (nth item displist) retlist))
+ (while (and (/= "" (substr readlist count 1))
+ (while (and (/= "" (substr readlist count 1))
+ (/= "" (substr readlist count 1)))
+ (setq count (1+count))
+		)
+ (setq readlist (substr readlist count))
+		)
+ (reverse retlist)
+	)</code></pre>
+
+<P>Это обстоятельство устраняет необходимость в переменной глобального списка. Следующие вызовы в основной части программы обработки диалоговых окон связывают короткий список с полем: вызывают функцию (client_data_ tile), затем передают список в функцию (mk_list) посредством выражения действия:</P>
+
+<pre><code> (client_data_tile "colorsyslist"
+	"Red-Green-Blue Cyan-Magenta-Yeltow Hue-Saturation-Value")
+ (action_tile "colorsyslist" "(setq usrchoice (mk_list $value $data))")</code></pre>
+
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+<Tr>
+ <Td ColSpan=2>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td BackGround=../../../оболочка/images/b1.gif Width=458 Height=100 Valign=Bottom>
+   <P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2015<Br>
+   <Img Src=../../../оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+  <Td BackGround=../../../оболочка/images/b2.gif Width=159 Height=100>
+   <A Href=#Top onMouseOver="mOver(4)" onMouseOut="mOut(4)">
+<Img Src=../../../оболочка/images/09a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link4"></A><Br>
+   <A Href=../../../index.html onMouseOver="mOver(5)" onMouseOut="mOut(5)">
+<Img Src=../../../оболочка/images/10a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link5"></A></Td>
+ </Tr>
+</Table>
+
+ </Td>
+</Tr>
+</Table>
+
+</Body>
+</HTML>

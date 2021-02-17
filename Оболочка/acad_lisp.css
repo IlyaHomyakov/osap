@@ -1,0 +1,59 @@
+<STYLE type="text/css">
+
+H3	{Font-Family: Times New Roman; text-align: left; font-size: 12pt; text-indent: 3em; color: #FFFFFF}
+
+A	{Font-Family: arial; font-size: 10pt; color: #4D3D5A}
+.a:link	{Font-Family: Times New Roman; text-align: left; font-size: 12pt; text-indent: 3em; color: #FFFFFF; text-decoration: none; font-Weight: bold}
+.a:visited	{Font-Family: Times New Roman; text-align: left; font-size: 12pt; text-indent: 3em; color: #FFFFFF; text-decoration: none; font-Weight: bold}
+.a:hover	{Font-Family: Times New Roman; text-align: left; font-size: 12pt; text-indent: 3em; color: #0000FF; font-Weight: bold}
+.h12:link		{Font-Family: Arial; text-align: left; font-size: 11pt;Color: #000000}
+.h12:visited	{Font-Family: Arial; text-align: left; font-size: 11pt;Color: #000000}
+.h12:active		{Font-Family: Arial; text-align: left; font-size: 11pt;Color: #000000}
+.h12:hover		{Font-Family: Arial; text-align: left; font-size: 11pt;Color: #000000; font-Weight: bold}
+.m:visited	{Color: #000090; text-decoration: none; font-Weight: bold}
+.m:active	{Color: #000050; text-decoration: none; font-Weight: bold}
+.m:hover	{Color: #7685C6; text-decoration: underline; font-Weight: bold}
+.s:link	{Font-Family: MS Sans Serif; font-size: 9pt; Color: #FFFFFF; text-decoration: none}
+.s:visited	{Font-Family: MS Sans Serif; font-size: 9pt; Color: #FFFFFF; text-decoration: none}
+.s:active	{Font-Family: MS Sans Serif; font-size: 9pt; Color: #000050; text-decoration: none}
+.s:hover	{Font-Family: MS Sans Serif; font-size: 9pt; Color: #C8C8FF; text-decoration: none}
+
+P	{Font-Family: Verdana; font-size: 10pt; text-align: justify}
+.co	{Font-Family: Arial; font-size: 10px; text-align: center}
+.c	{Font-Family: Verdana; font-size: 10pt; text-align: center}
+.cf	{Font-Family: Verdana; font-size: 10pt;}
+.r	{Font-Family: Verdana; font-size: 10pt; text-align: right}
+.m	{Color: #000090; text-decoration: none; font-Weight: bold}
+.negindent	{Font-Family: Arial; font-size: 10pt; text-align: justify; text-indent: -50pt; margin-left:50pt}
+.bord	{Font-Family: MS Sans Serif; font-size: 8pt; text-align: justify; text-indent: 0em; font-Weight: bold;Color: #647484; border-style: solid; border-width: 1pt; margin-right: 150pt; border-color: black}
+.f	{Font-Family: Times New Roman; font-size: 10pt;}
+.p1	{Font-Family: Arial; font-size: 10pt;Color: #696969; text-align: justify; text-indent: 1em}
+.tj	{Font-Family: MS Sans Serif; font-size: 10pt; text-align: justify; text-indent: 0em}
+.tjb	{Font-Family: MS Sans Serif; font-size: 10pt; text-align: justify; text-indent: 0em; font-Weight: bold}
+.tl	{Font-Family: MS Sans Serif; font-size: 10pt; text-align: left; text-indent: 0em}
+.tlb	{Font-Family: MS Sans Serif; font-size: 10pt; text-align: left; text-indent: 0em; Font-Weight: bold}
+.tc	{Font-Family: MS Sans Serif; font-size: 10pt; text-align: center; text-indent: 0em}
+.tcb	{Font-Family: MS Sans Serif; font-size: 10pt; text-align: center; text-indent: 0em; Font-Weight: bold}
+.pr	{Font-Family: Arial; font-size: 10pt; text-align: left; text-indent: 0em;  Color: #800000;  Font-Weight: bold}
+.prt	{Font-Family: Arial; font-size: 10pt; text-align: left; text-indent: 0em;  Color: #800000}
+.h	{Font-Family: Times New Roman; text-align: left; font-size: 12pt; text-indent: 0em; font-Weight: bold; color: #111111}
+.hh	{Font-Family: MS Sans Serif; text-align: left; font-size: 10pt; text-indent: 0em; font-Weight: bold; color: #FFFFFF}
+
+.h2	{Font-Family: Arial; text-align: left; font-size: 14pt;Color: #00008B; text-indent: 0em; font-Weight: bold}
+.h3	{Font-Family: Arial; text-align: left; font-size: 11pt;Color: #00008B; text-indent: 0em; font-Weight: bold}
+.h4	{Font-Family: Arial; text-align: left; font-size: 10pt;Color: #00008B; text-indent: 0em; font-Weight: bold}
+.h5	{Font-Family: MS Sans Serif; font-size: 8pt; text-align: justify; text-indent: 0em; font-Weight: bold;Color: #647484}
+.h55	{Font-Family: MS Sans Serif; font-size: 8pt; text-align: justify; text-indent: 0em; font-Weight: bold;Color: #445464}
+.h6	{Font-Family: Tahoma; text-align: center; font-size: 12pt; text-indent: 0em; color: #9CA6CE; font-Weight: bold}
+@media all and (min-width: 0) {.h6 {  text-indent: 0em; font-weight: 800; margin: auto;}}
+
+Li	{Font-Family: Verdana; font-size: 10pt; text-align: justify; text-indent: 0em}
+.l	{Font-Family: Arial; font-size: 10pt; text-align: justify; text-indent: 0em; Color: #FFFFFF}
+.lt	{Font-Family: MS Sans Serif; font-size: 8pt; text-align: left; text-indent: 0em}
+
+SPAN	{Font-Family: Times New Roman; font-size: 18pt; font-style: italic; Color: #000000}
+.code	{Font-Family: Courier; Font-Size: 10pt; Font-Style: normal; Color: #000000}
+.codes	{Font-Family: Courier; Font-Size: 10pt; Font-Style: normal; Color: #0080C0}
+.codfun	{Font-Family: Courier; Font-Size: 10pt; Font-Style: normal; Color: #0000FF}
+.h1	{
+	Font-Family: Arial; text-align: left; font-size: 16pt;Color: #000000; text-indent: 0em; font-Weight: bold; font-style: normal;}

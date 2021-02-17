@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Электронный ресурс по учебной дисциплине ОСАПр. Линейные размеры</Title>
+<Meta Name="Description" http-equiv="description" Content="Электронный ресурс по учебной дисциплине ОСАПр. Типы данных, переменные и выражения AutoLISP">
+<Link Rel="stylesheet" Type="text/css" Href="../Оболочка/acad.css">
+
+<Script>hljs.initHighlightingOnLoad();</Script>
+
+<Script Language="JavaScript">
+<!--
+function mOver(num) {if (document.images) {document.images['link'+num].src=eval('active'+num+'.src');}}
+function mOut(num) {if (document.images) {document.images['link'+num].src=eval('normal'+num+'.src');}}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 style="max-width: 1300px;">
+<Script Language="JavaScript">
+if (document.images) {
+normal1=new Image(190,29);normal1.src="../Оболочка/images/01a.gif";
+active1=new Image(190,29);active1.src="../Оболочка/images/01p.gif";
+normal2=new Image(190,29);normal2.src="../Оболочка/images/02a.gif";
+active2=new Image(190,29);active2.src="../Оболочка/images/02p.gif";
+normal31=new Image(170,40);normal31.src="../Оболочка/images/031a.gif";
+active31=new Image(170,40);active31.src="../Оболочка/images/031p.gif";
+normal32=new Image(170,40);normal32.src="../Оболочка/images/032a.gif";
+active32=new Image(170,40);active32.src="../Оболочка/images/032p.gif";
+normal33=new Image(170,40);normal33.src="../Оболочка/images/033a.gif";
+active33=new Image(170,40);active33.src="../Оболочка/images/033p.gif";
+normal34=new Image(170,40);normal34.src="../Оболочка/images/034a.gif";
+active34=new Image(170,40);active34.src="../Оболочка/images/034p.gif";
+normal4=new Image(190,29);normal4.src="../Оболочка/images/04a.gif";
+active4=new Image(190,29);active4.src="../Оболочка/images/04p.gif";
+normal5=new Image(190,29);normal5.src="../Оболочка/images/05a.gif";
+active5=new Image(190,29);active5.src="../Оболочка/images/05p.gif";
+normal6=new Image(159,46);normal6.src="../Оболочка/images/06a.gif";
+active6=new Image(159,46);active6.src="../Оболочка/images/06p.gif";
+normal7=new Image(159,54);normal7.src="../Оболочка/images/07a.gif";
+active7=new Image(159,55);active7.src="../Оболочка/images/07p.gif";
+}
+</Script>
+
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../Оболочка/images/bg01.gif Width=190 Height=91>&nbsp;</Td>
+ <Td RowSpan=2 BackGround=../Оболочка/images/bg02.gif Height=120 Valign=Bottom>
+<Table BackGround=../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td Width=180></Td>
+  <Td Valign=top Height=75><P Class=h6>AutoCAD</P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+  <Td BackGround=../Оболочка/images/bg03.gif>
+    <A Href=../Программа/!rabprog.html onMouseOver="mOver(1)" onMouseOut="mOut(1)"><Img Src=../Оболочка/images/01a.gif Border=0 Width=190 Height=29 Alt="Рабочая программа" name="link1"></A><Br>
+ </Td>
+</Tr>
+<Tr>
+ <Td Height=100% RowSpan="2" Valign=Top BackGround=../Оболочка/images/bg00.gif>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+  <A Href=../Теория/!lekcii.html onMouseOver="mOver(2)" onMouseOut="mOut(2)"><Img Src=../Оболочка/images/02a.gif Width=190 Height=29 Border=0 Alt="Лекции" name="link2"></A><Br>
+ </Td>
+</Tr>
+<Tr><Td BackGround=../Оболочка/images/bg04.gif Width=190 Valign=Top>
+  <Img Src=../Оболочка/images/03p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"><Br></Td>
+<Tr><Td BackGround=../Оболочка/images/bg05.gif Width=190 Valign=Top>
+  <A href="!acad.html" onMouseOver="mOver(31)" onMouseOut="mOut(31)"><Img Src=../Оболочка/images/031a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link31"></A><Br></Td></Tr>
+<Tr><Td BackGround=../Оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+  <A href="!mechanic.html" onMouseOver="mOver(32)" onMouseOut="mOut(32)"><Img Src=../Оболочка/images/032a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link32"></A><Br>
+  <A href="!mechanic.html" onMouseOver="mOver(33)" onMouseOut="mOut(33)"><Img Src=../Оболочка/images/033a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link33"></A><Br>
+  <A href="!lisp.html" onMouseOver="mOver(34)" onMouseOut="mOut(34)"><Img Src=../Оболочка/images/034a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link34"></A><Br>
+<Img Src=../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+ <A Href=../Заочнику/!zaochnoe.html onMouseOver="mOver(4)" onMouseOut="mOut(4)"><Img Src=../Оболочка/images/04a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link4"></A><Br>
+ <A Href=../Контроль_знаний/!samocontrol.html onMouseOver="mOver(5)" onMouseOut="mOut(5)"><Img Src=../Оболочка/images/05a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link5"></A><Br>
+ <Img Src=../Оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ 
+ <Td Valign=Сenter>
+ <Br><Br>
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../Оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Линейные размеры</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../Оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+<Table valign="left"><Tr align="left"><Td>
+<Ul>
+<Dt><A Class=m href="#tit1">Команда DIMLINEAR</A></Dt>
+<Dt><A Class=m href="#tit2">Команда DIMALIGNED</A></Dt>
+<Dt><A Class=m href="#tit3">Базовые размеры и размерные цепи</A></Dt>
+<Ul>
+  <Dt><A Class=m href="#tit4">Команда DIMBASELINE</A></Dt>
+  <Dt><A Class=m href="#tit5">Команда DIMCONTINUE</A></Dt>
+</Ul>
+
+</Ul>
+</Td></Tr></Table>
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+<P>AutoCAD обеспечивает несколько видов простановки линейных размеров, отличающихся углом, под которым проводится размерная линия.</P>
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>Linear Dimension</P></Td>
+ <Td><Center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/acad/DIML.gif></Center></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Dimension | Linear</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Командная строка</P></Td>
+ <Td><P Class=tl>DIMLINEAR</P></Td>
+</Tr>
+</Table><Br>
+
+
+<A name="tit1"></A>
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../Оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../Оболочка/images/raspor.gif></Td><Td align=left><span Class=h>Команда DIMLINEAR</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../Оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+
+<P>Команда DIMLINEAR позволяет создавать горизонтальный, вертикальный или повернутый размеры. Запросы команды DIMLINEAR:</P>
+
+<P Class=h5>First extension line origin or press ENTER to select:<Br>
+Начало первой выносной линии или ENTER для выбора:<Br>
+Second extension line origin:<Br>
+Начало второй выносной линии:<Br>
+Dimension line location (Mtext/Text/Angle/Horizontal/Vertical/Rotated):<Br>
+Местоположение размерной линии:<Br>
+Dimension text = измеренное значение<Br>
+Размерный текст = измеренное значение</P>
+
+<P>Если в ответ на первый запрос нажать клавишу Enter, команда Dimlinear выдаст следующие запросы:</P>
+<P Class=h5>First extension line origin or press ENTER to select:<Br>
+Начало первой выносной линии или ENTER для выбора:<Br>
+Select object to dimension:<Br>
+Выбрать объект для нанесения размера.<Br>
+Dimension text = измеренное значение</P>
+
+
+<P>Ключи команды Dimlinear:</P>
+
+<P><B>Mtext</B>&nbsp;- позволяет редактировать размерный текст с помощью редактора многострочного текста Multiline Text Editor. Можно полностью изменить текст или сохранить измеренное значение с помощью угловых скобок и добавить при необходимости любой текст до и после скобок;
+
+<P><B>Text</B>&nbsp;- позволяет редактировать размерный текст. При этом выдается запрос:</P>
+<P Class=h5>Dimension text &lt;10,9255&gt;:<Br>
+Размерный текст &lt;10,9255&gt;:</P>
+
+<P><B>Angle</B>&nbsp;- позволяет задать угол поворота размерного текста. При этом выдается запрос:</P>
+<P Class=h5>Enter text angle:<Br>
+Ввести угол поворота размерного текста:</P>
+
+<P><B>Horizontal</B>&nbsp;- определяет горизонтальную ориентацию размера;</P>
+
+<P><B>Vertical</B>&nbsp;- определяет вертикальную ориентацию размера;</P>
+
+<P><B>Rotated</B>&nbsp;- осуществляет поворот размерной и выносных линий. При этом выдается запрос:</P>
+<P Class=h5>Dimension line angle &lt;0&gt;:<Br>
+Угол поворота размерной линии:</P>
+
+<A name="tit2"></A>
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../Оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../Оболочка/images/raspor.gif></Td><Td align=left><span Class=h>Команда DIMALIGNED</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../Оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>Aligned Dimension</P></Td>
+ <Td><Center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/acad/DIMLK.gif></Center></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Dimension | Aligned</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Командная строка</P></Td>
+ <Td><P Class=tl>DIMALIGNED</P></Td>
+</Tr>
+</Table><Br>
+
+<P>С помощью команды DIMALIGNED подобно горизонтальным, вертикальным и повернутым размерам создается размер, параллельный измеряемой линии объекта, что позволяет выровнять размерную линию по объекту.</P>
+
+
+<P>Запросы команды DIMALIGNED:</P>
+<P Class=h5>First extension line origin or press ENTER to select:<Br>
+Начало первой выносной линии или ENTER для выбора:<Br>
+Second extension line origin:<Br>
+Начало второй выносной линии:<Br>
+Dimension line location (Mtext/Text/Angle):<Br>
+Местоположение размерной линии:<Br>
+Dimension text = измеренное значение</P>
+
+
+<A name="tit3"></A>
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../Оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../Оболочка/images/raspor.gif></Td><Td align=left><span Class=h>Базовые размеры и размерные цепи</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../Оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+
+<P>Базовые размеры и размерные цепи представляют собой последовательность линейных размеров.</P>
+<P>Базовые размеры&nbsp;- это последовательность размеров, отсчитываемых от одной базовой линии. У размерных цепей начало каждого размера совпадает с концом предыдущего. Перед построением базового размера или цепи на объекте должен быть нанесен хотя бы один линейный, ординатный или угловой размер.</P>
+
+<A name="tit4"></A>
+<Br><P Class=h3>Команда DIMBASELINE</P>
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>Baseline Dimension</P></Td>
+ <Td><Center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/acad/acad_dimlinear03.gif></Center></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Dimension | Baseline</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Командная строка</P></Td>
+ <Td><P Class=tl>DIMBASELINE</P></Td>
+</Tr>
+</Table><Br>
+
+<P>Команда Dimbaseline позволяет создавать базовые размеры. Запросы команды Dimbaseline:</P>
+
+<P Class=h5>Specify a second extension line origin or (Undo/&lt;Select&gt;):<Br>
+Указать начало второй выносной линии или (Отмени/&lt;Выбери&gt;):<Br>
+Dimension text = измеренное значение<Br>
+Specify a second extension line origin or (Undo/&lt;Select&gt;):</P>
+<P>Нажмите Enter для окончания команды.</P>
+
+<P>Если предыдущий размер не был линейным или если в ответ на первый запрос была нажата клавиша Enter, то предлагается выбрать линейный размер, который будет использоваться в качестве базового. При этом выдается следующий запрос:</P>
+<P Class=h5>Select base dimension:<Br>
+Указать базовый размер:</P>
+
+<P>Далее идут стандартные запросы команды Dimbaseline. Расстояние между размерными линиями в базовых размерах задается системной переменной DIMDLI.</P>
+
+<A name="tit5"></A>
+<Br><P Class=h3>Команда DIMCONTINUE</P>
+
+<Table Width=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>Continue Dimension</P></Td>
+ <Td><Center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/acad/acad_dimlinear04.gif></Center></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Dimension | Continue</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Командная строка</P></Td>
+ <Td><P Class=tl>DIMCONTINUE</P></Td>
+</Tr>
+</Table><Br>
+
+
+<P>Команда Dimcontinue позволяет создавать последовательную размерную цепь. Запросы команды Dimcontinue:</P>
+
+
+<P Class=h5>Specify a second extension line origin or (Undo/&lt;Select&gt;):<Br>
+Dimension text = измеренное значение<Br>
+Specify a second extension line origin or (Undo/&lt;Select&gt;):</P>
+<P>Нажать Enter для окончания команды.</P>
+
+<P Class=h5>Select continued dimension:</P>
+<P>Нажать Enter для окончания команды.</P>
+
+<P>Если предыдущий размер не был линейным или если в ответ на первый запрос была нажата клавиша Enter, то предлагается выбрать линейный размер, который будет использоваться для продолжения. При этом выдается следующий запрос:</P>
+
+<P Class=h5>Select continued dimension:<Br>
+Указать размер для продолжения:</P>
+
+<P>Далее идут стандартные запросы команды Dimcontinue.</P>
+
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+
+<Tr>
+<Td>&nbsp;</Td>
+</Tr>
+
+<Tr>
+<Td ColSpan=2>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr>
+<Td BackGround=../Оболочка/images/bg09.gif Width=458 Height=100 Valign=Bottom>
+<P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2017<Br>
+<Img Src=../Оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+<Td BackGround=../Оболочка/images/bg10.gif Width=159 Height=100>
+<A Href=#Top onMouseOver="mOver(6)" onMouseOut="mOut(6)"><Img Src=../Оболочка/images/06a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link6"></A><Br>
+<A Href=!zadanie.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../Оболочка/images/07a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link7"></A></Td>
+</Tr>
+</Table>
+
+</Td>
+</Tr>
+</Table>
+
+
+</Body>
+</HTML>

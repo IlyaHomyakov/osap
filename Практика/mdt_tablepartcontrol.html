@@ -1,0 +1,1981 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Создание Таблицы Управления Деталями</Title>
+<Meta Name="Description" http-equiv="description" Content="Методичка по ACAD.Создание Таблицы Управления Деталями ">
+<Meta Name="KeyWords" http-equiv="keywords" Content="">
+<Link Rel="stylesheet" Type="text/css" Href="../оболочка/acad.css">
+
+<Script Language="JavaScript"><!--
+	function mOver(num) {
+		if (document.images) {
+			document.images['link'+num].src=eval('active'+num+'.src');
+		}
+	}
+	function mOut(num) {
+		if (document.images) {
+			document.images['link'+num].src=eval('normal'+num+'.src');
+		}
+	}
+//-->
+</Script>
+
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 style="max-width: 1300px;">
+
+		<Script Language="JavaScript">
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../Оболочка/images/01a.gif";
+	active1=new Image(190,29);active1.src="../Оболочка/images/01p.gif";
+	normal2=new Image(190,29);normal2.src="../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../Оболочка/images/02p.gif";
+	normal31=new Image(170,40);normal31.src="../Оболочка/images/031a.gif";
+	active31=new Image(170,40);active31.src="../Оболочка/images/031p.gif";
+	normal32=new Image(170,40);normal32.src="../Оболочка/images/032a.gif";
+	active32=new Image(170,40);active32.src="../Оболочка/images/032p.gif";
+	normal33=new Image(170,40);normal33.src="../Оболочка/images/033a.gif";
+	active33=new Image(170,40);active33.src="../Оболочка/images/033p.gif";
+	normal34=new Image(170,40);normal34.src="../Оболочка/images/034a.gif";
+	active34=new Image(170,40);active34.src="../Оболочка/images/034p.gif";
+	normal4=new Image(190,29);normal4.src="../Оболочка/images/04a.gif";
+	active4=new Image(190,29);active4.src="../Оболочка/images/04p.gif";
+	normal5=new Image(190,29);normal5.src="../Оболочка/images/05a.gif";
+	active5=new Image(190,29);active5.src="../Оболочка/images/05p.gif";
+	normal6=new Image(159,46);normal6.src="../Оболочка/images/06a.gif";
+	active6=new Image(159,46);active6.src="../Оболочка/images/06p.gif";
+	normal7=new Image(159,54);normal7.src="../Оболочка/images/07a.gif";
+	active7=new Image(159,55);active7.src="../Оболочка/images/07p.gif";
+}
+</Script>
+
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../Оболочка/images/bg01.gif Width=190 Height=91>&nbsp;</Td>
+ <Td RowSpan=2 BackGround=../Оболочка/images/bg02.gif Height=120 Valign=Bottom>
+<Table BackGround=../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+<Td Width=140></Td>
+  <Td Valign=top Height=75><P Class=h6>Mechanical Desktop</P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+  <Td BackGround=../Оболочка/images/bg03.gif>
+    <A Href=../Программа/!rabprog.html onMouseOver="mOver(1)" onMouseOut="mOut(1)"><Img Src=../Оболочка/images/01a.gif Border=0 Width=190 Height=29 Alt="Рабочая программа" name="link1"></A><Br>
+ </Td>
+</Tr>
+<Tr>
+ <Td Height=100% RowSpan="2" Valign=Top BackGround=../Оболочка/images/bg00.gif>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+  <A Href=../Теория/!lekcii.html onMouseOver="mOver(2)" onMouseOut="mOut(2)"><Img Src=../Оболочка/images/02a.gif Width=190 Height=29 Border=0 Alt="Лекции" name="link2"></A><Br>
+ </Td>
+</Tr>
+<Tr><Td BackGround=../Оболочка/images/bg04.gif Width=190 Valign=Top>
+  <Img Src=../Оболочка/images/03p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"><Br></Td>
+<Tr><Td BackGround=../Оболочка/images/bg05.gif Width=190 Valign=Top>
+  <A href="!acad.html" onMouseOver="mOver(31)" onMouseOut="mOut(31)"><Img Src=../Оболочка/images/031a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link31"></A><Br></Td></Tr>
+<Tr><Td BackGround=../Оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+  <A href="!mechanic.html" onMouseOver="mOver(32)" onMouseOut="mOut(32)"><Img Src=../Оболочка/images/032a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link32"></A><Br>
+  <A href="!mechanic.html" onMouseOver="mOver(33)" onMouseOut="mOut(33)"><Img Src=../Оболочка/images/033a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link33"></A><Br>
+  <A href="!lisp.html" onMouseOver="mOver(34)" onMouseOut="mOut(34)"><Img Src=../Оболочка/images/034a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link34"></A><Br>
+<Img Src=../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+ <A Href=../Заочнику/!zaochnoe.html onMouseOver="mOver(4)" onMouseOut="mOut(4)"><Img Src=../Оболочка/images/04a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link4"></A><Br>
+ <A Href=../Контроль_знаний/!samocontrol.html onMouseOver="mOver(5)" onMouseOut="mOut(5)"><Img Src=../Оболочка/images/05a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link5"></A><Br>
+ <Img Src=../Оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ 
+ <Td Valign=Сenter>
+ <Br><Br>
+
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td></Tr>
+<Tr><Td Valign=Center Height=30><span Class=h1>4. Создание Таблицы Управления Деталями</span></Td></Tr>
+<Tr><Td Valign=Center Height=30><span Class=h1>(Creating Table Driven Parts)</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+<P>Можно назначать переменные на параметрические размеры, которые управляют базовой деталью, и затем использовать электронную таблицу для контроля размера и формы детали. Электронная таблица может содержать несколько версий детали.</P>
+<P>Каждая версия использует разные значения для определенных вами переменных. Mechanical Desktop перерисовывает деталь, используя переменные, заданные для текущей версии. Документация для всех версий может быть упрощена созданием одного чертежа, представляющего универсальную деталь.</P>
+<P>Электронная таблица вставлена в чертеж для регистрации значений переменных каждой версии.</P>
+<P>Для использования этого руководства вы должны установить программный продукт фирмы Microsoft для работы с электронными таблицами Microsoft Excel на компьютере.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.1. Ключевые термины</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Br>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td Width=90><P Class=tcb>Термин</P></Td>
+ <Td><P Class=tcb>Определение</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Переменная активной детали (Active part variable)</P></Td>
+ <Td><P Class=tl>Параметрическая переменная, используемая в размерах, которые управляют параметрами активной детали</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Подавление (гашение) опций (Feature suppression)</P></Td>
+ <Td><P Class=tl>Опция, которая подавлена или временно удалена из учета детали. Опции могут быть подавлены вручную или из внешней таблицы.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Глобальная переменная (Global variable)</P></Td>
+ <Td><P Class=tl>Параметрическая переменная, которая может использоваться любым количеством опций и деталей.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Спиральная развертка (Helical sweep)</P></Td>
+ <Td><P Class=tl>Геометрическая опция, определяемая величиной от перемещения профиля по трехмерному пути вокруг рабочих осей.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Связанная электронная таблица (Linked spreadsheet)</P></Td>
+ <Td><P Class=tl>Внешняя электронная таблица, динамически связанная с чертежом. Любые модификации в электронной таблице непосредственно затрагивают чертеж.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Ручное подавление (Manual suppression)</P></Td>
+ <Td><P Class=tl>Опции, подавленные в окне просмотра. Опции, подавленные вручную, подавляются во всех версиях детали.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Версия детали (Part version)</P></Td>
+ <Td><P Class=tl>Версия таблицы, управляющей деталью, которая определена в связанной электронной таблице.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Шаг (Pitch)</P></Td>
+ <Td><P Class=tl>Мерная линия, параллельная оси спирального пути, от одной точки на пути до соответствующей точки на смежном обороте.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Профильная плоскость (Profile plane)</P></Td>
+ <Td><P Class=tl>Рабочая плоскость в начальной точке спирального пути, расположенная перпендикулярно началу пути или в центре оси/пути.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Начальный угол (Start angle)</P></Td>
+ <Td><P Class=tl>Угол, под которым начинается спиральный путь от оси x активного плана эскиза.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Таблица (Table)</P></Td>
+ <Td><P Class=tl>Внешняя электронная таблица, которая управляет версиями детали.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Таблица управления подавлением (Table driven suppression)</P></Td>
+ <Td><P Class=tl>Функции, подавленные во внешней электронной таблице. Таблица управления подавлением детали подавляет только версию детали, определенную в электронной таблице.</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>Таблица управления переменными (Table driven variable)</P></Td>
+ <Td><P Class=tl>Глобальная или локальная переменные детали чертежа контролируются значениями внешней электронной таблицы.</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>Угол конусности (Taper angle)</P></Td>
+ <Td><P Class=tl>Угол, под которым спиральная развертка сходится к вершине конуса.</P></Td>
+</Tr>
+</Table><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.2. Руководство быстрым взглядом</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<Br><P Class=h3>4.2.1. Что нового в этом руководстве</P>
+
+<P>Таблицы управления деталью были введены в предыдущей версии Mechanical Desktop. Следующие нововведения и расширения вы найдете в данном руководстве:</P>
+<Ul>
+ <Li>Спиральная развертка</Li>
+ <Li>Таблица управления глобальными расчетными параметрами</Li>
+ <Li>Расчетными параметрами активной детали</Li>
+ <Li>Подавление опций</Li>
+ <Li>Таблица управления подавления опций</Li>
+ <Li>Разрешение противоречий с помощью электронных таблиц</Li>
+</Ul>
+<P>Остальные возможности включают:</P>
+ <Ul>
+ <Li>Использование браузера для выполнения большинства задач</Li>
+ <Li>Использование панели Вид (View) для контроля расположения деталей</Li>
+ <Li>Использование кнопки инструментов, меню или командной строки для доступа к командам</Li>
+</Ul>
+
+<P>Для дополнительной информации о нововведениях и расширениях смотрите часть 1 описания Подготовка к работе (Getting Started).</P>
+
+<Br><P Class=h3>4.2.2. Основные сведения о таблице управления деталями</P>
+
+<P>В производственной индустрии много деталей, отличающихся только размерами или имеющих небольшие различия в форме. Например, пружины, кронштейны, шайбы, гайки, болты. С помощью управления деталью с внешней электронной таблицы можно документировать число аналогичных деталей на одном чертеже.</P>
+<P>Все конструкторские данные сводятся в одну таблицу, на одном чертеже представляется много деталей.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.3. Подготовка к обучению</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Первая часть ознакомит Вас со спиральными развертками. Для ясности, спираль изображается в виде четырех нитей. Рабочие инструменты, используемые для создания разверток, помогут вам понять как это делается. Прежде всего, отключите все видимые примитивы, установите наименьшее количество нитей для более быстрого пересчета и обновления детали и поэкспериментируйте с инструментами на панели задач.</P>
+<P>Откройте файл tdparts.dwg в каталоге desktop\tutorial.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Будьте внимательны при сохранении учебных файлов, если ошибетесь при сохранении, то еще сможете его восстановить. Смотри раздел "Восстановление учебных файлов".</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Файл содержит пружину, созданную при помощи спиральной развертки.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol01.gif></Center>
+
+<P>Здесь три рабочих плана, связанных с деталью. Два использовались для создания эскизных рабочих осей для развертки. Третий, называемый профильным планом, построен перпендикулярно к началу пути, используется для создания эскиза профиля развертки. Здесь есть также рабочая точка в начале пути.</P>
+<P>Не нужно пробовать эти опции данном уроке. Перед тем, как начать, необходимо сделать их невидимыми, за исключением рабочих осей. Они будут полезны при ориентации, когда вы поменяете переменные, контролирующие трехмерный (3D) путь.</P>
+
+<Br><P Class=h3>4.3.1. Как спрятать элемент</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Раскройте в браузере иерархию, нажав "+" перед TDPARTS, затем PART1_1 и, наконец, Sweep1. </td>
+</tr>
+</table></P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol02.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Сделайте невидимым первый рабочий план: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Work Plane 1 и выберите Visible.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Part Visibility)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol03.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Visibility</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMVISIBLE</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Если вы выбрали кнопку инструментов, меню, или командную строку, выберите Work Planes (рабочие планы) и Work Points (рабочие точки) в диалоговом окне Desktop Visibility. Затем нажмите APPLY (Применить). </td>
+</tr>
+</table></P>
+
+
+<Center>
+  <img src=images/mdt/mdt_tablepartcontrol04.gif>
+</Center>
+
+<P>Нажмите ОК для выхода из диалогового окна.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Если вы используете браузер, повторите пункт 2 для двух других планов и рабочей точки. </td>
+</tr>
+</table></P>
+
+<P>Для увеличения скорости пересчета и перерисовки спиральной развертки установите переменную ISOLINES в значение по умолчанию. Развертка будет рисоваться с использованием только одной нити. Развертка будет выглядеть как спиральная трубка.</P>
+
+<Br><P Class=h3>4.3.2. Для установки изолиний</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>На подсказки в командной строке ответим следующим образом: </td>
+</tr>
+</table></P>
+
+<P Class=h5>COMMAND:</P>
+<P>Введите isolines.</P>
+<P Class=h5>New value for ISOLINES <8>:</P>
+<P>Введите 4.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Перерисуйте чертеж. </td>
+</tr>
+</table></P>
+
+<P>Развертка будет выглядеть так:</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol05.gif></Center>
+
+<P>Для того чтобы рассмотреть деталь лучше, используйте затеняющую кнопку на панели Desktop View. Эта кнопка включает и отключает затенение.</P>
+
+<Br><P Class=h3>4.3.3. Затенение детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>На панели инструментов Desktop View выберите: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+ <Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Toggle Shading)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol06.gif></Td>
+</Tr>
+<Tr>
+</Table>
+
+<P>Ваша деталь должна выглядеть:</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol07.gif></Center>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Для ясности, в данном руководстве затенение выключено.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Панель инструментов Desktop View содержит команды, позволяющие динамически вращать чертеж.</P>
+
+<Br><P Class=h3>4.3.4. Для динамического вращения детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>На панели инструментов Desktop View выберите: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+ <Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Dynamic Rotation)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol08.gif></Td>
+</Tr>
+</Table>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Выберите точку вблизи центра детали. Эта точка является базовой точкой вращения. Удерживая клавишу мыши нажатой, двигайте курсор по экрану. Деталь вращаться в соответствии с движением курсора </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Отпустите клавишу мыши, когда найдете искомый вид. </td>
+</tr>
+</table></P>
+
+<P>Теперь восстановите исходный вид. Файл tdparts.dwg имеет один сохраненный вид, View1.</P>
+
+<Br><P Class=h3>4.3.5. Для восстановления сохраненного вида</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Восстановите исходный вид чертежа: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Named Views)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol09.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>View -&gt; Named Views</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>DDWIEWS</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В диалоговом окне View Control подсветите View1 и выберите Restore. Выберите OK. </td>
+</tr>
+</table></P>
+
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol10.gif></Center>
+
+<P>Ваш чертеж вернулся в исходное состояние.</P>
+<P>Далее создаем локальные переменные деталей чертежа и связываем их с созданной спиральной деталью.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.4. Использование переменных чертежа</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Переменные чертежа представляют средство контроля над размерами, используя связи между ними. Изменение одной или более переменных отражается на детали в целом.</P>
+<P>Переменные чертежа могут быть локальными и глобальными.</P>
+
+<Br><P Class=h3>4.4.1. Локальные переменные чертежа</P>
+
+<P>Локальные переменные чертежа управляют только деталью, которая с ними связана. Используйте локальные переменные чертежа для управления версиями детали при помощи таблицы.</P>
+
+<Br><P Class=h3>4.4.2. Глобальные переменные чертежа</P>
+
+<P>Глобальные переменные чертежа также могут действовать из таблицы. Это позволяет вам использовать одни и те же переменные для различных операций над различными деталями. Если вы проектируете много деталей в одном файле, то можно использовать глобальные переменные для управления несколькими или всеми деталями с одинаковыми переменными.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.5. Создание локальных переменных детали</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Спиральная развертка управляется следующими переменными:</P>
+<Ul>
+ <Li>Тип развертки (Type of sweep)</Li>
+ <Li>Количество оборотов (Number of revolutions)</Li>
+ <Li>Шаг (Pitch)</Li>
+ <Li>Высота (Height)</Li>
+ <Li>Форма (Shape)</Li>
+ <Li>Диаметр развертки (Diameter of the sweep)</Li>
+ <Li>Конусный угол (Taper angle)</Li>
+ <Li>Ориентация (Orientation)</Li>
+ <Li>Стартовый угол (Start angle)</Li>
+ <Li>Радиус развертывающего профиля (Radius of the swept profile)</Li>
+</Ul>
+
+<P>В этом руководстве вы создадите переменные и параметрические уравнения для управления количеством оборотов, высотой и диаметром развертки. Вы также назначите переменную для управления радиусом профиля, который развертывается вдоль спирального пути. Так как вы работаете с одной деталью, то будете создавать локальные переменные детали.</P>
+<P>Позднее вы создадите электронную таблицу для определения четырех версий этой детали, изменяя значения локальных переменных для каждой версии.</P>
+
+<Br><P Class=h3>4.5.1. Для создания локальной переменной детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Откройте диалоговое окно Design Variables, используя один из следующих методов: </td>
+</tr>
+</table></P>
+
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на поле и выберите Design Variables.</P></Td>
+</Tr>
+</Table><Br>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol11.gif></Center>
+
+<Table WIDTH=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Design Variables)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol12.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Design Variables</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMVARS</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Убедитесь, что в диалоговом окне Design Variables выбрана закладка Active Part и нажмите New. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>В диалоговом окне  New Part Variable выберите: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Name (Имя):</P>
+<P>Введите rev.</P>
+<P Class=h5>Equation (Равенство):</P>
+<P>Введите 8.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol13.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Выберите ОК. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>Повторите пункт 3 для определения следующих переменных: </td>
+</tr>
+</table></P>
+
+<Table>
+<Tr>
+ <Td>Ht</Td>
+ <Td>2</Td>
+</Tr>
+<Tr>
+ <Td>Dia</Td>
+ <Td>.5</Td>
+</Tr>
+<Tr>
+ <Td>Rad</Td>
+ <Td>.1</Td>
+</Tr>
+</Table>
+
+<P>Диалоговое окно Design Variables должно выглядеть так:</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol14.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>Выберите ОК.</td>
+</tr>
+</table></P>
+
+<P>Следующий шаг состоит в изменение существующей детали путем замены ее размеров на значения созданных локальных переменных.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.6. Установка связи переменных чертежа с деталью</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Прежде чем изменять параметры пружины из таблицы, необходимо связать с ней определенные выше переменные. Будем изменять развертку и профиль, используемый для ее создания. Изменяя значения созданных ранее переменных, вы тем самым изменяете связанную с ними деталь.</P>
+
+<Br><P Class=h3>4.6.1. Для редактирования развертки</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Задайте размеры для отображения в виде выражений, используя один из следующих методов: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Display as Equation)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol15.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Sketch -&gt; Dimensions as Equation</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMDIMDSP</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Редактирование параметров пружины: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Sweep1 и выберите Edit.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Edit Feature)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol16.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Edit Feature</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMEDITFEAT</P></Td>
+</Tr>
+</Table><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>При использовании кнопки инструментов, меню или командной строки необходимо будет выбрать деталь. Укажите спиральную развертку.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>В диалоговом окне Helix выберите следующее: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Revolutions (Обороты):</P>
+<P>Введите rev.</P>
+<P Class=h5>Height(Высота):</P>
+<P>Введите ht.</P>
+<P Class=h5>Diameter(Диаметр):</P>
+<P>Введите dia.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol17.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Выберите ОК. </td>
+</tr>
+</table></P>
+
+<P>Вы связали переменные чертежа с управляющими параметрами пружины. Свяжите последнюю переменную с радиусом профиля.</P>
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>Отвечайте на подсказки следующим образом: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Select object (Выберите объект):</P>
+<P>Выберите размер (1).</P>
+<P Class=h5>Enter new value for dimension &lt;.1&gt; (Введите новое значение для размера):</P>
+<P>Введите rad.</P>
+<P Class=h5>Select object:</P>
+<P>Нажмите Enter.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol18.gif></Center>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Для ясности, затенение было отключено в этом примере. Возможно, вы предпочтете оставить его включенным на протяжении всего обучения.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>Обновите изображение, используя один из следующих методов: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Выберите иконку Update Part внизу окна браузера.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Update Part)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol19.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Update</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMUPDATE</P></Td>
+</Tr>
+</Table><Br>
+
+<P>Пружина обновилась. Деталь не изменилась, потому что значения переменных чертежа, связанных с пружиной, такие же, как и исходные размеры пружины.</P>
+<P>Далее мы определим таблицу для определения четырех различных версий созданной детали.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.7. Установка таблиц</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Таблица представляет собой электронную таблицу, в которой содержатся различные версии детали и значения локальных переменных для каждой версии. Будем использовать Microsoft Excel для создания таблицы управления деталями.</P>
+
+<Br><P Class=h3>4.7.1. Для установки таблицы</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Откройте диалоговое окно Design Variables. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши в окне браузера и выберите Design Variables.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Design Variables)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol12.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Design Variables</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMVARS</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P> В диалоговом окне Design Variables под Table Driven, выберите Setup.</td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Убедитесь, что в диалоговом окне Table Driven Setup выбрана закладка Active Part, затем выберите Create. </td>
+</tr>
+</table></P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol20.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>В диалоговом окне Create Table выберите папку desktop\tutorial и укажите tdparts.xls как имя таблицы. Выберите Save для выхода из диалогового окна. </td>
+</tr>
+</table></P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol21.gif></Center>
+
+<P>Откроется Microsoft Excel с новой таблицей, содержащей базовую деталь и значения для всех связанных с ней переменных.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol22.gif></Center>
+
+<P>Далее вы измените имя базовой детали на Part1 и добавите еще три описания детали.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>Введите значения переменных чертежа для каждого нового определения детали, как показано на рисунке. </td>
+</tr>
+</table></P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol23.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>Сохраните файл и выйдите из Microsoft Excel. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 7</strong></td>
+<td width="90%"><P>В диалоговом окне Table Driven Setup ваберите Update Link и нажмите ОК. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 8</strong></td>
+<td width="90%"><P>Нажмите ОК для выхода из диалогового окна Design Variables. </td>
+</tr>
+</table></P>
+
+<P>Теперь Desktop Browser содержит иконку таблицы, вложенную в PART1_1. Под этой иконкой размещены четыре созданные вами версии детали.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol24.gif></Center>
+
+<P>Иконка PART1_1(Part 1) показывает в скобках текущую версию детали. Иконка Table (tdpart.xls) показывает имя электронной таблицы, связанной с чертежом.</P>
+<P>Далее вы отобразите каждую версию детали. При выборе версии Mechanical Desktop пересчитывает деталь, используя значения переменных, связанных с выбранной версией.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.8. Отображение версий детали</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Для отображения кликните два раза мышью на необходимой версии в окне браузера. Mechanical Desktop пересчитает деталь, используя связанные с ней переменные.</P>
+
+<Br><P Class=h3>4.8.1. Для отображения версии детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Отображение Part 2. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните два раза мышью на Part 2.</P></Td>
+</Tr>
+</Table>
+
+<P>Вычисляется версия Part 2.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol25.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P> Повторите пункт 1 для отображения версий 3 и 4.</td>
+</tr>
+</table></P>
+
+<Br><Br><Table WIDTH=580>
+<Tr>
+ <Td WIDTH="50%"><Center><Img Src=images/mdt/mdt_tablepartcontrol26.gif></Center></Td>
+ <Td><Center><Img Src=images/mdt/mdt_tablepartcontrol27.gif></Center></Td>
+</Tr>
+<Tr>
+ <Td><Center>Версия 3</Center></Td>
+ <Td><Center>Версия 4</Center></Td>
+</Tr>
+</Table><Br><Br>
+
+<P>Сохраните файл.</P>
+<P>Далее вы будете модифицировать чертеж при помощи:</P>
+<Ul>
+ <Li>Введения других переменных</Li>
+ <Li>Изменения значений переменных для какой-либо версии детали</Li>
+ <Li>Добавления других версий детали</Li>
+</Ul>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.9. Редактирование таблиц</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Использование таблиц для управления различными версиями детали дает гибкость в редактировании детали. Можно не только быстро создавать различные варианты детали, но и редактировать параметры чертежа также легко, как изменять значения в ячейках электронной таблицы.</P>
+
+<Br><P Class=h3>4.9.1. Для добавления переменной чертежа в таблицу</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Загрузите электронную таблицу. </td>
+</tr>
+</table></P>
+
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Table(tdparts.xls) и выберите Edit.</P></Td>
+</Tr>
+</Table>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol28.gif></Center>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Определение детали в браузере отображает текущую версию детали для ясности.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Microsoft Excel откроет вашу таблицу.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P> В ячейку F1 электронной таблицы добавьте переменную для определения угла конусности пружины. Введите значения, как показано на рисунке.</td>
+</tr>
+</table></P>
+
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol29.gif></Center>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Для ясности, выравнивание ячеек было изменено.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P> Сохраните электронную таблицу, но не выходите из Microsoft Excel.</td>
+</tr>
+</table></P>
+
+
+<Br><P Class=h3>4.9.2. Для добавления переменной чертежа к активной детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Вернитесь к вашему чертежу и добавьте переменную для угла конусности. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши в окне браузера и выберите Design Variables.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Design Variables)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol12.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Design Variables</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMVARS</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Убедитесь, что в диалоговом окне Design Variables выбрана закладка Active Part и выберите NEW. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>В диалоговом окне New Part Variable выберите: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Name:</P>
+<P>Введите taper.</P>
+<P Class=h5>Equation:</P>
+<P>Введите 0.</P>
+<P>Выберите ОК.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Выберите ОК для выхода из диалогового окна Design Variables. </td>
+</tr>
+</table></P>
+
+<P>Далее будем редактировать развертку, добавляя новые переменные в ее параметры.</P>
+
+<Br><P Class=h3>4.9.3. Для редактирования развертки</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P> Добавьте новую переменную для параметра пружины.</td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Sweep1 и выберите Edit.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Edit Feature)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol16.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Edit Feature</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMEDITFEAT</P></Td>
+</Tr>
+</Table><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>При использовании кнопки инструментов, меню или командной строки вам надо будет указать объект. Укажите развертку.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P> В диалоговом окне Helix выберите следующее:</td>
+</tr>
+</table></P>
+
+<P Class=h5>Taper:</P>
+<P>Введите taper.</P>
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Выберите ОК.</td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P> Нажмите Enter для окончания команды.</td>
+</tr>
+</table></P>
+
+<P>Сохраните файл.</P>
+<P>Теперь будем изменять значения переменных для одной из версий детали в электронной таблице.<P>
+
+<Br><P Class=h3>4.9.4. Для изменения значений в таблице</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Возвратитесь в электронную таблицу и введите значения для Part 3 как показано на рисунке. </td>
+</tr>
+</table></P>
+
+<Br><Center><Img Src=images/mdt/mdt_tablepartcontrol30.gif></Center><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P> Добавьте новую версию детали, используя значения переменных из следующей иллюстрации.</td>
+</tr>
+</table></P>
+
+<Br><Center><Img Src=images/mdt/mdt_tablepartcontrol31.gif></Center><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Сохраните таблицу и выйдите из Microsoft Excel. </td>
+</tr>
+</table></P>
+
+<P>Возвратитесь в Мechanical Desktop и обновите связи с электронной таблицей.</P>
+
+<Br><P Class=h3>4.9.5. Для обновления связей</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Выберите один из следующих методов: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Table (tdparts.xls) и выберите Update.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Design Variables)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol12.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Design Variables</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMVARS</P></Td>
+</Tr>
+</Table><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Если вы используете браузер, следующие пункты выполнять не нужно.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В диалоговом окне Design Variables под Table Driven выберите Setup. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>В диалоговом окне Table Driven Setup выберите Update Link и OK. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Выберите ОК для выхода из диалогового окна Design Variables. </td>
+</tr>
+</table></P>
+
+<P>Браузер обновится и отобразит под иконкой Table пять версий детали.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol32.gif></Center>
+
+<P>Теперь, когда электронная таблица модифицирована и ее связи с чертежом обновлены, вы готовы отобразить изменения, которые были сделаны.</P>
+
+<Br><P Class=h3>4.9.6. Для показа модифицированных версий детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P> Показ модифицированных и созданных версии детали.</td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните два раза мышью на Part 1 под иконкой Table.</P></Td>
+</Tr>
+</Table>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>После того, как деталь будет пересчитана, повторите пункт 1 для деталей 3 и 5. </td>
+</tr>
+</table></P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Введение угла конусности развертки увеличило время пересчета.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Детали должны выглядеть так:</P>
+
+<Br><Br><Table WIDTH=580>
+<Tr>
+ <Td WIDTH="33%"><Center><Img Src=images/mdt/mdt_tablepartcontrol33.gif></Center></Td>
+ <Td WIDTH="33%"><Center><Img Src=images/mdt/mdt_tablepartcontrol34.gif></Center></Td>
+ <Td><Center><Img Src=images/mdt/mdt_tablepartcontrol35.gif></Center></Td>
+</Tr>
+<Tr>
+ <Td><Center>Версия 1</Center></Td>
+ <Td><Center>Версия 3</Center></Td>
+ <Td><Center>Версия 5</Center></Td>
+</Tr>
+</Table><Br><Br>
+
+<P>Сохраните файл.</P>
+<P>Далее, вы сделаете копию детали и отобразите две версии одной и той же детали на чертеже.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.10. Работа с двумя версиями детали</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Вы можете создавать копии деталей и работая с различными версиями для создания сборочных чертежей. В этом уроке вы сделаете копию детали и отобразите две версии одновременно.</P>
+
+<Br><P Class=h3>4.10.1. Для копирования описания детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Вернитесь во внешнюю систему координат для того, чтобы копия была ориентирована также как и оригинал. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В командной строке введите следующее: </td>
+</tr>
+</table></P>
+
+<P Class=h5>COMMAND:</P>
+<P>Введите UCS.</P>
+<P Class=h5>Origin/ZAxis/3point/OBject/View/X/Y/Z/Prev/Restore/Save/Del/?/<World>:</P>
+<P>Нажмите ENTER.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P> Сделайте копию PART1_1.</td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на PART1_1 и выберите Show Definition.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Assembly Catalog)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol36.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Assembly -&gt; Catalog</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMCATALOG</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>В диалоговом окне Assembly Catalog очистите кнопку Return to Dialog и убедитесь, что выбрана закладка All. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>Кликните правой клавишей мыши на PART1_1 под Local Assembly Definitions и выберите Copy Definition. </td>
+</tr>
+</table></P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol37.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>В диалоговом окне Copy Definition выберите: </td>
+</tr>
+</table></P>
+
+<P Class=h5>New Definition Name:</P>
+<P>Введите part2.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol38.gif></Center>
+
+<P>Выберите ОК.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 7</strong></td>
+<td width="90%"><P>Продолжайте в командной строке: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Select insertion point (Выберите точку вставки):</P>
+<P>Укажите точку справа от существующей детали.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol39.gif></Center>
+
+<P>Теперь Браузер содержит определение PART2_1. Все связи копии детали с электронной таблицей дублируются.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 8</strong></td>
+<td width="90%"><P>Посмотрим иерархию PART2_1. Для этого кликнем мышкой на знаке плюс перед определением детали, затем на знаке плюс перед иконкой Table. </td>
+</tr>
+</table></P>
+
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol40.gif></Center>
+
+<P>Далее, изменим версии всех деталей чертежа.</P>
+
+<Br><P Class=h3>4.10.2. Отображение различных версий</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Выберите PART1_1 для отображения ее версии Part 1. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=200>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните два раза мышью на Part 1 под иконкой Table, расположенной ниже PART1_1.</P></Td>
+</Tr>
+</Table>
+
+<P>PART1_1 отобразится, используя версию Part 1, определенную в таблице.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol41.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Активизация PART2_1. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на PART2_1 и выберите Activate Part.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Activate Part)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol42.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Part -&gt; Make Active</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMACTIVATE</P></Td>
+</Tr>
+</Table><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Если вы использовали кнопку инструментов, меню или командную строку, выберите PART2_1 в ответ на подсказку c командной строки.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Отобразим версию Part 3 для PART2_1. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните два раза клавишей мыши на Part 3, расположенной под PART2_1.</P></Td>
+</Tr>
+</Table>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol43.gif></Center>
+
+<P>Отобразилась версия Part 3 детали PART2_1.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol44.gif></Center>
+
+<P>Сохраните файл.</P>
+<P>При связи электронной таблицы с Mechanical Desktop могут произойти случайные ошибки. В следующем разделе вы узнаете, как исправлять ошибки типа:</P>
+<Ul>
+ <Li>электронная таблица не найдена</Li>
+ <Li>электронная таблица была изменена после сохранения чертежа</Li>
+ <Li>данные в электронной таблице некорректны или пропущены</Li>
+</Ul>
+<P>Откройте файл tdpart2.dwg в папке desktop\tutorial.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Убедитесь, что вы сделали резервную копию исходных учебных файлов, чтобы восстановить исходный файл, если вы допустите ошибку.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Чертеж представляет собой крепежную скобу и связан с электронной таблицей.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol45.gif></Center>
+
+<P>Деталь описывается девятью локальными переменными. Изменение значения одной переменной отражается на всех связанных с ней размерах.</P>
+<P>В следующей части вы проверите чертеж и связь с электронной таблицей, чтобы исправить ошибки.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.11. Исправление стандартных ошибок в таблицах</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Вы можете создавать копии деталей и работая с различными версиями для создания сборочных чертежей. В этом уроке вы сделаете копию детали и отобразите две версии одновременно.</P>
+
+<Br><P Class=h3>4.11.1. Для раскрытия иерархии</P>
+
+</P>
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Нажмите знак плюс около TDPART2 и затем около PART1_1.</P></Td>
+</Tr>
+</Table>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Посмотрите Desktop Browser. 
+  <table width="100%" border="0">
+    <tr>
+      <td width="10%" valign="top" class="Text_b"><p><strong>Шаг 1</strong></td>
+      <td width="90%"><p> Используйте следующий метод:</td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol46.gif></Center>
+
+<P>Обратите внимание на то, что иконка Table отображается красным цветом. Это означает, что либо электронная таблица не найдена, либо она была изменена после последнего сохранения чертежа, либо содержит некорректные данные в одной или нескольких ячейках. Перед тем как использовать эту таблицу, необходимо устранить проблему.</P>
+
+<Br><P Class=h3>4.11.2. Для решения конфликта со связанной электронной таблицей</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Используйте следующий метод: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Table(tdpart.xls) и выберите Resolve Conflict.</P></Td>
+</Tr>
+</Table>
+
+<P>В диалоговом окне сообщений AutoCAD появится сообщение о том, что связанная таблица не найдена.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol47.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Для продолжения нажмите Да. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>В диалоговом окне Link Table убедитесь, что выбрана папка desktop\tutorial и выберите tdpart2.xls. </td>
+</tr>
+</table></P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol48.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P> Выберите ОК.</td>
+</tr>
+</table></P>
+
+<P>Теперь Mechanical Desktop ссылается на таблицу tdpart2.xls.Обратите внимание на цвет иконки. Она все еще красная, значит, есть еще какая-то проблема.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>Определение конфликта. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Table(tdpart2.xls) и выберите Resolve Conflict.</P></Td>
+</Tr>
+</Table>
+
+<P>В диалоговом окне сообщений AutoCAD появится сообщение о том, что в связанной таблице есть неправильная ячейка.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol49.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>Выберите YES для устранения проблемы. </td>
+</tr>
+</table></P>
+
+<P>Microsoft Excel открыл электронную таблицу, в которой подсвечена ячейка с неправильными данными.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol50.gif></Center>
+
+<P>Переменная HD задает диаметр отверстий в скобе. Для первой версии детали значение пропущено в ячейке В10.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 7</strong></td>
+<td width="90%"><P> В ячейку В10 введите .1875, после чего сохраните электронную таблицу и выйдите из Microsoft Excel.</td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 8</strong></td>
+<td width="90%"><P> Обновите связи с таблицей.</td>
+</tr>
+</table></P>
+
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Table(tdpart2.xls) и выберите Update.</P></Td>
+</Tr>
+</Table>
+
+<P>Mechanical Desktop обновит связи и браузер отобразит версии детали.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol51.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 9</strong></td>
+<td width="90%"><P>Обновление детали. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Нажмите иконку Update Part внизу браузера.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Update Part)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol19.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Update</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMUPDATE</P></Td>
+</Tr>
+</Table><Br>
+
+<P>Далее, отобразим версии детали.</P>
+
+<Br><P Class=h3>4.11.3. Для отображения первой версии детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Отобразите первую версию детали, используя следующий метод: </td>
+</tr>
+</table></P>
+
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните два раза клавишей мыши на иконке 3х5, расположенной под PART1_1.</P></Td>
+</Tr>
+</Table>
+
+<P>Скоба пересчитывается в соответствии со значением из таблицы и затем отображается.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Повторите шаг 1 для оставшихся четырех версий детали. </td>
+</tr>
+</table></P>
+
+<P>Сохраните файл.</P>
+<P>Далее вы научитесь подавлять переменные для некоторых, но не для всех, версий детали. Маленьким скобам не нужно скрепление, поэтому для таких версий можно подавить переменную, связанную со скреплением.</P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=99% BgColor=#ABB3D5>
+<Tr><Td Bgcolor=#000000 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Width=30><Img Src=../оболочка/images/raspor.gif></Td><Td align=left><span Class=h>4.12. Подавление(гашение) опций</span></Td></Tr>
+<Tr><Td Bgcolor=#000000 Width=25 ColSpan=2><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Подавление опций выполняется из браузера или из связанной таблицы. Подавление из браузера отражается на всех версиях детали. Таблица позволяет контролировать каждую версию.</P>
+<P>В созданную таблицу добавляем элементы, которые мы хотим подавлять. Сначала вручную подавляем стяжку, и это изменение отобразится в браузере для всех версий детали. При этом не важно, какая версия детали активна в данный момент.</P>
+
+<Br><P Class=h3>4.12.1. Для подавления опции из браузера</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Для подавления стяжки используйте один из следующих методов: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Brace и выберите Suppress.</P></Td>
+</Tr>
+</Table>
+
+<Center>
+  <img src=images/mdt/mdt_tablepartcontrol52.gif>
+</Center>
+
+<Table WIDTH=300>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Suppress by Type)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol53.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Feature Suppression -&gt; Suppress by Type</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMSUPPRESSFEAT</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В диалоговом окне Suppress by Type убедитесь, что выбрана Active Part, затем под Sketched Features выберите Extudes. </td>
+</tr>
+</table></P>
+
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol54.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Нажмите ОК. </td>
+</tr>
+</table></P>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>Если вы используете браузер для подавления, то диалогового окна Suppress by Type не будет.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Далее из командной строки: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Highlighted features will be suppressed. Continue? No/&lt;Yes&gt;:</P>
+<P>Нажмите ENTER.</P>
+
+<P>Поскольку вырез под стяжку и четыре отверстия непосредственно связаны со стяжкой, то они тоже будут подавлены. Вручную подавленные элементы в браузере отображены окружностью и пунктирной линией, предшествующей имени, закрытому серой пеленой. Они могут быть включены в любое время.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol55.gif></Center>
+
+<P>Далее, добавим подавленные элементы в таблицу.</P>
+
+<Br><P Class=h3>4.12.2. Для добавления подавленных элементов в таблицу</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Используйте следующие методы: </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на поле браузера и выберите Design Variables.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Design Variables)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol12.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Design Variables</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMVARS</P></Td>
+</Tr>
+</Table><Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В диалоговом окне Design Variables под Table Driven выберите Setup. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>В диалоговом окне Table Driven Setup выберите: </td>
+</tr>
+</table></P>
+
+<P Class=h5>Type:</P>
+<P>Нажмите Both.</P>
+<P Class=h5>Format:</P>
+<P>Concatenate Tables.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol56.gif></Center>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 4</strong></td>
+<td width="90%"><P>Выберите Append для продолжения. </td>
+</tr>
+</table></P>
+
+<P>Microsoft Exel откроет tdparts2.xls. В таблицу под ранее созданными переменными чертежа добавились два новых элемента - стяжка (brace) и отверстие под стяжку (bracecut). Буква S в колонке 3*5 показывает, что эти элементы подавлены.</P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol57.gif></Center>
+
+<P>Далее, подавим элементы стяжка и отверстие под стяжку для версии детали 4*6.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 5</strong></td>
+<td width="90%"><P>В электронной таблице введите S в ячейки С12 и С13. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 6</strong></td>
+<td width="90%"><P>Сохраните электронную таблицу и выйдите из Micrisoft Excel. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 7</strong></td>
+<td width="90%"><P>ыберите ОК для выхода из диалогового окна Table Driven Setup и опять ОК для выхода из диалогового окна Design Variables. </td>
+</tr>
+</table></P>
+
+<P>Вы создали два элемента, управление подавлением которых осуществляется из таблицы. Эти элементы нельзя включить вручную. Для их включения необходимо редактировать электронную таблицу.</P>
+<P>Для активизации таблицы управления подавлением для этих элементов нужно обновить свези с таблицей. Во-первых, вручную включите эти два элемента в браузере. Если они были подавлены вручную, то подавление распространяется на все версии детали.</P>
+
+<Br><P Class=h3>4.12.3. Для ручного включения элемента</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Сперва включим элемент отверстие под стяжку. </td>
+</tr>
+</table></P>
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Bracecut и выберите Unsuppress+.</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Кнопка инструментов<Br>(Unsuppress by Type)</P></Td>
+ <Td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Img Src=images/mdt/mdt_tablepartcontrol58.gif></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Меню</P></Td>
+ <Td><P Class=tl>Part -&gt; Feature Suppression -&gt; Unsuppress by Type</P></Td>
+</Tr>
+<Tr>
+ <Td><P Class=tlb>Команда</P></Td>
+ <Td><P Class=tl>AMUNSUPPRESSFEAT</P></Td>
+</Tr>
+</Table><Br>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>При использовании Unsuppress+ в браузере вы включаете не только выбранный элемент, но и все с ним связанные.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>В диалоговом окне Unsuppress By Type убедитесь, что Fillets и Extrudes выбраны и нажмите ОК. </td>
+</tr>
+</table></P>
+
+<Center><Img Src=images/mdt/mdt_tablepartcontrol59.gif></Center>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=580>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td Valign=Top><P Class=pr>Примечание:&nbsp;&nbsp;</P></Td>
+<Td Valign=Center><P Class=prt>При использовании браузера для включения элемента диалогового окна Unsuppress By Type не будет.</P></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#800000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr>
+<Tr><Td><Img Src=../оболочка/images/raspor.gif Height=1></Td><Td Bgcolor=#FF0000><Img Src=../оболочка/images/raspor.gif Height=1></Td></Tr></Table>
+<Br>
+
+<P>Стяжка и все связанные с ней элементы включились.</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Обновление связей с таблицей. </td>
+</tr>
+</table></P>
+
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на Table(tdpart2.xls) и выберите Update.</P></Td>
+</Tr>
+</Table>
+
+<P>Проверьте браузер. Там не должно быть подавленных элементов. Теперь отобразите версию 3*5 крепежной скобы.</P>
+
+<Br><P Class=h3>4.12.4. Для отображения версии детали</P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 1</strong></td>
+<td width="90%"><P>Для отображения используйте следующий метод. </td>
+</tr>
+</table></P>
+
+
+<Table WIDTH=300>
+<Tr VALIGN=TOP>
+ <Td><P Class=tlb>Браузер</P></Td>
+ <Td><P Class=tl>Кликните правой клавишей мыши на иконке 3*5, расположенной под Table(tdpart2.xls).</P></Td>
+</Tr>
+</Table>
+
+<P>Деталь пересчитывается и отображается, используя значения для версии 3*5, которые находятся в связанной таблице. Добавленные элементы закрыты серой пеленой. Окружность, пересеченная диагональной линией, показывает, что элемент подавлен из таблицы и может быть включен только путем редактирования таблицы.</P>
+
+<Table WIDTH=580>
+<Tr>
+ <Td WIDTH="50%"><Center>
+   <hr width="90%" color="#7685C6" align="Right">
+   <Img Src=images/mdt/mdt_tablepartcontrol60.gif></Center></Td>
+ <Td><Center><Img Src=images/mdt/mdt_tablepartcontrol45.gif></Center></Td>
+</Tr>
+</Table>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 2</strong></td>
+<td width="90%"><P>Повторите шаг 1 для версии 4*6. </td>
+</tr>
+</table></P>
+
+<table width="100%" border="0">
+<tr>
+<td width="10%" valign="top" class="Text_b"><P><strong>Шаг 3</strong></td>
+<td width="90%"><P>Повторите шаг 1 для оставшихся трех версий. Убедитесь, что в этих версиях элементы не подавлены. </td>
+</tr>
+</table></P>
+
+<P>Сохраните файл.</P>
+
+<Br>
+
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+
+																<Tr>
+																	<Td>&nbsp;</Td>
+																</Tr>
+
+																<Tr>
+																	<Td ColSpan=2>
+
+																		<Table Border=0 CellSpacing=0 CellPadding=0>
+																			<Tr>
+																				<Td BackGround=../Оболочка/images/bg09.gif Width=458 Height=100 Valign=Bottom>
+																					<P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2017<Br>
+																						<Img Src=../Оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+																							<Td BackGround=../Оболочка/images/bg10.gif Width=159 Height=100>
+																								<A Href=#Top onMouseOver="mOver(6)" onMouseOut="mOut(6)"><Img Src=../Оболочка/images/06a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link6"></A><Br>
+																								<A Href=!zadanie.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../Оболочка/images/07a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link7"></A></Td>
+																							</Tr>
+																						</Table>
+
+																					</Td>
+																				</Tr>
+																			</Table>
+
+
+</Body>
+</HTML>

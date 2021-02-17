@@ -1,0 +1,2298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Электронный ресурс по учебной дисциплине ОСАПр. Системные переменные AutoCAD</Title>
+<Meta Name="Description" http-equiv="description" Content="Электронный ресурс по учебной дисциплине ОСАПр. Системные переменные AutoCAD">
+<Link Rel="stylesheet" Type="text/css" Href="../Оболочка/acad_lisp.css">
+
+<Script>hljs.initHighlightingOnLoad();</Script>
+
+<Script Language="JavaScript">
+<!--
+	function mOver(num) {if (document.images) {document.images['link'+num].src=eval('active'+num+'.src');}}
+	function mOut(num) {if (document.images) {document.images['link'+num].src=eval('normal'+num+'.src');}}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 style="max-width: 1300px;" >
+<div class=max>
+<Script Language="JavaScript">
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../Оболочка/images/01a.gif";
+	active1=new Image(190,29);active1.src="../Оболочка/images/01p.gif";
+	normal2=new Image(190,29);normal2.src="../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../Оболочка/images/02p.gif";
+	normal31=new Image(170,40);normal31.src="../Оболочка/images/031a.gif";
+	active31=new Image(170,40);active31.src="../Оболочка/images/031p.gif";
+	normal32=new Image(170,40);normal32.src="../Оболочка/images/032a.gif";
+	active32=new Image(170,40);active32.src="../Оболочка/images/032p.gif";
+	normal33=new Image(170,40);normal33.src="../Оболочка/images/033a.gif";
+	active33=new Image(170,40);active33.src="../Оболочка/images/033p.gif";
+	normal34=new Image(170,40);normal34.src="../Оболочка/images/034a.gif";
+	active34=new Image(170,40);active34.src="../Оболочка/images/034p.gif";
+	normal4=new Image(190,29);normal4.src="../Оболочка/images/04a.gif";
+	active4=new Image(190,29);active4.src="../Оболочка/images/04p.gif";
+	normal5=new Image(190,29);normal5.src="../Оболочка/images/05a.gif";
+	active5=new Image(190,29);active5.src="../Оболочка/images/05p.gif";
+	normal6=new Image(159,46);normal6.src="../Оболочка/images/06a.gif";
+	active6=new Image(159,46);active6.src="../Оболочка/images/06p.gif";
+	normal7=new Image(159,54);normal7.src="../Оболочка/images/07a.gif";
+	active7=new Image(159,55);active7.src="../Оболочка/images/07p.gif";
+}
+</Script>
+
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../Оболочка/images/bg01.gif Width=190 Height=91>&nbsp;</Td>
+ <Td RowSpan=2 BackGround=../Оболочка/images/bg02.gif Height=120 Valign=Bottom>
+<Table BackGround=../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+<Td Width=180></Td>
+  <Td Valign=top Height=60><P Class=h6>AutoLISP</P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+  <Td BackGround=../Оболочка/images/bg03.gif>
+    <A Href=../Программа/!rabprog.html onMouseOver="mOver(1)" onMouseOut="mOut(1)"><Img Src=../Оболочка/images/01a.gif Border=0 Width=190 Height=29 Alt="Рабочая программа" name="link1"></A><Br>
+ </Td>
+</Tr>
+<Tr>
+ <Td Height=100% RowSpan="2" Valign=Top BackGround=../Оболочка/images/bg00.gif>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+  <A Href=../Теория/!lekcii.html onMouseOver="mOver(2)" onMouseOut="mOut(2)"><Img Src=../Оболочка/images/02a.gif Width=190 Height=29 Border=0 Alt="Лекции" name="link2"></A><Br>
+ </Td>
+</Tr>
+<Tr><Td BackGround=../Оболочка/images/bg04.gif Width=190 Valign=Top>
+  <Img Src=../Оболочка/images/03p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"><Br></Td>
+<Tr><Td BackGround=../Оболочка/images/bg05.gif Width=190 Valign=Top>
+  <A href="!acad.html" onMouseOver="mOver(31)" onMouseOut="mOut(31)"><Img Src=../Оболочка/images/031a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link31"></A><Br></Td></Tr>
+<Tr><Td BackGround=../Оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+  <A href="!mechanic.html" onMouseOver="mOver(32)" onMouseOut="mOut(32)"><Img Src=../Оболочка/images/032a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link32"></A><Br>
+  <A href="!mechanic.html" onMouseOver="mOver(33)" onMouseOut="mOut(33)"><Img Src=../Оболочка/images/033a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link33"></A><Br>
+  <A href="!lisp.html" onMouseOver="mOver(34)" onMouseOut="mOut(34)"><Img Src=../Оболочка/images/034a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link34"></A><Br>
+<Img Src=../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../Оболочка/images/bg03.gif Valign=Top>
+ <A Href=../Заочнику/!zaochnoe.html onMouseOver="mOver(4)" onMouseOut="mOut(4)"><Img Src=../Оболочка/images/04a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link4"></A><Br>
+ <A Href=../Контроль_знаний/!samocontrol.html onMouseOver="mOver(5)" onMouseOut="mOut(5)"><Img Src=../Оболочка/images/05a.gif Width=190 Height=29 Border=0 Alt="Самоконтроль" name="link5"></A><Br>
+ <Img Src=../Оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ 
+ <Td Valign=Сenter>
+ <Br><Br>
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Системные переменные AutoCAD</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+
+<P>Ниже перечислены системные переменные AutoCAD. Системные переменные содержат информацию о
+настройках различных режимов AutoCAD и некоторую дополнительную информацию. Системные
+переменные можно считывать и изменять (если, переменная не помечена "только для чтения") при
+помощи команды SETVAR или из AutoLISP (getvar и setvar). Системную переменную можно вызвать,
+просто указав ее имя на подсказку Command. Системные переменные могут быть целого,
+вещественного, строкового типа или списком (тип каждой переменной указан в таблице).
+Большинство системных переменных AutoCAD записываются в файл чертежа. Если переменная
+записывается в файл конфигурации acad.cfg или вообще не сохраняется, это оговаривается
+особо.</P>
+
+<Hr Width="90%" Color="#7685C6" Align="right">
+<Br>
+
+	<Map Name=map>
+ <Area Shape=RECT Coords="0,0,19,20" Href=#a>
+ <Area Shape=RECT Coords="20,0,39,20" Href=#b>
+ <Area Shape=RECT Coords="40,0,59,20" Href=#c>
+ <Area Shape=RECT Coords="60,0,79,20" Href=#d>
+ <Area Shape=RECT Coords="80,0,99,20" Href=#e>
+ <Area Shape=RECT Coords="100,0,119,20" Href=#f>
+ <Area Shape=RECT Coords="120,0,139,20" Href=#g>
+ <Area Shape=RECT Coords="140,0,159,20" Href=#h>
+ <Area Shape=RECT Coords="160,0,179,20" Href=#i>
+ <Area Shape=RECT Coords="180,0,199,20" Href=#l>
+ <Area Shape=RECT Coords="200,0,219,20" Href=#m>
+ <Area Shape=RECT Coords="220,0,239,20" Href=#o>
+ <Area Shape=RECT Coords="240,0,259,20" Href=#p>
+ <Area Shape=RECT Coords="260,0,279,20" Href=#q>
+ <Area Shape=RECT Coords="280,0,299,20" Href=#r>
+ <Area Shape=RECT Coords="300,0,319,20" Href=#s>
+ <Area Shape=RECT Coords="320,0,339,20" Href=#t>
+ <Area Shape=RECT Coords="340,0,359,20" Href=#u>
+ <Area Shape=RECT Coords="360,0,379,20" Href=#v>
+ <Area Shape=RECT Coords="380,0,399,20" Href=#w>
+ <Area Shape=RECT Coords="400,0,419,20" Href=#x>
+</Map>
+<Img Src=../Оболочка/images/operators.gif Width=420 Height=21 Usemap=#map Align=Right Border=0><Br><Br>
+
+<Hr Width="90%" Color="#7685C6" Align="right">
+<Br>
+
+
+<A name="a"></A>
+
+<Table Width=97%>
+
+<Tr><Td><SPAN>A</SPAN></Td></Tr>
+
+<Tr>
+ <Td Valign=TOP Width=120><P Class=m>ACADPREFICS</P></Td>
+ <Td><P>Строковая.<Br>
+Содержит имя каталога, в котором AutoCAD будет искать вспомогательные файлы, если они не будут найдены в текущем каталоге (файлы прототипов, шрифтов, меню, программ AutoLISP и вставляемых рисунков). Если, например, вы работаете с проектом NUM_1, настройки которого хранятся в каталоге D:\ACAD\NUM_1, то перед загрузкой AutoCAD из каталога, скажем, WORK следует поместить в командный файл запуска AutoCAD строку</P>
+<P Class=h5>SET ACAD=D:\ACAD\NUM_1</P>
+<P>и переменная ACADPREFIX получит значение</P>
+<P Class=h5>"D:\ACAD\NUM_1"</P>
+<P>Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ACADVER</P></Td>
+ <Td><P>Строковая.<Br>
+Содержит номер версии AutoCAD. Эта переменная не идентична переменной SACADVER заголовка DXF-файла, в которой содержится номер уровня базы данных рисунка.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>AFLAGS</P></Td>
+ <Td><P>Целая.<Br>
+Биты этой переменной определяют флаги режимов создания атрибутов командой ATTDEF. Числа, приведенные ниже, устанавливают соответствующие биты этой переменной. Для установки нескольких битов следует записать сумму нужных чисел в AFLAGS:<Br>
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>Invisible (Скрытый),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>Constant (Постоянный),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>Verify (Контролируемый),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>Preset (Установленный).</P></Td>
+</Tr>
+</Table>
+Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ANGBASE</P></Td>
+ <Td><P>Вещественная.<Br>
+Направление угла 0 градусов в текущей ПСК.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ANGDIR</P></Td>
+ <Td><P>Целая.<Br>
+Направление отсчета углов в текущей ПСК:<Br>
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>-1</P></Td>
+ <Td><P>по часовой стрелке,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>против часовой стрелки.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>APERTURE</P></Td>
+ <Td><P>Целая.<Br>
+Высота прицела объектной привязки в пикселах.  Записывается в файл конфигурации.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>AREA</P></Td>
+ <Td><P>Вещественная.<Br>
+Значение площади, вычисленной с помощью команд AREA, LIST или DBLIST.<Br>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>АTTDIA</P></Td>
+ <Td><P>Целая.<Br>
+Способ ввода значений атрибутов командой INSERT:<Br>
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>через диалоговое окно,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>с командной строки.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ATTMODE</P></Td>
+ <Td><P>Целая.<Br>
+Режим отображения атрибутов:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>все атрибуты невидимы,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>видимость определяется флагами,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>видимы даже скрытые атрибуты.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ATTREQ</P></Td>
+ <Td><P>Целая.<Br>
+Режим присвоения значений атрибутам при вставке командой INSERT:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>ввод запрещен (берутся значения по умолчанию),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>разрешается ввод значений в командной строке или через диалоговое окно.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>AUDITCTL</P></Td>
+ <Td><P>Целая.<Br>
+Управляет созданием файла отчета о проверке .adf:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>файл отчета о проверке не создается,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>включает запись ADT-файла отчета о проверке.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>AUNITS</P></Td>
+ <Td><P>Целая.<Br>
+Угловые единицы измерения:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>десятичные градусы,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>градусы/минуты/секунды</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>грады,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>3</P></Td>
+ <Td><P>радианы,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>топографические единицы.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>AUPREC</P></Td>
+ <Td><P>Целая.<Br>
+Количество всех десятичных разрядов при отображении значений углов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>AXISMODE</P></Td>
+ <Td><P>Целая.<Br>
+Отображение осей:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>оси включены,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>оси отключены.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>AXISUNIT</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Цена деления в условных единицах разметки осей X и У (команда AXIS).</P></Td>
+</Tr>
+</Table>
+
+
+<A name="b"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr>
+ <Td><SPAN>B</SPAN></Td>
+</Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>BACKZ</P></Td>
+ <Td><P>Вещественная.<Br>
+Задает смещение задней секущей плоскости для текущего видового экрана в условных единицах. Определена только в том случае, если включен бит "заднего сечения" переменной VIEWMODE. Расстояние до задней секущей плоскости от камеры может быть, найдено вычитанием переменной BACKZ из расстояния от камеры до цели.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>BLIPMODE</P></Td>
+ <Td><P>Целая.<Br>
+Отрисовка маркеров:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>включена,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>отключена.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+</Table>
+
+<A name="c"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>C</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>CDATE</P></Td>
+ <Td><P>Вещественная.<Br>
+Календарная дата/время (стандартный формат OC UNIX).<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CECOLOR</P></Td>
+ <Td><P>Строковая.<Br>
+Текущий цвет.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CELTYPE</P></Td>
+ <Td><P>Строковая.<Br>
+Текущий тип линии.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CHAMFERA</P></Td>
+ <Td><P>Вещественная.<Br>
+Длина первой фаски.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CHAMFERB</P></Td>
+ <Td><P>Вещественная.<Br>
+Длина второй фаски.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CIRCLERAD</P></Td>
+ <Td><P>Вещественная.<Br>
+Устанавливает радиус по умолчанию для кругов. При вводе 0 радиус по умолчанию не предполагается.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CLAYER</P></Td>
+ <Td><P>Строковая.<Br>
+Текущий слой.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CMDDIA</P></Td>
+ <Td><P>Вещественная.<Br>
+В конфигурацию:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>использовать в команде PLOT диалоговые окна,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>не использовать.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CMDACTIVE</P></Td>
+ <Td><P>Целая.<Br>
+Битовый код, определяющий, действует обычная и/или "прозрачная" команда, пакет или диалоговое окно. Является суммой следующего:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>действует обычная команда,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>действует обычная и "прозрачная" команда,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>действует пакет,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>действует диалоговое окно.</P></Td>
+</Tr>
+</Table>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CMDECHO</P></Td>
+ <Td><P>Целая.<Br>
+Отображение текста программы при выполнении функции AutoLISP:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>не подавляется,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>подавляется ("тихий" режим).</P></Td>
+</Tr>
+</Table>
+Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CMDNAMES</P></Td>
+ <Td><P>Строковая.<Br>
+Отображает английское имя действующей команды (и; "прозрачной" команды, если есть). Например,</P>
+<P Class=h5>LINE'ZOOM</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>COORDS</P></Td>
+ <Td><P>Целая.<Br>
+Режим отображения координат в cтpoкe состояний (устанавливается клавишей F6):
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отображаются только координаты точки указания,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>отображаются текущие абсолютные координаты перекрестья,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>при запросе угла или расстояния отображаются угол и расстояние от последией введенной точки.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>CVPORT</P></Td>
+ <Td><P>Целая.<Br>
+Номер текущего видового экрана.</P></Td>
+</Tr>
+</Table>
+
+<A name="d"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>D</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>DATE</P></Td>
+ <Td><P>Дата/время по Юлианскому календарю (стандартный формат ОС UNIX).<Br>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DBMODE</P></Td>
+ <Td><P>Целая.<Br>
+Битовый код, определяющий характер изменений в чертеже (только для чтения). Является суммой:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>база данных примитивов чертежа изменена,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>символьная таблица изменена,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>переменные базы данных изменены,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>рамка изменена,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>16</P></Td>
+ <Td><P>вид изменен.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DIASTAT</P></Td>
+ <Td><P>Целая.<Br>
+Способ выхода из диалогового окна:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>выход осуществлен с помощью клавиши Cancel,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>выход, осуществлен с помощью клавиши OK,</P></Td>
+</Tr>
+</Table>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DISTANCE</P></Td>
+ <Td><P>Вещественная.<Br>
+Расстояние, вычисленное командой DIST.<Br>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DONUTID</P></Td>
+ <Td><P>Вещественная.<Br>
+Внутренний диаметр кольца по умолчанию. Может равняться нулю.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DONUTOD</P></Td>
+ <Td><P>Вещественная.<Br>
+Внешний диаметр кольца по умолчанию не может равняться нулю. Если DONUTID больше DONUTOD, их значения меняются местами при следующей команде.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DRAGMODE</P></Td>
+ <Td><P>Целая. В рисунок.<Br>
+Режим слежения:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отключен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>включен (по запросу),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>Авто.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DRAGP1</P></Td>
+ <Td><P>Целая. В конфигурацию.<Br>
+Частота регенерации объекта при слежении.<Br>
+Сохраняется в файле конфигурации.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DRAGP2</P></Td>
+ <Td><P>Целая. В конфигурацию.<Br>
+Частота регенерации объекта при быстром слежении.<Br>
+Сохраняется в файле конфигурации.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DWGCODEPAGE</P></Td>
+ <Td><P>Строковая. В рисунок.<Br>
+Кодовая таблица рисунка. При созданий нового рисунка устанавливается равной системной кодовой Таблице и далее не поддерживается. Должна отражать кодовую таблицу чертежа и может быть установлена в любое значение, допустимое для переменной SYSCODEPAGE, или значение "undefined". Сохраняется в заголовке.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DWGNAME</P></Td>
+ <Td><P>Строковая.<Br>
+Имя рисунка. Может включать путь доступа операционной системы, если он был указан ври вводе имени рисунка.<Br>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DWGPREFIX</P></Td>
+ <Td><P>Строковая.<Br>
+Путь доступа операционной системы.<Br>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>DWGTILED</P></Td>
+ <Td><P>Целая.<Br>
+Битовый код, определяющий, присвоено ли текущему чертежу имя:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>у чертежа нет имени,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>у чертежа есть имя.</P></Td>
+</Tr>
+</Table>
+Только для чтения.</P></Td>
+</Tr>
+</Table>
+
+<A name="e"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>E</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>ELEVATION</P></Td>
+ <Td><P>Вещественная.<Br>
+Текущий уровень.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>EXPERT</P></Td>
+ <Td><P>Целая.<Br>
+Режим отображения подсказок типа "Вы уверены?":
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>все подсказки,</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>1</P></Td>
+ <Td><P>подавляются подсказки "Выполнять регенерацию?" и "Вы действительно хотите отключить текущий слой?",</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>2</P></Td>
+ <Td><P>подавляются перечисленные выше подсказки, а также "Блок уже существует. Переопределить его?" (команда BLOCK и "Рисунок с этим именем уже существует. Заменить его?" (команда WBLOCK),</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>3</P></Td>
+ <Td><P>подавляются перечисленные выше подсказки, а также подсказки команды LTYPE, если пользователь пробует загрузить уже загруженный тип линии иди создать новый тип линии в файле, в котором этот тип линии уже определен,</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>4</P></Td>
+ <Td><P>подавляются перечисленные выше подсказки, а также подсказки команд UCS Save и VPORTS Save, если имя, вводимое пользователем, уже существует,</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>5</P></Td>
+ <Td><P>подавляются перечисленные выше подсказки, а также подсказки, выдаваемые "Размер Сохрани" и "Размер подави", если размерный стиль с указанным именем уже существует. Подавление подсказки означает, что на нее автоматически дается положительный ответ.</P></Td>
+</Tr>
+</Table>
+Впоследствии можно будет использовать значения большие чем 5, тем самым расширяя круг подавляемых подсказок.<Br>
+В зависимости от значения переменной EXPERT могут изменяться сценарии, макрокоманды меню, команды AutoLISP и функции команд.<Br>
+Значение по умолчанию - 0. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>EXTMAX</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Правая верхняя граница рисунка. Уменьшается только командами ZOOM All или ZOOM Extents.<Br>
+Результат выдается в мировых координатах.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>EXTMIN</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Левая нижняя граница рисунка. Уменьшается только командами ZOOM Аll или ZOOM Extents.<Br>
+Результат выдается в мировых координатах.<Br>
+Только для чтения.</P></Td>
+</Tr>
+</Table>
+
+<A name="f"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>F</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>FILEDIA</P></Td>
+ <Td><P>Целая.
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>использовать диалоговые окна, если это возможно,</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>2</P></Td>
+ <Td><P>не использовать диалоговые окна, за исключением случаев, когда с помощью тильды ("~") окно запрашивается в явном виде.</P></Td>
+</Tr>
+</Table>
+Записывается в файл конфигурации.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>FILLETRAD</P></Td>
+ <Td><P>Вещественная.<Br>
+Задает радиус сопряжения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>FILLMODE</P></Td>
+ <Td><P>Целая.<Br>
+Управление режимом закрашивания:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>включен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>отключен.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>FRONTZ</P></Td>
+ <Td><P>Вещественная.<Br>
+Определяет смещение передней секущей плоскости для текущего видового экрана в условных единицах. Расстояние до передней секущей плоскости от точки зрения определяется вычитанием переменной FRONTZ из расстояния, от точки зрения до цели. Определена, только если одновременно включены бит "передняя секущая плоскость" переменной VIEWMODE и бит "передняя секущая плоскость не в точке зрения".<Br>
+Только для чтения.</P></Td>
+</Tr>
+</Table>
+
+<A name="g"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>G</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>GRIDMODE</P></Td>
+ <Td><P>Целая.<Br>
+Отображение сетки на текущем видовом экране:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>включена,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P> отключена.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>GRIDUNIT</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Задает интервалы сетки текущего видового экрана по X и Y.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>GRIPBLOCK</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Управляет заданием ручек в блоках:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>задается только одна ручка в точке вставки блока (значение по умолчанию),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>ручки появляются у всех примитивов блока.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>GRIPCOLOR</P></Td>
+ <Td><P>Целая 1-255.<Br>
+В конфигурацию.<Br>
+Цвет невыбранных ручек в виде контура. Значение по умолчанию - 5 (синий).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>GRIPHOT</P></Td>
+ <Td><P>Целая 1-255.<Br>
+В конфигурацию.<Br>
+Цвет выбранных ручек в виде закрашенного квадрата. Значение по умолчанию - 1(красный).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>GRIPS</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Позволяет использовать ручки выбора примитивов для растягивания, перемещения, поворота, масштабирования и зеркального отражения:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>ручки отключены,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>ручки включены (задание по умолчанию).</P></Td>
+</Tr>
+</Table>
+Для настройки размера ручек и задания зоны притяжения графического курсора к ручке при объектной привязке используется переменная GRIPSIZE.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>GRIPSIZE</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Размер квадрата, изображающего ручку.<Br>
+Значение по умолчанию - 3.</P></Td>
+</Tr>
+</Table>
+
+<A name="h"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>H</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>HANDLES</P></Td>
+ <Td><P>Целая.<Br>
+Режим присвоения меток примитивам:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отключен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>включен.</P></Td>
+</Tr>
+</Table>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>HIGHLIGHT</P></Td>
+ <Td><P>Целая.<Br>
+Выделение объектов при выборе:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отключено,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>включено.</P></Td>
+</Tr>
+</Table>
+Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>HPANG</P></Td>
+ <Td><P>Вещественная.<Br>
+Угол наклона образца штриховки по умолчанию.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>HPDOUDLE</P></Td>
+ <Td><P>Целая.<Br>
+Штрихование крест-накрест для созданных пользователем штриховок:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>обычная штриховка,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>штриховка крест-накрест.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>HPNAME</P></Td>
+ <Td><P>Строковая.<Br>
+Имя образца штриховки по умолчанию длиной до 34 символов без пробелов. Если значение по умолчанию не задано, возвращает "". Ввод точки (.) означает отсутствие значения по умолчанию.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>HPSCALE</P></Td>
+ <Td><P>Вещественная.<Br>
+Масштабный коэффициент образца штриховки  по  умолчанию. Не может равняться нулю.</P></Td>
+</Tr>
+</Table>
+
+<A name="i"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>I</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>INSBASE</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Базовая точка вставки рисунка как блока в текущей ПСК (устанавливается также командой BASE).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>INSNAME</P></Td>
+ <Td><P>Строковая.<Br>
+Имя блока по умолчанию для команд DDINSERT и INSERT. Должно соответствовать соглашению об именах символов. Если значение по умолчанию не задано, возвращает "". Ввод точки (.) означает отсутствие значения по умолчанию.</P></Td>
+</Tr>
+</Table>
+
+<A name="l"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>L</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>LASTANGLE</P></Td>
+ <Td><P>Вещественная.<Br>
+Конечный угол последней введенной дуги в плоскости XY текущей ПСК.<Br>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LASTPOINT</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Последняя введенная точка, координаты которой выражены в текущей ПСК (ссылка на нее выполняется знаком "@" во время ввода координат с клавиатуры).<Br>
+Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LENSLENGTH</P></Td>
+ <Td><P>Вещественная.<Br>
+Задает фокусное расстояние (в мм), используемое при построении перспективы для текущего видового экрана.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LIMCHECK</P></Td>
+ <Td><P>Целая.
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>контроль лимитов включен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>отключен.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LIMMAX</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Задает строковые координаты правого верхнего угла лимитов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LIMMIN</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Задает координаты левого нижнего угла лимитов, выраженные а мировых координатах.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LOGINNAME</P></Td>
+ <Td><P>Строковая.<Br>
+Отображает указанное при настройке или введенное при запуске AutoCAD имя пользователя.<Br>
+Только дая чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LTSCALE</P></Td>
+ <Td><P>Вещественная.<Br>
+Общий масштабный коэффициент типа линии.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LUNITS</P></Td>
+ <Td><P>Целая.<Br>
+Определяет систему измерения линейных единиц:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>научная,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>десятичная,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>3</P></Td>
+ <Td><P>техническая,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>архитектурная,</P></Td>
+</Tr><Tr>
+ <Td><P>5</P></Td>
+ <Td><P>с дробной частью.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>LUPREC</P></Td>
+ <Td><P>Целая.<Br>
+Задает число десятичных разрядов или знаменатель в линейных единицах.</P></Td>
+</Tr>
+</Table>
+
+<A name="m"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>M</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>MAXACTVP</P></Td>
+ <Td><P>Целая.<Br>
+Максимальное число одновременно регенерируемых видовых экранов.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>MAXSORT</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Максимальное число символов или имен файлов, которое можно отсортировать с помощью команд вывода списков;<Br>
+если общее чисто сортируемых элементов превышает это число, сортировка не производится (по умолчанию - 200). Записывается в файл конфигурации.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>MENUCTL</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Управляет переключением "страниц" экранного меню при вводе команды с клавиатуры:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>при вводе команды с клавиатуры "станицы" экранного меню не переключаются,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>при вводе команды с клавиатуры "станицы" экранного меню переключаются.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>MENUECHO</P></Td>
+ <Td><P>Целая.<Br>
+Биты этой переменной управляют эхо-выводом и подсказками меню. Числа, приведенные ниже, устанавливают соответствующие биты этой переменной. Для установки нескольких бит следует записать в MENUECHO сумму нужных чисел:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>подавляет эхо-вывод пунктов меню (аналогично переключателю ^Р в макроопределениях меню),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>подавляет системные подсказки во время действия меню,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>подавляет переключатель ^Р эхо-вывода пунктов меню.</P></Td>
+</Tr>
+</Table>
+По умолчанию принимается значение 0 (выдаются все пункты меню и системные подсказки).<Br>
+Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>MENUNAME</P></Td>
+ <Td><P>Строковая.<Br>
+Имя загруженного в данный момент файла меню. Включает путь доступа операционной системы, если он был указан.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>MIRRTEXT</P></Td>
+ <Td><P>Целая.<Br>
+Управление зеркальным отражением текста командой MIRROR:
+<Table Border=0>
+<Tr>
+ <Td Width=50><P>0</P></Td>
+ <Td><P>ориентация текста не меняется,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>не - 0</P></Td>
+ <Td><P>зеркальное отображение текста.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+</Table>
+
+<A name="o"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>O</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>OFFSETDIST</P></Td>
+ <Td><P>Вещественная.<Br>
+Расстояние смешения по умолчанию.<Br>
+При вводе отрицательного значения по умолчанию предполагается "Point".</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>OSMODE</P></Td>
+ <Td><P>Целая.<Br>
+Биты этой переменной управляют режимами объектной привязки. Числа, приведенные ниже, устанавливают соответствующие биты этой переменной. Для установки нескольких бит следует записать в OSMODE сумму нужных чисел:
+<Table Border=0>
+<Tr>
+ <Td Width=40><P>1</P></Td>
+ <Td><P>ENDpoint,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>MIDpoint,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>CENter,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>NODe,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>16</P></Td>
+ <Td><P>QUAdrant,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>32</P></Td>
+ <Td><P>INTersection,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>64</P></Td>
+ <Td><P>INSert,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>128</P></Td>
+ <Td><P>PERpendicular,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>256</P></Td>
+ <Td><P>TANgent,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>512</P></Td>
+ <Td><P>NEArest,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1024</P></Td>
+ <Td><P>QUICK.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ORTHOMODE</P></Td>
+ <Td><P>Целая.<Br>
+Управление режимом ORTHO:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>включен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>отключен.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+</Table>
+
+<A name="p"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>P</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>PDMODE</P></Td>
+ <Td><P>Целая.<Br>
+Задает символ отображения примитива "точка".</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PDSIZE</P></Td>
+ <Td><P>Вещественная.<Br>
+Размер символа отрбражения примитива "точка".</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PERIMETER</P></Td>
+ <Td><P>Вещественная.<Br>
+Периметр, вычисленный  командами AREA, LIST, DBLIST.<Br>
+Только дли чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PFACEMAX</P></Td>
+ <Td><P>Целая.<Br>
+Максимальное число вершин на одну грань.<Br>
+Только дли чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PICKADD</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Управляет добавочным выбором примитивов:
+<Table Border=0>
+<Tr>
+ <Td Width=30 Valign=TOP><P>0</P></Td>
+ <Td><P>отключает PICKADD. Последние выбранные индивидуально или с помощью рамки примитивы становятся новым набором выбора. Предварительно выбранные примитивы в набор не добавляются. Добавить в набор примитивы можно, удерживая при выборе клавишу Shift в нажатом положении,</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>1</P></Td>
+ <Td><P>включает PICKADD. Все выбранные индивидуально или с помощью рамки примитивы добавляются в текущий набор выбора. Удалить примитивы из набора можно, удерживая при выборе клавишу Shift в нажатом положении.</P></Td>
+</Tr>
+</Table>
+Значение по умолчанию - 0.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PICKAUTO</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Управляет автоматическим созданием рамки выбора в ответ на запрос "Select objects":
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отключает PICKADD,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td Valign=TOP><P>позволяет создавать рамку выбора (в том числе и секущую) автоматически на запрос "Select objects".</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PICKBOX</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Высота прицела выбора объекта в пикселах. Сохраняется в файле конфигурации.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PICKDRAG</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Управляет способом создания рамки выбора:
+<Table Border=0>
+<Tr>
+ <Td Width=30 Valign=TOP><P>0</P></Td>
+ <Td><P>путем указания двух диагональных точек, определяющих рамку. При перемещении устройства указания из одной точки в другую его кнопки опущены (значение по умолчанию - 0),</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>1</P></Td>
+ <Td><P>нажав кнопку выбора устройства указания в первой из точек, переместиться к другой, удерживая кнопку выбора нажатой, и отпустить ее во второй.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PICKFIRST</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Управляет способом выбора примитивов, при котором можно сначала создать набор выбора, а затем ввести команду редактирования или справок:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отключает предварительный набор,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>включает предварительный набор (по умолчанию - 1).</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PLATFORM</P></Td>
+ <Td><P>Строковая.<Br>
+Сообщение только для чтения, указывающее используемую AutoCAD среду.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PLINEGEN</P></Td>
+ <Td><P>Целая.<Br>
+В рисунок.<Br>
+Управляет генерацией типа линии в вершинах двумерных полилиний. Если равна единице, штрихи не обрываются в вершинах полилинии. Если равна нулю, штрихи начинаются и обрываются в каждой вершине. Не влияет на сегменты полилиний, имеющих переменную ширину.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PLINEWID</P></Td>
+ <Td><P>Вещественная.<Br>
+В рисунок.<Br>
+Ширина полилинии по умолчанию. Может равняться нулю.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PLOTID</P></Td>
+ <Td><P>Строковая.<Br>
+В конфигурацию.<Br>
+Изменяет текущий настроенный плоттер на основе присвоенного ему описания. Делает текущим плоттер, описание которого начинается с заданного текста.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PLOTTER</P></Td>
+ <Td><P>Целая.<Br>
+В конфигурацию.<Br>
+Изменяет плоттер по умолчанию на основе присвоенного ему целого (от 0 до максимально присвоенного). Можно создать до 29 конфигураций. Делает текущим плоттер с заданным номером конфигурации (номера от 1 до 28 присваиваются при настройке).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>POLYSIDES</P></Td>
+ <Td><P>Целая.<Br>
+Количество сторон многоугольника по умолчанию для команды POLYGON. Допустимый диапазон от 3 до 1024.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>POPUPS</P></Td>
+ <Td><P>Целая.<Br>
+Признак наличия расширенного пользовательского интерфейса (возможность работы с диалоговыми окнами, строкой меню и падающими меню):
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>РПИ реализуется,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>текущий драйвер монитора не поддерживает РПИ.</P></Td>
+</Tr>
+</Table>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PSLTSCALE</P></Td>
+ <Td><P>Целая.<Br>
+Управляет масштабом типа линий в пространстве листа:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>специальное изменение масштаба типа линии отключено,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>масштаб типа линий зависит от масштаба видового экрана.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PSPROLOG</P></Td>
+ <Td><P>Строковая.<Br>
+Задает имя пролога, считываемого из файла acad.pst при использовании команды PSOUT.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>PSQUALITY</P></Td>
+ <Td><P>Целая.<Br>
+Управляет качеством отображения изображений PostScript и отрисовкой их контурными или закрашенными:<Br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0     отключает генерацию изображений PostScript,<Br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Положительное значение - задает количество пикселов на единицу измерения рисунка для разрешения PostScript,<Br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Отрицательное значение - абсолютная величина задает количество пикселов на единицу рисунка. Изображения PostScript выводятся контурно {без закрашивания).</P></Td>
+</Tr>
+</Table>
+
+<A name="q"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>Q</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>QTEXTMODE</P></Td>
+ <Td><P>Целая.<Br>
+Режим отображения текста:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>контурный текст,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>нормальное отображение текста.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+</Table>
+
+<A name="r"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>R</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>REGENMODE</P></Td>
+ <Td><P>Целая.<Br>
+Автоматическая регенерация:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>включена,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>отключена.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>RE-INT</P></Td>
+ <Td><P>Целая.<Br>
+Переинициализирует порты ввода/вывода, монитор, дигитайзер, плоттер и файл acad.pgp, используя описанные ниже битовые коды. Для задания нескольких переинициализаций следует ввести сумму значений кодов; например, 3 задает переинициализацию порта дигитайзера (1) и плоттера (2):<Br>
+1 = порт дигитайзера,<Br>
+2 = порт плоттера,<Br>
+4 = дигитайзер,<Br>
+8 = монитор,<Br>
+16 = перезагрузка РGР-файла.</P></Td>
+</Tr>
+</Table>
+
+<A name="s"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>S</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>SAVEFILE</P></Td>
+ <Td><P>Строковая.<Br>
+Имя текущего файла для автоматического сохранения.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SAVENAME</P></Td>
+ <Td><P>Целая.<Br>
+Имя файла, в который копируется рисунок.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SAVETIME</P></Td>
+ <Td><P>Целая.<Br>
+Автоматическое сохранение текущего рисунка с расширением .sv$, с указанным интервалом в минутах (или 0 для отключения периодического сохранения). Таймер сбрасывается при вводе команд SAVE, SAVEAS и QSAVE.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SCREENBOXES</P></Td>
+ <Td><P>Целая.<Br>
+Количество боксов в зоне экранного меню графического экрана. При отключенном экранном меню при настройке SCRINBOXES равна нулю. В системах, позволяющих изменять размер графического окна или перенастраивать экранное меню в течение сеанса редактирования, значение этой переменной может изменяться.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SCREENMODE</P></Td>
+ <Td><P>Целая.<Br>
+Битовый код, указывающий состояние экрана AutiCAD. Является суммой следующего:<Br>
+0 = текстовый экран,<Br>
+1 = графический экран,<Br>
+2 = двухэкранная конфигурация.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SCREENSIZE</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Задает размер экрана графического монитора в пикселах, X и Y.<Br>
+Только для чтения. Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SHADEDGE</P></Td>
+ <Td><P>Целая.
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>грани тонируются, ребра не выделяются,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>грани тонируются, ребра рисуются фоновый цветом,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>грани не заполняются, ребра рисуются цветом объекта,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>3</P></Td>
+ <Td><P>грани рисуются цветом объекта, ребра - цветом фона.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SHADEDIF</P></Td>
+ <Td><P>Целая.<Br>
+Отношение окружающей освещенности к освещенности диффузного отражения (в процентах от окружающей освещенности).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SHPNAME</P></Td>
+ <Td><P>Строковая.<Br>
+Имя формы по умолчанию. Должно соответствовать принятому соглашению об именах символов. Ввод точки (".") означает отсутствие значения по умолчанию.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SKETCHINC</P></Td>
+ <Td><P>Вещественная.<Br>
+Шаг приращения в команде SKETCH.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SKPOLY</P></Td>
+ <Td><P>Целая.<Br>
+Команда SKETCH генерирует:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отрезки,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>полилинии.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SNAPANG</P></Td>
+ <Td><P>Вещественная.<Br>
+Угол поворота сетки шаговой привязки (в текущей ПСК) для текущего видового экрана.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SNAPBASE</P></Td>
+ <Td><P>Список двух действительных чисел.<Br>
+Начальная точка сетки шаговой привязки для текущего видового экрана (в текущей ПСК).</P></Td>
+</Tr>
+
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SNAPISOPAIR</P></Td>
+ <Td><P>Целая.<Br>
+Текущая плоскость изометрии текущего видового экрана:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>левая,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>верхняя,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>правая.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SNAPMODE</P></Td>
+ <Td><P>Целая.<Br>
+Режим SNAP для текущего видового экрана:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>включен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>отключен.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SNAPSTYL</P></Td>
+ <Td><P>Целая.<Br>
+Задает тип текущего видового экрана:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>стандартный,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>изометрический.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SNAPUNIT</P></Td>
+ <Td><P>Список двух действительных чисел.<Br>
+Задает шаг привязки по X и Y текущего видового экрана.</P></Td>
+</Tr>
+
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SORTENTS</P></Td>
+ <Td><P>Целая.<Br>
+Управляет порядком сортировки:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отключает переменную,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>сортировка при выборе объектов,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>сортировка при объектной привязке,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>сортировка при перерисовках,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>сортировка при создании слайдов,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>16</P></Td>
+ <Td><P>сортировка при регенерациях,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>32</P></Td>
+ <Td><P>сортировка при черчении,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>64</P></Td>
+ <Td><P>сортировка при выводе в формате PostScript,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>96</P></Td>
+ <Td><P>значение по умолчанию - сортировка при черчении и выводе в формате PostScript.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SPLFRAME</P></Td>
+ <Td><P>Целая.<Br>
+Управление отображением каркаса сплайна при сглаживании полилинии, определяющей сети поверхности сглаживания (отображается либо поверхность сглаживания, либо сеть), а также невидимых краев ЗD граней:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>не отображаются,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>отображаются.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SPLINESEGS</P></Td>
+ <Td><P>Целая.<Br>
+Задает число прямых сегментов,которые должны быть сгенерированы для каждого участка сплайна.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SPLINETYPE</P></Td>
+ <Td><P>Целая.<Br>
+Тип сплайна, создаваемого командой  PEDIT Spline:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>5</P></Td>
+ <Td><P>квадратичный В-сплайн,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>6</P></Td>
+ <Td><P>кубический В-сплайн.</P></Td>
+</Tr>
+</Table>
+Остальные значения запрещены.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SURFTAB1</P></Td>
+ <Td><P>Целая.<Br>
+Задает число интервалов, которые должны быть сгенерированы в командах RULESURF и TABSURF, и плотность сети в направлении М для команд REVSURF и EDGESURF.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SURFTAB2</P></Td>
+ <Td><P>Целая.<Br>
+Задает плотность сети в направлении N для команд REVSURF и EDGESURF.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SURFTYPE</P></Td>
+ <Td><P>Целая.<Br>
+Тип поверхности сглаживания, создаваемой командой PEDIT Spline:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>5</P></Td>
+ <Td><P>поверхность квадратичного В-сплайна,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>6</P></Td>
+ <Td><P>поверхность кубического В-сплайна,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>поверхность Безье.</P></Td>
+</Tr>
+</Table>
+Остальные значения запрещены.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SURFU</P></Td>
+ <Td><P>Целая.<Br>
+Плотность поверхности в направлении М.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SURFV</P></Td>
+ <Td><P>Целая.<Br>
+Плотность поверхности в направлении N.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>SYSCODEPAGE</P></Td>
+ <Td><P>Строковая.<Br>
+Указывает системную кодовую таблицу, заданную в файле acad.xmf.<Br>
+Только для чтения.</P></Td>
+</Tr>
+</Table>
+
+<A name="t"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>T</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>TABMODE</P></Td>
+ <Td><P>Целая.
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>отключает режим "планшет",</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>включает режим "планшет".</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TARGET</P></Td>
+ <Td><P>Список из трех действительных чисел.<Br>
+Задает положение цели в координатах ПСК на текущем видовом экране.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TDCREATE</P></Td>
+ <Td><P>Вещественная.<Br>
+Время и дата создания рисунка (стандартный формат ОС UNIX).<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TDINDWG</P></Td>
+ <Td><P>Вещественная.<Br>
+Общее время редактирования (стандартный формат ОС UNIX).<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TDUPDATE</P></Td>
+ <Td><P>Вещественная.<Br>
+Время и дата последнего редактирования/записи  (специальный формат, стандартный формат ОС UNIX).<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ТDUSRTIMER</P></Td>
+ <Td><P>Вещественная.<Br>
+Таймер пользователя (стандартный формат ОС UNIX).<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TEMPPREFIX</P></Td>
+ <Td><P>Строковая.<Br>
+Путь операционной системы, по которому AutoCAD помещает временные файлы. Если у вас есть возможность использовать виртуальный (электронный) диск, то, указав в этой переменной путь доступа к нему, вы можете ускорить работу AutoCAD. Эта переменная не может быть установлена из графического редактора (следует воспользоваться подменю настройки главного меню).<Br>
+Сохраняется в файле конфигурации.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TEXTEVAL</P></Td>
+ <Td><P>Целая.<Br>
+Режим анализа ввода в тех запросах AutoCAD, где требуется ввод текстовых строк. Ввод выражений AutoLISP и передача значений переменных AutoLISP (знак "!"):
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>недопустим (будет воспринят как текст),</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>допустим (будут переданы AutoLISP).</P></Td>
+</Tr>
+</Table>
+Следует иметь в виду, что команда DTEXT с AutoLISP не работает вообще.<Br>
+Не сохраняется.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TEXTSIZE</P></Td>
+ <Td><P>Вещественная.<Br>
+Задает высоту по умолчанию нового текста в текущей гарнитуре (если высота переменная).</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>ТЕХТSTYLE</P></Td>
+ <Td><P>Строковая.<Br>
+Имя текущей гарнитуры шрифта.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>THICKNESS</P></Td>
+ <Td><P>Вещественная.<Br>
+Текущая высота примитивов.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TILEMODE</P></Td>
+ <Td><P>Целая.
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>режим совместимости с версией 10 (использует команду VPORTS),</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>0</P></Td>
+ <Td><P>активизирует пространство листа и режим работы с видовыми экранами, как с примитивами (использует команду MVIEW).</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TRACEWID</P></Td>
+ <Td><P>Вещественная.<Br>
+Ширина полосы по умолчанию.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TREEDEPTH</P></Td>
+ <Td><P>Целая.<Br>
+Четырехзначный код, указывающий на количество делений на ветви древовидного пространственного индекса. Первые две цифры - глубина узлов в пространстве модели, две последние - глубина узлов в пространстве листа. Для трехмерных рисунков коды положительные, для двумерных - отрицательные.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>TREEMAX</P></Td>
+ <Td><P>Целая.<Br>
+Ограничения максимального количества узлов в пространственном индексе рисунка (дерево октантов) для ограничения требования к памяти при регенерации.</P></Td>
+</Tr>
+</Table>
+
+<A name="u"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>U</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>UCSFOLLOW</P></Td>
+ <Td><P>Целая.<Br>
+Режим слежения за изменением системы координат (автоматическое переключение на вид в плане в новой системе):
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>включен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>выключен.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UCSICON</P></Td>
+ <Td><P>Целая.<Br>
+Биты этой переменной управляют отображением пиктограммы системы координат текущего видового экрана. Для установки бит следует записать в UCSICON нужное число:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>пиктограмма отображается,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>если отображается, то привязана к началу текущей ПСК (если это возможно).</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UCSNAME</P></Td>
+ <Td><P>Строковая.<Br>
+Содержит имя текущей системы координат.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UCSORG</P></Td>
+ <Td><P>Список из трех действительных чисел.<Br>
+Начало текущей системы координат в мировых координатах.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UCSXDIR</P></Td>
+ <Td><P>Список из трех действительных чисел.<Br>
+Задаёт направление X текущей ПСК.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UCSYDIR</P></Td>
+ <Td><P>Список из трех действительных чисел.<Br>
+Задает направление Y текущей ПСК.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UNDOCTL</P></Td>
+ <Td><P>Целая.<Br>
+Код состояния команды UNDO:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>возможность отмены команд включена,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>возможность отмены одной команды,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>режим автогруппы включен,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>действует группа.</P></Td>
+</Tr>
+</Table>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UNDOMARKS</P></Td>
+ <Td><P>Целая.<Br>
+Количество активных меток, заданных командой UNDO Метка.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>UNITMODE</P></Td>
+ <Td><P>Целая.
+<Table Border=0>
+<Tr>
+ <Td Width=30 Valign=TOP><P>0</P></Td>
+ <Td><P>отображение с дробной частью, в футах и дюймах и в топографических единицах, как ранее,</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>1</P></Td>
+ <Td><P>отображение с дробной частью, в футах и дюймах и в топографических единицах в формате ввода.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>USERI1-5</P></Td>
+ <Td><P>Пять свободных целочисленных переменных для использования сторонними разработчиками.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>USERR1-5</P></Td>
+ <Td><P>Пять свободных вещественных переменных для использования сторонними разработчиками.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>USERS1-5</P></Td>
+ <Td><P>Пять свободных вещественных переменных для использования сторонними разработчиками.</P></Td>
+</Tr>
+</Table>
+
+<A name="v"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>V</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>VIEWCTR</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Центр текущего видового экрана в координатах ПСК.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>VIEWDIR</P></Td>
+ <Td><P>Список из трех действительных чисел.<Br>
+Направление взгляда на текущем видовом экране в мировых координатах. Описывает положение камеры вектором смещения от точки цели.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>VIEWMODE</P></Td>
+ <Td><P>Целая.<Br>
+Биты этой переменной управляют режимами отображения текущего видового экрана (1 - "Вкл."). Числа, приведенные ниже, в сумме определяют значение этой переменной:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>перспективный вид,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>2</P></Td>
+ <Td><P>переднее сечение,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>4</P></Td>
+ <Td><P>заднее сечение,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>8</P></Td>
+ <Td><P>переменная UCSFOLLOW равна единице,</P></Td>
+</Tr>
+<Tr>
+ <Td Valign=TOP><P>16</P></Td>
+ <Td><P>переднее сечение не в точке зрения. Если этот бит установлен в единицу, то расстояние до переднего сечения (FRONTZ) определяет переднюю секущую плоскость. Если "Откл.", переменная FRONTZ игнорируется и передняя секущая плоскость проходит через точку установки камеры (т.е. векторы за камерой не отображаются). Этот флаг игнорируется, если бит "переднего сечения" (2) в состоянии "Откл."</P></Td>
+</Tr>
+</Table>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>VIEWSIZE</P></Td>
+ <Td><P>Вещественная.<Br>
+Задает высоту изображения на текущем видовом экране в условных единицах.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>VIEWTWIST</P></Td>
+ <Td><P>Вещественная.<Br>
+Задает угол поворота вида для текущего видового экрана.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>VISRETAIN</P></Td>
+ <Td><P>Вещественная.<Br>
+Задает угол поворота вида для текущего видового экрана.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>VSMAX</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Задает правый верхний угол "виртуального экрана" текущего видового экрана, выраженный в координатах ПСК.<Br>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>VSMIN</P></Td>
+ <Td><P>Список из двух действительных чисел.<Br>
+Задает левый нижний угол "виртуального экрана" текущего видового экрана, выраженный в координатах ПСК.<Br>
+Только для чтения.</P></Td>
+</Tr>
+</Table>
+
+<A name="w"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>W</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>WORLDUCS</P></Td>
+ <Td><P>Целая.<Br>
+Совпадение текущей ПСК с МСК:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>совпадает,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>не совпадает.</P></Td>
+</Tr>
+</Table>
+Только для чтения.</P></Td>
+</Tr>
+
+<Tr>
+ <Td Valign=TOP><P Class=m>WОRLDVIEW</P></Td>
+ <Td><P>Целая.<Br>
+Система координат, в которой работают команды DVIEW и VPOINT, действующие в текущей ПСК:
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>1</P></Td>
+ <Td><P>текущая ПСК,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>0</P></Td>
+ <Td><P>мировая система координат.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+</Table>
+
+<A name="x"></A>
+
+<Table Width=97%>
+
+<Tr><A Href=#top><Img Src=images/Button/back.gif border=0 Align="right"></A></Tr>
+
+<Tr><Td><SPAN>X</SPAN></Td></Tr>
+
+<Tr>
+ <Td Width=120 Valign=TOP><P Class=m>XREFCTL</P></Td>
+ <Td><P>Целая.<Br>
+Управляет записью файлов .xlg (файл журнала внешних ссылок):
+<Table Border=0>
+<Tr>
+ <Td Width=30><P>0</P></Td>
+ <Td><P>файл не создается,</P></Td>
+</Tr>
+<Tr>
+ <Td><P>1</P></Td>
+ <Td><P>файл записывается.</P></Td>
+</Tr>
+</Table></P></Td>
+</Tr>
+</Table>
+
+
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+<Tr>
+																	<Td>&nbsp;</Td>
+																</Tr>
+
+																<Tr>
+																	<Td ColSpan=2>
+
+																		<Table Border=0 CellSpacing=0 CellPadding=0>
+																			<Tr>
+																				<Td BackGround=../Оболочка/images/bg09.gif Width=458 Height=100 Valign=Bottom>
+																					<P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2017<Br>
+																						<Img Src=../Оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+																							<Td BackGround=../Оболочка/images/bg10.gif Width=159 Height=100>
+																								<A Href=#Top onMouseOver="mOver(6)" onMouseOut="mOut(6)"><Img Src=../Оболочка/images/06a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link6"></A><Br>
+																								<A Href=!zadanie.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../Оболочка/images/07a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link7"></A></Td>
+																							</Tr>
+																						</Table>
+
+																					</Td>
+																				</Tr>
+																			</Table>
+
+</Body>
+</HTML>

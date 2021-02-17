@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<Head>
+<Meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<Title>Электронный ресурс по учебной дисциплине ОСАПр. Функции AutoLISP для диалоговых окон</Title>
+<Meta Name="Description" http-equiv="description" Content="Электронный ресурс по учебной дисциплине ОСАПр. Функции AutoLISP для диалоговых окон">
+<Link Rel="stylesheet" Type="text/css" Href="../../../Оболочка/acad.css">
+
+<Script>hljs.initHighlightingOnLoad();</Script>
+
+<Script Language="JavaScript">
+<!--
+	function mOver(num) {if (document.images) {document.images['link'+num].src=eval('active'+num+'.src');}}
+	function mOut(num) {if (document.images) {document.images['link'+num].src=eval('normal'+num+'.src');}}
+//-->
+</Script>
+</Head>
+
+<Body Bgcolor=#E6E6E6 TopMargin=1 LeftMargin=1 MarginWidth=0 MarginHeight=0 >
+<div class=max>
+<Script Language="JavaScript"><!--
+if (document.images) {
+	normal1=new Image(190,29);normal1.src="../../../Оболочка/images//01a.gif";
+	active1=new Image(190,29);active1.src="../../../Оболочка/images//01p.gif";
+	normal2=new Image(190,29);normal2.src="../../../Оболочка/images/02a.gif";
+	active2=new Image(190,29);active2.src="../../../Оболочка/images/02p.gif";
+	normal3=new Image(190,29);normal3.src="../../../Оболочка/images//03a.gif";
+	active3=new Image(190,29);active3.src="../../../Оболочка/images//03p.gif";
+	normal4=new Image(159,46);normal4.src="../../../Оболочка/images//09a.gif";
+	active4=new Image(159,46);active4.src="../../../Оболочка/images//09p.gif";
+	normal5=new Image(159,54);normal5.src="../../../Оболочка/images//10a.gif";
+	active5=new Image(159,54);active5.src="../../../Оболочка/images//10p.gif";
+	normal7=new Image(190,29);normal7.src="../../../Оболочка/images//7a.gif";
+	active7=new Image(190,29);active7.src="../../../Оболочка/images//7p.gif";
+	normal11=new Image(170,25);normal11.src="../../../Оболочка/images//02_1a.gif";
+	active11=new Image(170,25);active11.src="../../../Оболочка/images//02_1p.gif";
+	normal12=new Image(170,19);normal12.src="../../../Оболочка/images//02_2a.gif";
+	active12=new Image(170,19);active12.src="../../../Оболочка/images//02_2p.gif";
+	normal13=new Image(170,19);normal13.src="../../../Оболочка/images//02_3a.gif";
+	active13=new Image(170,19);active13.src="../../../Оболочка/images//02_3p.gif";
+	normal24=new Image(170,19);normal24.src="../../../Оболочка/images//04a.gif";
+	active24=new Image(170,19);active24.src="../../../Оболочка/images//04p.gif";
+	normal25=new Image(170,19);normal25.src="../../../Оболочка/images//05a.gif";
+	active25=new Image(170,19);active25.src="../../../Оболочка/images//05p.gif";
+	normal26=new Image(170,19);normal26.src="../../../Оболочка/images//06a.gif";
+	active26=new Image(170,19);active26.src="../../../Оболочка/images//06p.gif";
+	normal14=new Image(170,19);normal14.src="../../../Оболочка/images//l1_a.gif";
+	active14=new Image(170,19);active14.src="../../../Оболочка/images//l1_p.gif";
+	normal15=new Image(170,19);normal15.src="../../../Оболочка/images//z_a.gif";
+	active15=new Image(170,19);active15.src="../../../Оболочка/images//z_p.gif";
+	normal16=new Image(170,19);normal16.src="../../../Оболочка/images//l2_a.gif";
+	active16=new Image(170,19);active16.src="../../../Оболочка/images//l2_p.gif";
+	normal17=new Image(170,19);normal17.src="../../../Оболочка/images//z_a.gif";
+	active17=new Image(170,19);active17.src="../../../Оболочка/images//z_p.gif";
+	normal18=new Image(170,19);normal18.src="../../../Оболочка/images//l3_a.gif";
+	active18=new Image(170,19);active18.src="../../../Оболочка/images//l3_p.gif";
+	normal19=new Image(170,19);normal19.src="../../../Оболочка/images//z_a.gif";
+	active19=new Image(170,19);active19.src="../../../Оболочка/images//z_p.gif";
+	normal20=new Image(170,19);normal20.src="../../../Оболочка/images//l4_a.gif";
+	active20=new Image(170,19);active20.src="../../../Оболочка/images//l4_p.gif";
+	normal21=new Image(170,19);normal21.src="../../../Оболочка/images//z_a.gif";
+	active21=new Image(170,19);active21.src="../../../Оболочка/images//z_p.gif";
+	normal27=new Image(170,19);normal27.src="../../../Оболочка/images/15a.gif";
+	active27=new Image(170,19);active27.src="../../../Оболочка/images/15p.gif";
+}
+//-->
+</Script>
+
+<Left>
+<A Name="Top"></A>
+<Table Border=0 Width=100% CellSpacing=0 CellPadding=0>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg01.gif Width=190 Height=91 name="link19">&nbsp;</Td>
+ <Td Rowspan=2 BackGround=../../../Оболочка/images/bg02_acad.gif Height=120 Valign=Bottom style="background-repeat:no-repeat;">
+
+<Table BackGround=../../../Оболочка/images/raspor.gif Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td Width=230></Td>
+  <Td><P Class=h6>AutoLISP<Br><Img Src=../../../Оболочка/images/raspor.gif Width=1 Height=26></P></Td>
+ </Tr>
+</Table>
+
+</Td></Tr>
+<Tr>
+ 
+
+
+<Td BackGround=../../../Оболочка/images/bg03.gif>
+ <A Href=../../../Программа/!rabprog.html onMouseOver="mOver(26)" onMouseOut="mOut(26)"><Img Src=../../../Оболочка/images/06a.gif Width=190 Height=29 Border=0 
+Alt="Рабочая программа" name="link26"></A><Br></Td>
+
+</Tr>
+<Tr>
+ <Td BackGround=../../../Оболочка/images/bg09.gif Valign=Top>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+<Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+	<A Href=../../../Теория/!lekcii.html onMouseOver="mOver(7)" onMouseOut="mOut(7)"><Img Src=../../../оболочка/images/7a.gif Width=190 Height=29 Border=0 
+Alt="Лекции" name="link7"></A><Br>
+ </Td>
+ <Tr><Td BackGround=../../../оболочка/images/bg04.gif Width=190 Valign=Top>
+ <a href="../../!zadanie.html"> <Img Src=../../../оболочка/images/8p.gif Border=0 Width=190 Height=29 Alt="Лабораторные работы"></a><Br></Td>
+<Tr><Td BackGround=../../../оболочка/images/bg05_1.gif Width=190 Valign=Top>
+  <A href="../lb1/!acad.html" onMouseOver="mOver(14)" onMouseOut="mOut(14)"><Img Src=../../../оболочка/images/l1_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 1" name="link14"></A><Br></Td></Tr>
+<Tr><Td BackGround=../../../оболочка/images/bg06.gif Width=190 Height=36 Valign=Top>
+   <A href="../lb1/laba1.html"  onMouseOver="mOver(15)" onMouseOut="mOut(15)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 1" name="link15"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(18)" onMouseOut="mOut(18)"><Img Src=../../../Оболочка/images/l3_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 2" name="link18"></A><Br>
+<A  href="../lb2/laba2.html" onMouseOver="mOver(19)" onMouseOut="mOut(19)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 2" name="link19"></A><Br>
+  <A href="../lb2/!mechanic.html" onMouseOver="mOver(20)" onMouseOut="mOut(20)"><Img Src=../../../Оболочка/images/l4_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 3" name="link20"></A><Br>
+<A href="../lb3/laba3.html"1 onMouseOver="mOver(21)" onMouseOut="mOut(21)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 3" name="link21"></A><Br>
+ <A href="../lb4/!lisp.html" onMouseOver="mOver(16)" onMouseOut="mOut(16)"><Img Src=../../../Оболочка/images/l2_a.gif Width=170 Height=40 Border=0 Alt="Лабораторная работа 4" name="link16"></A><Br>
+<A  href="../lb4/laba4.html" onMouseOver="mOver(17)" onMouseOut="mOut(17)"><Img Src=../../../Оболочка/images/z_a.gif Width=170 Height=20 Border=0 Alt="Задания 4" name="link17"></A><Br>
+  <Img Src=../../../Оболочка/images/bg07.gif Width=190 Height=23><Br></Td></Tr>
+ 
+ <Tr><Td BackGround=../../../оболочка/images/bg03.gif Valign=Top>
+   <A Href=../../../Заочнику/!zaochnoe.html onMouseOver="mOver(27)" onMouseOut="mOut(27)"><Img Src=../../../Оболочка/images/15a.gif Width=190 Height=29 Border=0  Alt="Заочнику" name="link27"></A><Br>
+  <A Href=../../../Контроль_знаний/!samocontrol.html onMouseOver="mOver(25)" onMouseOut="mOut(25)"><Img Src=../../../оболочка/images/05a.gif Width=190 Height=29 Border=0 
+Alt="Самоконтроль" name="link25"></A><Br>
+	 <Img Src=../../../оболочка/images/bg08.gif Width=190 Height=13><Br>
+</Table></Td>
+ <Td Valign=Top>
+<P><Br></P>
+
+<Center>
+<Table Border=0 CellPadding=0 CellSpacing=0 Width=95%><Tr><Td>
+
+<Br>
+<Table Border=0 CellPadding=0 CellSpacing=0>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td>
+<Tr><Td Valign=Center Height=30><span Class=h1>Функции AutoLISP для диалоговых окон</span></Td></Tr>
+<Tr><Td Bgcolor=#000000><Img Src=../../../оболочка/images/raspor.gif Height=2></Td></Tr>
+</Table></Center><Br>
+
+ <Table valign="left"><Tr align="left"><Td>
+<Ul>
+<Dt><A Class=m href="#tit1">Открытие и закрытие DCL-файлов</A></Dt>
+<Dt><A Class=m href="#tit2">Открытие и закрытие диалоговых окон</A></Dt>
+<Dt><A Class=m href="#tit3">Инициализация выражений действия и функций вызова с возвратом</A></Dt>
+<Dt><A Class=m href="#tit4">Обработка полей и атрибутов</A></Dt>
+<Dt><A Class=m href="#tit5">Задание полей списков и раскрывающихся списков</A></Dt>
+<Dt><A Class=m href="#tit6">Создание изображений</A></Dt>
+<Dt><A Class=m href="#tit7">Данные, связанные с программным приложением</A></Dt>
+</Ul>
+</Td></Tr></Table>
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+
+<P>Эти функции обращаются к соответствующему DCL-файлу при отображении диалогового окна на экране.</P>
+
+<A name="tit1"></A>
+<P Class=h3>Открытие и закрытие DCL-файлов</P>
+
+<pre><code> (load_dialog имя-файла)</code></pre>
+
+<P>Загружает указанный DCL-файл. Возвращает целое значение (dcl_id), используемое в последующих вызовах функций new_dialog и unload_dialog. В имя файла не следует вставлять расширение.</P>
+<pre><code> (unload_dialog dcl_id)</code></pre>
+
+<P>Выгружает указанный DCL_файл. Всегда возвращает nil.</P>
+
+<A name="tit2"></A>
+<P Class=h3>Открытие и закрытие диалоговых окон</P>
+
+<pre><code> (new_dialog имя-окна dcl_id [[действие] точка])</code></pre>
+
+<P>Начинает управление диалоговым окном, выводит его на экран и может определить действие по умолчанию. Аргумент имя-окна является строкой и определяет диалоговое окно, а аргумент dcl_id определяет DCL-файл (это значение определяется вызовом функции load_dialog). Приложение должно вызывать функцию new_dialog перед вызовом start_dialog. Все установки, такие, как присвоение полям значений, создание изображений или списков для долей списка и связывание действий с полями (через вызовы функции action_tile), должны происходить после вызова функции new_dialog и перед вызовом start_dialog. Действие по умолчанию выполняется после указания пользователем активного поля, которое не имеет присвоенного функцией action_tile или определенного в DCL-файле действия или функции вызова с возвратом. При успешном завершении функции (new_dialog) возвращает t, в противном случае - nil. Аргумент действие, который должен быть задан, если определен аргумент точка, является строкой, содержащей выражение AutoLISP для использования как действия по умолчанию. Если аргумент действие определять не нужно, следует присвоить ему пустую строку (" "). Если присутствует аргумент точка, то он является списком (X У) точки расположения диалогового окна на экране. Точка обычно определяет положение левого верхнего угла диалогового окна. Поэтому не следует определять положение диалогового окна при его первой инициализации. Координаты положения окна следует задавать после вызова функции (done_dialog) для повторного открытия окна. Это позволяет открывать окна заново, где они были закрыты. Если точка определена как '(-1 -1), диалоговое окно откроется в положении по умолчанию (в центре графического экрана AutoCAD).</P>
+
+<P>Всегда следует проверять возвращаемое функцией new_dialog значение. Вызов функции start_dialog, если функция new_dialog вернула значение ошибки, может привести к непредсказуемым последствиям.</P>
+
+<pre><code> (start_dialog)</code></pre>
+
+<P>Начинает диалог в диалоговом окне. Диалоговое окно должно быть предварительно инициализировано предшествующим вызовом функции new_dialog. Оно остается активным, пока выражение действия или функция вызова с возвратом не вызовут функцию done_dialog; обычно вызов done_dialog связан с полем, имеющим ключ "accept" (обычно клавиша "Да" ("ОК")) или "Cancel" (обычно клавиша "Отмена" ("Cancel")).</P>
+<P>Функция (start_dialog) не имеет аргументов. Она возвращает аргумент состояние, переданный в функцию (done_dialog). Значением по умолчанию является 1, если пользователь указал клавишу OK; 0, если пользователь указал клавишу Cancel; -1, если окна были закрыты вызовом функции (term_dialog). Но если функция (done_dialog) установила состояние в значение большее 1, функция (start_dialog) вернет значение, смысл которого определяется приложением.</P>
+
+<pre><code> (done_dialog [состояние])</code></pre>
+
+<P>Завершает диалог в диалоговом окне и убирает его с экрана. Функция должна вызываться из выражения действия или из функции вызова с возвратом. Эта функция также возвращает текущее положение (X Y) диалогового окна. Если функция с возвратом определена для клавиш с ключом "accept" или "done", функция вызова с возвратом должна определенно вызывать функцию done_dialog. Если этого не сделать, пользователь может не выйти из диалогового окна. Если с этими клавишами не связана функция вызова с возвратом и используются стандартные клавиши выхода, AutoCAD обрабатывает их автоматически. Кроме того, точное действие AutiLISP для клавиши "accept" должно определить действие как 1 (или как определенное приложением значение), иначе функция (start_dialog) вернет значение по умолчанию 0, что аналогично отмене диалогового окна.</P>
+<P>Аргумент состояние не является обязательным. Если он определен, то должен быть положительным целым, который функция (start_dialog) возвращает как 1 для OK и как 0 для Cancel. Функция (done_dialog) возвращает список координат точки (X Y), определяющей положение диалогового окна, которое покинул пользователь. Этот список можно использовать в последующем вызове функции (new_dialog) для повторного открытия диалогового окна в месте, выбранном пользователем.</P>
+
+<pre><code> (term_dialog)</code></pre>
+
+<P>Завершает диалог во всех активных в настоящий момент диалоговых окнах, как в случае прерывания пользователем. Если при открытых DCL-файлах выполнение приложения прерывается, AutoCAD автоматически вызывает функцию (term_dialog). Данная функция используется в основном для закрытия вложенных диалоговых окон. Функция (tenm_dialog) всегда возвращает nil.</P>
+
+
+
+<A name="tit3"></A>
+<P Class=h3>Инициализация выражений действия и функций вызова с возвратом</P>
+
+<pre><code> (action_tile ключ выражение_действия)</code></pre>
+
+<P>Присваивает действие, которое будет выполняться после выбора пользователем определенного поля. Аргумент ключ представляет имя поля, которое будет вызывать действие. Действие, присвоенное функцией action_tile, замещает действие по умолчанию диалогового окна или атрибут поля action, если они определены в DCL-файле.</P>
+<P>Аргументы ключ и выражение_действия являются строками. Аргумент выражение_действия вычисляется после выбора пользователем поля. Выражение может обращаться к текущему значению поля (атрибут поля value), определенному как $value, к его имени, определенному как $key, к данным, установленным функцией (client_data_tile), определенным как $data, к коду причины вызова, определенному как $reason, к координатам изображения, если это поле изображения, определенным как $x и $y.</P>
+
+
+<A name="tit4"></A>
+<P Class=h3>Обработка полей и атрибутов</P>
+
+<pre><code> (mode_tile ключ режим)</code></pre>
+
+<P>Устанавливает режим для данного поля. Аргумент ключ определяет поле. Аргумент режим является целым числом, его значения даются в таблице:</P>
+
+<Center>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Значение аргумента</P></Td>
+ <Td><P Class=tcb>Результат</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>0</P></Td>
+ <Td><P Class=tc>Поле включено (доступно)</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>1</P></Td>
+ <Td><P Class=tc>Поле отключено (недоступно)</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>2</P></Td>
+ <Td><P Class=tc>Выбрать поле</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>3</P></Td>
+ <Td><P Class=tc>Подсветить содержимое текстового поля</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>4</P></Td>
+ <Td><P Class=tc>Включить/отключить подсветку изображения</P></Td>
+</Tr>
+</Table></Center>
+
+<P><I>Для аргумента <B>режим</B> можно определить только одно целое значение.<Br>Аргумент <B>ключ</B> является строкой.</I></P>
+
+<pre><code> (get_attr ключ атрибут)</code></pre>
+
+<P>Запрашивает значение DCL указанного атрибута. Аргумент ключ определяет поле, аргумент атрибут - имя атрибута в DCL-описании поля. Значение возвращается как первоначально установленное в описании поля; оно не отражает изменений состояния поля, которые могут произойти после ввода пользователя или вызова функции set_tile.</P>
+<P>Функция (get_attr) возвращает значение атрибута как строку. Аргументы ключ и атрибут являются строками.</P>
+
+<pre><code> (get_tile ключ) </code></pre>
+
+<P>Запрашивает действующее значение указанного поля.</P>
+<P>Аргумент ключ определяет поле. Функция (get_tile) возвращает значение поля как строку. Аргумент ключ является строкой.</P>
+
+<pre><code> (set_tile ключ значение)</code></pre>
+
+<P>Устанавливает действующее значение для указанного поля. Аргумент ключ определяет поле, аргумент значение - присваиваемое значение. Все аргументы являются строками.</P>
+
+
+<A name="tit5"></A>
+<P Class=h3>Задание полей списков и раскрывающихся списков</P>
+
+<pre><code> (start_list ключ {операция] индекс])</code></pre>
+
+<P>Запускает обработку указанного поля списка или раскрывающегося списка, определенного аргументом ключ. Аргумент операция является целым числом со следующими возможными значениями:</P>
+
+<Center>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Аргумент</P></Td>
+ <Td><P Class=tcb>Результат</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>1</P></Td>
+ <Td><P Class=tc>Изменить выбранное содержимое списка</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tcb>2</P></Td>
+ <Td><P Class=tc>Добавить новый пункт в список</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tcb>3</P></Td>
+ <Td><P Class=tc>Удалить старый список и создать новый (по умолчанию)</P></Td>
+</Tr>
+</Table></Center>
+
+<P>Аргумент индекс игнорируется, если функция start_dialog не вызывается с кодом изменения 1, тогда индекс определяет пункт списка для изменения последующим вызовом функции add_list. Значения индекс начинаются с нуля. Аргументы операция и индекс необязательны. Если не определен аргумент операция, он по умолчанию устанавливается в 3. Если не определена операция и не определен индекс, индекс по умолчанию устанавливается в 0. Аргумент ключ является строкой.</P>
+<pre><code> (add_list элемент)</code></pre>
+
+<P>Добавляет заданную строку в текущий список или замещает пункт списка на элемент. Аргумент элемент является строкой. Он завершает обработку текущего списка.</P>
+
+<pre><code> (end_list)</code></pre>
+
+
+<A name="tit6"></A>
+<P Class=h3>Создание изображений</P>
+
+<pre><code> (dimx_tile ключ)
+ (dimy_tile ключ)</code></pre>
+
+<P>Функции возвращают размеры поля в единицах диалогового окна, которые используются функциями vector_image, fill_image и slide_image, требующими задания абсолютных координат. Аргумент ключ определяет поле. Координаты возвращаются как максимально разрешенные в поле. Так как координаты отсчитываются от нуля, функции возвращают значения на единицу меньше, чем размеры по Х- или Y-направлению. Функция dimx_tile возвращает ширину поля, функция dimy_tile - его высоту. Для обеих функций аргумент ключ является строкой.</P>
+
+<pre><code> (start_image ключ)</code></pre>
+
+<P>Запускает процесс создания указанного изображения в поле, определенном аргументом ключ. Аргумент ключ является строкой.</P>
+
+<pre><code> (vector_image x1 у1 х2 у2 цвет)</code></pre>
+
+<P>Рисует вектор на текущем активном изображении (открытом функцией start_image) из точки (x1&nbsp;у1) в точку (х2&nbsp;у2). Параметр цвет определяет номер цвета AutoCAD или один из логических цветов:</P>
+
+<Center>
+<Table Border="1" CellPadding="2" CellSpacing="1">
+ <Tr BgColor="#D1D6E9">
+ <Td><P Class=tcb>Номер цвета</P></Td>
+ <Td><P Class=tcb>Мнемоника ADI</P></Td>
+ <Td><P Class=tcb>Значение</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tc>-2</P></Td>
+ <Td><P Class=tc>BGLCOLOR</P></Td>
+ <Td><P Class=tc>Цвет фона графического экрана AutoCAD</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tc>-15</P></Td>
+ <Td><P Class=tc>DBGLCOLOR</P></Td>
+ <Td><P Class=tc>Цвет фона диалогового окна</P></Td>
+</Tr>
+<Tr Bgcolor=#DCDCDC>
+ <Td><P Class=tc>-16</P></Td>
+ <Td><P Class=tc>DFGLCOLOR</P></Td>
+ <Td><P Class=tc>Цвет диалогового окна (для текста)</P></Td>
+</Tr>
+<Tr Bgcolor=#EAEAEA>
+ <Td><P Class=tc>-18</P></Td>
+ <Td><P Class=tc>LINELCOLOR</P></Td>
+ <Td><P Class=tc>Цвет линии диалогового окна</P></Td>
+</Tr>
+</Table></Center>
+
+<P>Начало (0 0) находится в левом верхнем углу изображения. Можно получить координаты правого нижнего угла изображения, вызвав функцию размеров (dimx_tile).</P>
+
+<pre><code> (fill_image x1 y1 х2 у2 цвет)</code></pre>
+
+<P>Рисует закрашенный прямоугольник на активном изображении. Аргументы аналогичны функции vector_image.</P>
+
+<pre><code> (slide_image x1 y1 х2 у2 имя_слайда)</code></pre>
+
+<P>Отображает слайд AutoCAD на текущем активном изображении. Слайд может быть отдельным слайдом (*.sld) или находиться в составе библиотеки слайдов (*.slb). При вызове из библиотеки сначала указывается имя библиотеки, затем в круглых скобках имя слайда. Первый угол слайда, его точка вставки, определяется как (x1 y1), второй угол - (х2 у2). Начало (0 0) находится в левом верхнем углу изображения. Завершает создание текущего изображения</P>
+
+<pre><code> (end_image)</code></pre>
+
+
+<A name="tit7"></A>
+<P Class=h3>Данные, связанные с программным приложением</P>
+
+
+<pre><code> (client_data_tile ключ клиент-данные)</code></pre>
+
+<P>Связывает управляемые приложением данные с полем, определенным аргументом ключ. Аргумент ключ является строкой. Определенные приложением данные задаются аргументом клиент-данные и также являются строкой. Выражение действия может ссылаться на строку, определенную как $data.</P>
+
+
+
+
+<Hr Width="90%" Color="#7685C6" Align="Right">
+<Br>
+
+</Td></Tr></Table>
+</Center>
+
+ </Td>
+</Tr>
+<Tr>
+ <Td ColSpan=2>
+
+<Table Border=0 CellSpacing=0 CellPadding=0>
+ <Tr>
+  <Td BackGround=../../../оболочка/images/b1.gif Width=458 Height=100 Valign=Bottom>
+   <P Class=co>Copyright &copy; БГУИР, Кафедра Систем управления, 2015<Br>
+   <Img Src=../../../оболочка/images/raspor.gif Width=1 Height=8></P></Td>
+  <Td BackGround=../../../оболочка/images/b2.gif Width=159 Height=100>
+   <A Href=#Top onMouseOver="mOver(4)" onMouseOut="mOut(4)">
+<Img Src=../../../оболочка/images/09a.gif Width=159 Height=46 Border=0 Alt="К началу документа" name="link4"></A><Br>
+   <A Href=../../../index.html onMouseOver="mOver(5)" onMouseOut="mOut(5)">
+<Img Src=../../../оболочка/images/10a.gif Width=159 Height=54 Border=0 Alt="К первой странице" name="link5"></A></Td>
+ </Tr>
+</Table>
+
+ </Td>
+</Tr>
+</Table>
+
+</Body>
+</HTML>
